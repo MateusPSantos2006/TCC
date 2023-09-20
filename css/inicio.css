@@ -1,8 +1,12 @@
+#inicio {
+    padding: 0 0 3vh 0;
+}
+
 #direita {
-    background-image: url(../imagens/chevronRight.png);
+    background-image: url(../imagens/direita.svg);
 }
 #esquerda {
-    background-image: url(../imagens/chevronLeft.png);
+    background-image: url(../imagens/esquerda.svg);
 }
 
 #pesquisa {
@@ -15,14 +19,16 @@
 }
 
 #tituloForm {
-    margin: 30px 0px 15px 0px;
+    margin: 20px 0px 18px 0px;
+    font-weight: 600;
 }
 
 #innerForm {
     width: 100%;
-    padding: 0px 70px 0px 70px;
+    padding: 0px 25% 0px 25%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #inputsArea {
@@ -32,11 +38,16 @@
 .formInput {
     height: 35px;
     background-color: white;
-    border-radius: 2px;
-    border: 1px #989898 solid;
+    border-radius: 5px;
+    border: 1.5px #696969 solid;
     padding: 5px 7px 5px 7px;
 }
 
 #textInput {
     margin-right: 20px;
+}
+
+#formSubmit {
+    width: 90px;
+    height: 45px;
 }
