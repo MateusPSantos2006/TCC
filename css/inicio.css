@@ -1,0 +1,42 @@
+#direita {
+    background-image: url(../imagens/chevronRight.png);
+}
+#esquerda {
+    background-image: url(../imagens/chevronLeft.png);
+}
+
+#pesquisa {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tituloForm {
+    margin: 30px 0px 15px 0px;
+}
+
+#innerForm {
+    width: 100%;
+    padding: 0px 70px 0px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#inputsArea {
+    display: flex;
+}
+
+.formInput {
+    height: 35px;
+    background-color: white;
+    border-radius: 2px;
+    border: 1px #989898 solid;
+    padding: 5px 7px 5px 7px;
+}
+
+#textInput {
+    margin-right: 20px;
+}
