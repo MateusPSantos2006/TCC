@@ -1,0 +1,27 @@
+.card {
+    width: 260px;
+    background-color: rgb(168, 240, 240);
+    padding: 10px;
+    border-radius: 15px;
+    border: solid 1px black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.infosCards {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tituloCard {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#areaCards {
+    display: flex;
+    justify-content: space-between;
+}

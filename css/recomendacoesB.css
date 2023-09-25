@@ -1,0 +1,58 @@
+#areaCards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    width: 450px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card img{
+    width: 45%;
+}
+
+.contCard {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.infosCards {
+    text-align: center;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloCard {
+    text-align: center;
+    margin-top: 15px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.innerClassInfos {
+    width: 50%;
+}
+
+.tentativaEErro {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.enfase {
+    font-weight: 600;
+    font-size: 18px;
+}

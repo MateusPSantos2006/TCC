@@ -9,6 +9,10 @@
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/inicio.css">
+        <!--
+            <link rel="stylesheet" href="./css/recomendacoesA.css">
+        -->
+        <link rel="stylesheet" href="./css/recomendacoesB.css">
     </head>
     <body>
         <header>
@@ -33,7 +37,7 @@
         <main>
             <section id="inicio">
                 <div id="carrosel">
-                    <div id="carouselExample" class="carousel slide">
+                    <div id="carouselExample" class="carousel slide" data-ride="carousel" data-bs-interval="30">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img src="./imagens/1.png" class="d-block w-100" alt="...">
@@ -51,11 +55,11 @@
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                           <span class="carousel-control-next-icon" aria-hidden="true" id="direita"></span>
                         </button>
-                      </div>
+                    </div>
                 </div>
 
                 <form action="" id="pesquisa">
-                    <h1 id="tituloForm">
+                    <h1 class="titulo">
                         Está procurando algum livro?
                     </h1>
                     <div id="innerForm">
@@ -73,8 +77,205 @@
                     </div>
                 </form>
             </section>
+
+            <section id="recomendacoes">
+                <p class="titulo">
+                    Recomendações do dia
+                </p>
+
+                <div id="areaCards">
+                    <!-- MODELO A
+                        <div class="card">
+                        <img src="./imagens/livroPlaceholder.jpg" alt="">
+
+                        <p class="tituloCard">
+                            Carta ao pai
+                        </p>
+                        <div class="infosCards">
+                            <p class="innerClassInfos">
+                                Status <br>
+                                Disponível
+                            </p>
+                            <p class="innerClassInfos">
+                                Gereno <br>
+                                Não ficção
+                            </p>
+                            <p class="innerClassInfos">
+                                autor <br>
+                                Kafka
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./imagens/artistaComFome.jpg" alt="">
+
+                        <p class="tituloCard">
+                            Artista com fome
+                        </p>
+                        <div class="infosCards">
+                            <p class="innerClassInfos">
+                                Status <br>
+                                Disponível
+                            </p>
+                            <p class="innerClassInfos">
+                                Gereno <br>
+                                Não ficção
+                            </p>
+                            <p class="innerClassInfos">
+                                autor <br>
+                                Kafka
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./imagens/metamorfose.jpg" alt="">
+
+                        <p class="tituloCard">
+                            A metamorfose
+                        </p>
+                        <div class="infosCards">
+                            <p class="innerClassInfos">
+                                Status <br>
+                                Disponível
+                            </p>
+                            <p class="innerClassInfos">
+                                Gereno <br>
+                                Não ficção
+                            </p>
+                            <p class="innerClassInfos">
+                                autor <br>
+                                Kafka
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./imagens/oProcesso.jpg" alt="">
+
+                        <p class="tituloCard">
+                            O processo
+                        </p>
+                        <div class="infosCards">
+                            <p class="innerClassInfos">
+                                Status <br>
+                                Disponível
+                            </p>
+                            <p class="innerClassInfos">
+                                Gereno <br>
+                                Não ficção
+                            </p>
+                            <p class="innerClassInfos">
+                                autor <br>
+                                Kafka
+                            </p>
+                        </div>
+                    </div>-->
+
+                    <div class="card">
+                        <img src="./imagens/metamorfose.jpg" alt="">
+                        <div class="contCard">
+                            <p class="tituloCard"></p>
+                            <div class="infosCards">
+                                <p class="tituloCard">
+                                    A metamorfose
+                                </p>
+                                <div class="tentativaEErro"> 
+                                    <p class="innerClassInfos">
+                                        <span class="enfase">
+                                            Gereno
+                                        </span>
+                                        <br> Não ficção
+                                    </p>
+                                    <p class="innerClassInfos">
+                                        <span class="enfase">
+                                            Autor
+                                        </span>
+                                        <br> Kafka
+                                    </p>
+                                    <p class="innerClassInfos">
+                                        <span class="enfase">
+                                            Status
+                                        </span>
+                                        <br> disponivel
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./imagens/oProcesso.jpg" alt="">
+                        <div class="contCard">
+                            <p class="tituloCard"></p>
+                            <div class="infosCards">
+                                <p class="tituloCard">
+                                    O processo
+                                </p>
+                                <div class="tentativaEErro"> 
+                                    <p class="innerClassInfos">
+                                        <span class="enfase">
+                                            Gereno
+                                        </span>
+                                        <br> Não ficção
+                                    </p>
+                                    <p class="innerClassInfos">
+                                        <span class="enfase">
+                                            Autor
+                                        </span>
+                                        <br> Kafka
+                                    </p>
+                                    <p class="innerClassInfos">
+                                        <span class="enfase">
+                                            Status
+                                        </span>
+                                        <br> disponivel
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="./imagens/artistaComFome.jpg" alt="">
+                        <div class="contCard">
+                            <p class="tituloCard"></p>
+                            <div class="infosCards">
+                                <p class="tituloCard">
+                                    Artista com fome
+                                </p>
+                                <div class="tentativaEErro"> 
+                                    <p class="innerClassInfos">
+                                        <span class="enfase">
+                                            Gereno
+                                        </span>
+                                        <br> Não ficção
+                                    </p>
+                                    <p class="innerClassInfos">
+                                        <span class="enfase">
+                                            Autor
+                                        </span>
+                                        <br> Kafka
+                                    </p>
+                                    <p class="innerClassInfos">
+                                        <span class="enfase">
+                                            Status
+                                        </span>
+                                        <br> disponivel
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>   
 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+z5v5s8I4Jbxcz2l2zCGpKJw5f5p5o5g7f5fn5+F5" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>

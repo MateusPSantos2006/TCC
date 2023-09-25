@@ -18,11 +18,6 @@
     align-items: center;
 }
 
-#tituloForm {
-    margin: 20px 0px 18px 0px;
-    font-weight: 600;
-}
-
 #innerForm {
     width: 100%;
     padding: 0px 25% 0px 25%;
@@ -50,4 +45,5 @@
 #formSubmit {
     width: 90px;
     height: 45px;
+    font-weight: 600;
 }

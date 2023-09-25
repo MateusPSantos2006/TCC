@@ -7,6 +7,13 @@ body {
 section {
     width: 100%;
     height: auto;
-    padding: 6vh 17.5% 4vh 17.5%;
+    padding: 6vh 10% 4vh 10%;
     background-color: #f5f5f5;
+}
+
+.titulo {
+    margin: 20px 0px 18px 0px;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
 }
