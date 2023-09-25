@@ -1,14 +1,17 @@
-#areaCards {
+.grupoCard {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
+    justify-content: center;
 }
 
 .card {
     width: 450px;
+    height: 320px;
     padding: 10px;
-    margin-bottom: 20px;
+    margin: 0 10px 0 10px;
+    border: solid black 1px;
+    border-left: 1px black solid;
+    border-radius: 15px;
+
     display: flex;
     flex-direction: row;
 }
