@@ -1,0 +1,69 @@
+#BuscasResul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#busca {
+    margin-bottom: 50px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#totalResul {
+    width: 80%;
+    height: 8vh;
+    background-color: #ffe65b;
+    border-radius: 3px;
+    border: solid 2px #FFD700;
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+}
+
+#totalResul p {
+    width: 100%;
+    text-align: center; 
+    margin: 0;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#areaCardResul{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cardResul {
+    width: 100%;
+    margin-top: 30px;
+    height: 200px;
+    background-color: #59aadd ;
+
+    display: flex;
+}
+
+.cardResul img {
+    height: 100%;
+}
+
+.infosCardResul {
+    padding:1%;
+    color: black;
+    font-size: 20px;
+}
+
+.infosCardResul p{
+    margin-bottom: 0;
+}
+
+.enfase{
+    font-size: 22px;
+    font-weight: 600;
+}
