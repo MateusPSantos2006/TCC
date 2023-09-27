@@ -43,7 +43,7 @@
 .cardResul {
     width: 100%;
     margin-top: 30px;
-    height: 200px;
+    height: 250px;
     background-color: #59aadd ;
 
     display: flex;
@@ -54,16 +54,29 @@
 }
 
 .infosCardResul {
-    padding:1%;
+    padding: 1% 2% 1% 2%;
     color: black;
     font-size: 20px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .infosCardResul p{
-    margin-bottom: 0;
+    margin: 0;
+    height: auto;
 }
 
 .enfase{
     font-size: 22px;
     font-weight: 600;
+}
+
+.simboloDisponibilidade {
+    width: 20px;
+    height: 20px;
+}
+
+.sinopse {
+    width: 60%;
 }

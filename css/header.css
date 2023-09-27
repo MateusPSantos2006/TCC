@@ -9,7 +9,7 @@ header {
     align-items: center;
 }
 
-#navegacaoHeader {
+.navegacaoHeader {
     width: 400px;
     display: flex;
     justify-content: space-between;
