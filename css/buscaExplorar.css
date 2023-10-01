@@ -13,18 +13,6 @@
     align-items: center;
 }
 
-#totalResul {
-    width: 80%;
-    height: 8vh;
-    background-color: #ffe65b;
-    border-radius: 3px;
-    border: solid 2px #FFD700;
-    margin-bottom: 30px;
-
-    display: flex;
-    align-items: center;
-}
-
 #totalResul p {
     width: 100%;
     text-align: center; 

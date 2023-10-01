@@ -1,0 +1,52 @@
+.titulo {
+    margin-bottom: 25px;
+}
+
+#cadastroLivro {
+    background-color: #59aadd;
+    width: 85%;
+    padding: 1%;
+
+    display:grid;
+    grid-template-areas: "coluna1 coluna2"
+    "base base";
+    grid-template-columns: 50% 50%;
+}
+
+
+#coluna1{
+    grid-area: coluna1;
+}
+
+#coluna2{
+    grid-area: coluna2;
+}
+
+#base{
+    grid-area: base;
+}
+
+.coluna {
+    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.CadastroLivrosInput {
+    width: 100%;
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.CadastroLivrosInput label {
+    width: auto;
+    font-size: 20px;
+    margin: 0;
+}
+
+.CadastroLivrosInput input {
+    width: 250px;
+    margin-left: 15px;
+}

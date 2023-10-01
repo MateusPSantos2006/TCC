@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/cadastroLivro.css">
 </head>
   <body>
     <header>
@@ -31,6 +32,30 @@
             </a>
         </div>
     </header>
+
+    <section>
+        <h1 class="titulo">
+            Cadastro do livro
+        </h1>
+
+        <div class="alerta">
+            <p>
+                Preencha os dados corretametne e clique em Confirmar para cadastrar o livro no sistema
+            </p>
+        </div>
+
+        <form action="" id="cadastroLivro">
+            <div class="coluna" id="coluna1">
+                <div class="CadastroLivrosInput"><label for="nomeLivro">Nome do livro</label><input type="text" name="nomeLivro" id="nomeLivro"></div>
+                <div class="CadastroLivrosInput"><label for="publicacao">Publicado em</label><input type="number" name="publicacao" id="publicacao"></div>
+            </div>
+            <div class="coluna" id="coluna2">
+                <div class="CadastroLivrosInput"><label for="nomeAutor">Nome do autor</label><input type="text" name="nomeAutor" id="nomeAutor"></div>
+                <div class="CadastroLivrosInput"><label for="Npags">Nº de páginas</label><input type="number" name="npags" id="Npags"></div>
+            </div>
+            <div id="base"></div>
+        </form>
+    </section>
       
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

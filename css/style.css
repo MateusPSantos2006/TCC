@@ -10,7 +10,9 @@ section {
     padding: 6vh 10% 4vh 10%;
     background-color: #f5f5f5;
 
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titulo {
@@ -40,4 +42,23 @@ section {
     width: 90px;
     height: 45px;
     font-weight: 600;
+}
+
+.alerta {
+    width: 80%;
+    height: 8vh;
+    background-color: #ffe65b;
+    border-radius: 3px;
+    border: solid 2px #FFD700;
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+}
+
+.alerta p {
+    font-size: 18px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
 }
