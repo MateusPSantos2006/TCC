@@ -41,7 +41,7 @@
 }
 
 #areaSinopse {
-    width: 55%;
+    width: 49%;
     text-align: center;
 
     display: flex;
@@ -69,10 +69,19 @@
 }
 
 #areaResto {
-    width: 43%;
+    width: 49%;
     text-align: center;
 }
 
 #areaResto p {
     margin: 0;
+}
+
+#disponibilidade{
+    width: 25px;
+    height: 25px;
+}
+
+#disponibilidadeTexto:disabled {
+    background-color: #fff;
 }
