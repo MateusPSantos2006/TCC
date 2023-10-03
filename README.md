@@ -1,20 +1,20 @@
 # Biblioteca Digital
 
-Objetivo
+# Objetivo
 
 Criar uma biblioteca digital para alunos do ensino médio, que seja personalizada e eficaz, incentivando a leitura e contribuindo para a disseminação da cultura e do conhecimento.
 
-Problema
+ # Problema
 
 Atualmente, os alunos do ensino médio têm dificuldade em encontrar livros que sejam relevantes para seus interesses e objetivos de aprendizagem. Isso ocorre porque a biblioteca da escola é pouco utilizada e não oferece recomendações personalizadas.
 
-Solução
+ # Solução
 
 A biblioteca digital resolverá esses problemas criando um banco de dados bibliográfico que contém informações sobre todos os livros da sala de leitura. O banco de dados será acessível online, o que permitirá que os alunos pesquisem livros a partir de palavras-chave, facilitando o processo de encontrar o livro desejado.
 
 Além disso, o projeto permitirá que os professores recomendem livros para seus alunos diretamente no banco de dados. Isso ajudará os alunos a encontrarem livros que sejam relevantes para seus interesses e objetivos de aprendizagem.
 
-Tecnologias
+# Tecnologias
 
 O projeto será desenvolvido utilizando as seguintes tecnologias:
 
@@ -40,7 +40,7 @@ Benefícios
 
 O projeto da Biblioteca Digital irá beneficiar diretamente os alunos do ensino médio, professores e funcionários da escola.
 
-Alunos
+ # Alunos
 
 Melhor acesso a livros: Os alunos terão acesso a uma ampla variedade de livros, de todos os gêneros, de autores nacionais e internacionais.
 Mais facilidade na pesquisa: A biblioteca digital será fácil de navegar e usar, mesmo para alunos que não têm experiência com tecnologia.
