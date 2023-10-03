@@ -1,5 +1,6 @@
 # Biblioteca Digital
 
+**Acervo Digital Benedito Calixto**
 # Objetivo
 
 Criar uma biblioteca digital para alunos do ensino médio, que seja personalizada e eficaz, incentivando a leitura e contribuindo para a disseminação da cultura e do conhecimento.
