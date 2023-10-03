@@ -26,36 +26,42 @@ PHP para interagir com o banco de dados
 SQL para armazenar as informações no banco de dados
 Equipe
 
-O projeto está sendo desenvolvido por dois estudantes do 3° ano do NOVOTEC do E.E Benedito Calixto:
+# O projeto está sendo desenvolvido por dois estudantes do 3° ano do NOVOTEC do E.E Benedito Calixto:
 
-Alyson Silva Prado
-Mateus Pinheiro Santos
-Próximos passos
+**Alyson Silva Prado**
 
-O projeto está em fase de desenvolvimento. Os próximos passos são:
+**Mateus Pinheiro Santos**
+
+
+# O projeto está em fase de desenvolvimento
 
 Digitalizar os livros da sala de leitura
 Desenvolver o sistema de busca e recuperação de informações
 Integrar o sistema com a plataforma de ensino da escola
 Benefícios
 
-O projeto da Biblioteca Digital irá beneficiar diretamente os alunos do ensino médio, professores e funcionários da escola.
+ O projeto da Biblioteca Digital irá beneficiar diretamente os alunos do ensino médio, professores e funcionários da escola.
 
  # Alunos
 
-Melhor acesso a livros: Os alunos terão acesso a uma ampla variedade de livros, de todos os gêneros, de autores nacionais e internacionais.
-Mais facilidade na pesquisa: A biblioteca digital será fácil de navegar e usar, mesmo para alunos que não têm experiência com tecnologia.
-Recomendações personalizadas: A biblioteca digital oferecerá recomendações personalizadas de livros para cada aluno, com base em seus interesses e histórico de leitura.
+**Melhor acesso a livros:** Os alunos terão acesso a uma ampla variedade de livros, de todos os gêneros, de autores nacionais e internacionais.
+**Mais facilidade na pesquisa:** A biblioteca digital será fácil de navegar e usar, mesmo para alunos que não têm experiência com tecnologia.
+**Recomendações personalizadas:** A biblioteca digital oferecerá recomendações personalizadas de livros para cada aluno, com base em seus interesses e histórico de leitura.
 Professores
 
-Recomendações personalizadas: Os professores poderão recomendar livros para seus alunos com base em seus interesses e objetivos de aprendizagem.
-Acompanhamento de progresso: Os professores poderão acompanhar o progresso de leitura de seus alunos.
-Pesquisa: Os professores poderão usar o banco de dados para realizar pesquisas sobre literatura.
+**Recomendações personalizadas:** Os professores poderão recomendar livros para seus alunos com base em seus interesses e objetivos de aprendizagem.
+
+**Acompanhamento de progresso:** Os professores poderão acompanhar o progresso de leitura de seus alunos.
+
+**Pesquisa:** Os professores poderão usar o banco de dados para realizar pesquisas sobre literatura.
 Funcionários da escola
 
-Verificação de disponibilidade: Os funcionários da escola poderão verificar a disponibilidade de livros.
-Empréstimos: Os funcionários da escola poderão controlar os empréstimos de livros.
-Fins administrativos: Os funcionários da escola poderão usar o banco de dados para fins administrativos, como controle de estoque e relatórios.
-Conclusão
+**Verificação de disponibilidade:** Os funcionários da escola poderão verificar a disponibilidade de livros.
+
+**Empréstimos:** Os funcionários da escola poderão controlar os empréstimos de livros.
+
+**Fins administrativos:**  Os funcionários da escola poderão usar o banco de dados para fins administrativos, como controle de estoque e relatórios.
+
+# Conclusão
 
 A Biblioteca Digital é um projeto inovador que tem o potencial de melhorar a vida dos alunos do ensino médio, incentivando a leitura e contribuindo para a disseminação da cultura e do conhecimento.
