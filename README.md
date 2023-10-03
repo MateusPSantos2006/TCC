@@ -54,23 +54,7 @@ O projeto da Biblioteca Digital irá beneficiar diretamente os alunos do ensino 
 * **Empréstimos:** Os funcionários da escola poderão controlar os empréstimos de livros.
 * **Fins administrativos:**  Os funcionários da escola poderão usar o banco de dados para fins administrativos, como controle de estoque e relatórios.
 
-# **Acervo Digital Benedito Calixto**
-
-## **Estágio de desenvolvimento**
-
-O projeto está em fase de desenvolvimento e as seguintes etapas já foram concluídas:
-
-* **Definição do escopo do projeto**
-* **Pesquisa de tecnologias**
-* **Criação do protótipo**
-
-As seguintes etapas ainda estão em andamento:
-
-* **Digitalização dos livros**
-* **Desenvolvimento do sistema de busca e recuperação de informações**
-* **Integração do sistema com a plataforma de ensino da escola**
-
- Data | Etapa | Descrição 
+**Data | Etapa | Descrição**
 ---|---|---|
 | 2023-10-03 | **Digitalização dos livros** | Os alunos Alyson e Mateus iniciaram a digitalização dos livros da biblioteca da escola. A previsão é que a digitalização seja concluída até o dia 2023-10-17. |
 | 2023-10-10 | **Desenvolvimento do sistema de busca e recuperação de informações** | Os alunos Alyson e Mateus iniciaram o desenvolvimento do sistema de busca e recuperação de informações. O sistema permitirá que os alunos pesquisem livros por título, autor, gênero, etc. A previsão é que o desenvolvimento seja concluído até o dia 2023-10-24. |
@@ -100,3 +84,15 @@ O sucesso do projeto será medido por meio das seguintes métricas:
 **Conclusão**
 
 O projeto do Acervo Digital Benedito Calixto é um projeto inovador que tem o potencial de transformar a forma como os alunos do ensino médio acessam livros. Com o sistema em funcionamento, os alunos terão acesso a uma ampla variedade de livros, de todos os gêneros, de autores nacionais e internacionais.
+
+## **Métricas de acompanhamento**
+
+Aqui estão as métricas de acompanhamento para o estágio de desenvolvimento do projeto:
+
+ Data | Etapa | Ação | Valor
+---|---|---|---|
+| 2023-10-03 | **Digitalização dos livros** | Iniciada | 10% concluída
+| 2023-10-10 | **Desenvolvimento do sistema de busca e recuperação de informações** | Iniciada | 20% concluída
+| 2023-10-17 | **Integração do sistema com a plataforma de ensino da escola** | Iniciada | 0% concluída
+
+A equipe irá atualizar essas métricas regularmente para acompanhar o progresso do projeto.
