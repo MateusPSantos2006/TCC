@@ -32,20 +32,6 @@ O projeto está sendo desenvolvido por dois estudantes do 3° ano do NOVOTEC do 
 * **[Alyson Silva Prado](https://github.com/alysonsilvaprado)**
 * **[Mateus Pinheiro Santos](https://github.com/mateuspinheirosantos)**
 
-## **Estágio de desenvolvimento**
-
-O projeto está em fase de desenvolvimento e as seguintes etapas já foram concluídas:
-
-* **Definição do escopo do projeto**
-* **Pesquisa de tecnologias**
-* **Criação do protótipo**
-
-As seguintes etapas ainda estão em andamento:
-
-* **Digitalização dos livros**
-* **Desenvolvimento do sistema de busca e recuperação de informações**
-* **Integração do sistema com a plataforma de ensino da escola**
-
 ## **Benefícios**
 
 O projeto da Biblioteca Digital irá beneficiar diretamente os alunos do ensino médio, professores e funcionários da escola.
@@ -68,6 +54,49 @@ O projeto da Biblioteca Digital irá beneficiar diretamente os alunos do ensino 
 * **Empréstimos:** Os funcionários da escola poderão controlar os empréstimos de livros.
 * **Fins administrativos:**  Os funcionários da escola poderão usar o banco de dados para fins administrativos, como controle de estoque e relatórios.
 
-## **Conclusão**
+# **Acervo Digital Benedito Calixto**
 
-A Biblioteca Digital é um projeto inovador que tem o potencial de melhorar a vida dos alunos do ensino médio, incentivando a leitura e contribuindo para a disseminação da cultura e do conhecimento.
+## **Estágio de desenvolvimento**
+
+O projeto está em fase de desenvolvimento e as seguintes etapas já foram concluídas:
+
+* **Definição do escopo do projeto**
+* **Pesquisa de tecnologias**
+* **Criação do protótipo**
+
+As seguintes etapas ainda estão em andamento:
+
+* **Digitalização dos livros**
+* **Desenvolvimento do sistema de busca e recuperação de informações**
+* **Integração do sistema com a plataforma de ensino da escola**
+
+ Data | Etapa | Descrição 
+---|---|---|
+| 2023-10-03 | **Digitalização dos livros** | Os alunos Alyson e Mateus iniciaram a digitalização dos livros da biblioteca da escola. A previsão é que a digitalização seja concluída até o dia 2023-10-17. |
+| 2023-10-10 | **Desenvolvimento do sistema de busca e recuperação de informações** | Os alunos Alyson e Mateus iniciaram o desenvolvimento do sistema de busca e recuperação de informações. O sistema permitirá que os alunos pesquisem livros por título, autor, gênero, etc. A previsão é que o desenvolvimento seja concluído até o dia 2023-10-24. |
+| 2023-10-17 | **Integração do sistema com a plataforma de ensino da escola** | Os alunos Alyson e Mateus iniciarão a integração do sistema com a plataforma de ensino da escola. A integração permitirá que os professores recomendem livros para seus alunos diretamente no sistema. A previsão é que a integração seja concluída até o dia 2023-10-31. |
+
+**Análise do progresso**
+
+O projeto está progredindo conforme o planejado. Os alunos Alyson e Mateus estão trabalhando duro para concluir as etapas restantes o mais rápido possível.
+
+**Próximos passos**
+
+Após a conclusão das etapas restantes, o sistema será submetido a testes para garantir que esteja funcionando corretamente. Após os testes, o sistema será lançado para os alunos, professores e funcionários da escola.
+
+**Impacto esperado**
+
+O Acervo Digital Benedito Calixto terá um impacto positivo na vida dos alunos do ensino médio, incentivando a leitura e contribuindo para a disseminação da cultura e do conhecimento.
+
+**Métricas de sucesso**
+
+O sucesso do projeto será medido por meio das seguintes métricas:
+
+* **Quantidade de livros digitalizados**
+* **Quantidade de alunos que usam o sistema**
+* **Quantidade de livros emprestados**
+* **Quantidade de recomendações de livros feitas pelos professores**
+
+**Conclusão**
+
+O projeto do Acervo Digital Benedito Calixto é um projeto inovador que tem o potencial de transformar a forma como os alunos do ensino médio acessam livros. Com o sistema em funcionamento, os alunos terão acesso a uma ampla variedade de livros, de todos os gêneros, de autores nacionais e internacionais.
