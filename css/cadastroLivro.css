@@ -91,7 +91,7 @@
 
     display: grid;
     grid-template-columns: 28% 36% 36%;
-    justify-items: center;
+    justify-items: end;
     align-items: baseline;
 }
 
