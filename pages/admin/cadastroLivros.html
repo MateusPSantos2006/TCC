@@ -77,24 +77,24 @@
                 <div id="areaSinopse">
                     <div class="input-group">
                         <label class="input-group-text" id="labelSinopse" for="sinopse">Escreva a sinópse do livro</label>
-                        <textarea class="form-control" rows="6" aria-label="With textarea" id="sinopse" placeholder="Escreva a sinópse com até 450 caractéres, para não tomar muito do seu tempo, recomendo puxar do ChatGPT mesmo, não tem problema."></textarea>
+                        <textarea class="form-control" rows="6" aria-label="With textarea" name="sinopse" id="sinopse" placeholder="Escreva a sinópse com até 450 caractéres, para não tomar muito do seu tempo, recomendo puxar do ChatGPT mesmo, não tem problema."></textarea>
                     </div>
                 </div>
                 <div id="areaResto">
                     <div class="input-group mb-3">
                         <label class="input-group-text" for="inputGroupFile01">Capa do livro</label>
-                        <input type="file" class="form-control" id="inputGroupFile01">
+                        <input type="file" name="capa" class="form-control" id="inputGroupFile01">
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-text">
-                            <input class="form-check-input mt-0" id="disponibilidade" type="checkbox" value="disponivel" aria-label="Checkbox for following text input">
+                            <input class="form-check-input mt-0" name="status" id="disponibilidade" type="checkbox" value="disponivel" aria-label="Checkbox for following text input">
                         </div>
                         <input type="text" class="form-control" id="disponibilidadeTexto" aria-label="Text input with checkbox" disabled="disabled" value="O livro cadastrado consta no acervo e pode ser emprestado">
                     </div>
                     <div id="areaRestoBotoes">
                         <div class="input-group mb-3">
                             <label class="input-group-text" for="copias">Nº de cópias</label>
-                            <input type="number" class="form-control" id="copias" value="1" aria-label="Número de cópias" aria-describedby="Número total de cópias desse exemplar" name="copias">
+                            <input type="number" class="form-control" name="copias" id="copias" value="1" aria-label="Número de cópias" aria-describedby="Número total de cópias desse exemplar" name="copias">
                         </div>
                         <button type="submit" class="btn btn-success">Confirmar</button> 
                         <button type="reset" class="btn btn-danger">Limpar</button>
