@@ -1,3 +1,6 @@
+body{
+    background-color: #f5f5f5   ;
+}
 .quase-tudo{
     width: 100%;
     height: 100%;
@@ -5,18 +8,19 @@
     justify-content: center;
     align-items: center;
     min-height: 90vh;
-
+}
+h1{
+    color: aliceblue;
 }
 .wrapper{
-
     width: 750px;
-    background-color: gray;
+    background-color: #001f3f;
     border-radius: 10px;
     color: rgb(0, 0, 0);
     padding: 40px 35px 55px;
 }
 .wrapper h1{
-    font-size: 36px;
+    font-size: 50px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -24,7 +28,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: gray;
+    background-color: #001f3f;
 
 }
 .input-box .input-field{
@@ -36,16 +40,16 @@
 .input-box .input-field input{
     width: 100%;
     height: 100%;
-    background: transparent;
+    background: #f5f5f5;
     border: 2px solid rgba(255, 255,255,0.5);
     outline: none;
     font-size: 16px;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 6px;
     padding: 15px 15px 15px 40px;
 }
 .input-box .input-field input::placeholder{
-    color: white;
+    color: black;
 }
 .input-box .input-field i {
     left: 15px;
@@ -62,11 +66,7 @@
 .wrapper label input{
     accent-color: white;
     margin-right: 10px;
-    
-
-
 }
-
 .wrapper .botao {
     width: 222.5%;
     height: 45px;
