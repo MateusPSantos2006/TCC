@@ -1,9 +1,9 @@
-<?php
-    namespace conexaoPDO;
+<?php    
+    namespace pastaphp\banco;
     
     class pdo {
         private $host = "127.0.0.1";
-        private $dbname = "biblioteca";
+        private $dbname = "bibliotecatestes";
         private $user = "root";
         private $pass = "";
         private \PDO $conexao;
@@ -27,5 +27,6 @@
             }
         }
     }
-    $conn = new pdo();
-    $conn->conectar();
+
+    //$conn = new pdo();
+    //$conn->conectar();

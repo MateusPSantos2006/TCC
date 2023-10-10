@@ -1,10 +1,10 @@
 <?php
-    namespace validacaoLivro;
+    namespace pastaphp\validacoes;
 
     class livro {
         private $dadosArray=[];
-
-        public function __construct($dadosForm, $padrao) {
+        private $padrao = "/[@_%$|#*!+={}]/";
+        public function __construct($dadosForm, $padrao = $this->padrao) {
             foreach ($dadosForm as $dado) {
                 $dado = trim($dado);
                 $dado=preg_replace($padrao, "", $dado);
@@ -13,9 +13,11 @@
 
             $this->dadosArray[2] = filter_var($this->dadosArray[2], FILTER_SANITIZE_NUMBER_INT);
             $this->dadosArray[9] = filter_var($this->dadosArray[9], FILTER_SANITIZE_NUMBER_INT);
-            print_r ($this->dadosArray);
+            if ($this->dadosArray[9] < 1) {
+                $this->dadosArray[9] = 1;
+            }
+        }
+        public function getArrayLivro() {
+            return $this->dadosArray;
         }
     }
-
-    $padrao = "/[@_%$#*!+={}]/";
-    $objeto = new livro ($_GET, $padrao);
