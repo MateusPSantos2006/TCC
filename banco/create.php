@@ -1,15 +1,12 @@
 <?php
-
-    //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-    //FAZ A VALIDAÇÃO PRIMERIODAW9FI9WJF
     namespace inserir;
     use conexaoPDO;
 
     class create {
-        private $conexao;
+        private $arrayInsert;
 
-        public function __construct($conexao) {
-            $this->conexao = $conexao;
+        public function __construct($dados) {
+            $this->arrayInsert = $dados;
         } 
 
         public function inserirLivro($arrayDados) {
