@@ -1,0 +1,22 @@
+footer {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 20px 0;
+    border-top: 1px solid white;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer .copyright {
+    font-size: 14px;
+  }
+  footer a{
+    color: blue;
+    text-decoration: none;
+  }
+  
