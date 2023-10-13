@@ -6,6 +6,7 @@ Use esta seção para informar às pessoas sobre quais versões do seu projeto e
 
 | Versão | Suportada |
 | ------- | -------- |
+| 5.0     | Sim |
 | 4.0     | Sim |
 | 3.0     | Sim |
 | 2.0     | Não |
