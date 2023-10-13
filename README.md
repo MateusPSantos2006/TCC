@@ -31,9 +31,9 @@ Claro, vou adicionar um formato de imagem para as fotos de perfil da equipe:
 O projeto está sendo desenvolvido por dois estudantes do 3° ano do NOVOTEC do E.E Benedito Calixto:
 
 
-* **Alyson Silva Prado** - [GitHub](https://github.com/alysonsilvaprado)
+*  [Alyson Silva Prado](https://github.com/alysonsilvaprado) 
 
-* **Mateus Pinheiro Santos** - [GitHub](https://github.com/mateuspinheirosantos)
+*  [Mateus Pinheiro Santos](https://github.com/mateuspinheirosantos) 
 
 
 ## **Benefícios** 🌟
@@ -83,8 +83,8 @@ Aqui estão as atualizações semanais do projeto:
 | Semana | Data | Etapa | Ação | Valor |
 | ------ | --- | ----- | ----- | ----- |
 | Semana 1 | 00-00-0000 | **Digitalização dos livros** | Iniciada | 1% concluída |
-| Semana 2 | 00-00-0000 | **Desenvolvimento do sistema de busca e recuperação de informações** | Iniciada | 1% concluída |
-| Semana 3 | 00-00-0000 | **Integração do sistema com a plataforma de ensino da escola** | Iniciada | 1% concluída |
+| Semana 2 | 00-00-0000 | **Desenvolvimento do sistema de busca e alteração de informações** | Iniciada | 1% concluída |
+| Semana 3 | 00-00-0000 | **....................................** | Iniciada | 1% concluída |
 | Semana 4 | 00-00-0000 | **....................................** | Iniciada | 1% concluída |
 | Semana 5 | 00-00-0000 | **....................................** | Iniciada | 1% concluída |
 | Semana 6 | 00-00-0000 | **....................................** | Iniciada | 1% concluída |
