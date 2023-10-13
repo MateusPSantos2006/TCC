@@ -35,7 +35,7 @@ O projeto está sendo desenvolvido por dois estudantes do 3° ano do NOVOTEC do 
 
 * **Mateus Pinheiro Santos** - [GitHub](https://github.com/mateuspinheirosantos)
 
-Por favor, substitua "inserir-url-da-foto-aqui" pelas URLs das fotos de perfil correspondentes.
+
 ## **Benefícios** 🌟
 
 O projeto da Biblioteca Digital irá beneficiar diretamente os alunos do ensino médio, professores e funcionários da escola.
@@ -82,11 +82,23 @@ Aqui estão as atualizações semanais do projeto:
 
 | Semana | Data | Etapa | Ação | Valor |
 | ------ | --- | ----- | ----- | ----- |
-| Semana 1 | 2023-10-03 | **Digitalização dos livros** | Iniciada | 10% concluída |
-| Semana 2 | 2023-10-10 | **Desenvolvimento do sistema de busca e recuperação de informações** | Iniciada | 20% concluída |
-| Semana 3 | 2023-10-17 | **Integração do sistema com a plataforma de ensino da escola** | Iniciada | 0% concluída |
-| ... | ... | ... | ... | ... |
-| Semana 12 | ... | ... | ... | ... |
+| Semana 1 | 00-00-0000 | **Digitalização dos livros** | Iniciada | 1% concluída |
+| Semana 2 | 00-00-0000 | **Desenvolvimento do sistema de busca e recuperação de informações** | Iniciada | 1% concluída |
+| Semana 3 | 00-00-0000 | **Integração do sistema com a plataforma de ensino da escola** | Iniciada | 1% concluída |
+| Semana 4 | 00-00-0000 | **....................................** | Iniciada | 1% concluída |
+| Semana 5 | 00-00-0000 | **....................................** | Iniciada | 1% concluída |
+| Semana 6 | 00-00-0000 | **....................................** | Iniciada | 1% concluída |
+| Semana 7 | 00-00-0000 | **....................................** | Iniciada | 1% concluída |
+| Semana 8 | 00-00-0000 | **....................................** | Iniciada | 1% concluída |
+| Semana 9 | 00-00-0000 | **....................................** | Iniciada | 1% concluída |
+| Semana 10 | 00-00-0000 | **....................................** | Iniciada | 1% concluída |
+| Semana 11 | 00-00-0000 | **....................................** | Iniciada | 1% concluída |
+| Semana 12 | 00-00-0000 | **....................................** | Iniciada | 1% concluída |
+| Semana 13 | 00-00-0000 | **....................................** | Iniciada | 1% concluída |
+| Semana 14 | 00-00-0000 | **....................................** | Iniciada | 1% concluída |
+| Semana 15 | 00-00-0000 | **....................................** | Iniciada | 1% concluída |
+
+
 
 **Conclusão** 🎉
 
