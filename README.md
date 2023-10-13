@@ -24,7 +24,6 @@ O projeto será desenvolvido utilizando as seguintes tecnologias:
 * **PHP** para interagir com o banco de dados
 * **SQL** para armazenar as informações no banco de dados
 
-Claro, vou adicionar um formato de imagem para as fotos de perfil da equipe:
 
 ## **Equipe 👥**
 
