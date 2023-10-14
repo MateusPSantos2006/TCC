@@ -1,8 +1,8 @@
 <?php    
-    namespace pastaphp\banco;
+    namespace TCC\pastaphp\banco;
     
-    class pdo {
-        private $host = "127.0.0.1";
+    class Pdo {
+        private $host = "localhost";
         private $dbname = "bibliotecatestes";
         private $user = "root";
         private $pass = "";
@@ -27,6 +27,3 @@
             }
         }
     }
-
-    //$conn = new pdo();
-    //$conn->conectar();

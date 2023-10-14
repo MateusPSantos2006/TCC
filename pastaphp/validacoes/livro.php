@@ -1,13 +1,13 @@
 <?php
-    namespace pastaphp\validacoes;
+    //namespace TCC\pastaphp\validacoes;
 
-    class livro {
+    class Livro {
         private $dadosArray=[];
         private $padrao = "/[@_%$|#*!+={}]/";
-        public function __construct($dadosForm, $padrao = $this->padrao) {
+        public function __construct($dadosForm) {
             foreach ($dadosForm as $dado) {
                 $dado = trim($dado);
-                $dado=preg_replace($padrao, "", $dado);
+                $dado=preg_replace($this->padrao, "", $dado);
                 $this->dadosArray[]=htmlspecialchars($dado, ENT_QUOTES);
             }
 

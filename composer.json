@@ -1,0 +1,13 @@
+{
+    "name": "mateuspsantos/tcc",
+    "description": "meu tcc com o Alyson",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "TCC\\": "TCC/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {},
+    "license": "MIT"
+}
