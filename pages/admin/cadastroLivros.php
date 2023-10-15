@@ -44,62 +44,58 @@
 
         <div class="alerta">
             <p>
-                Preencha os dados corretamente e clique em Confirmar para cadastrar o livro no sistema
+                O livro cadastrado automaticamente constará como disponível para empréstimo. Não cadastre livros avariados ou desaparecidos.
             </p>
         </div>
 
-        <form action="../../pastaphp/banco/insercao/createLivro.php" id="cadastroLivro">
+        <form action="../../pastaphp/operacoes/createLivro.php" method="post" enctype="multipart/form-data" id="cadastroLivro">
             <div class="coluna" id="coluna1">
                 <div class="input-group mb-3">
                     <label class="input-group-text" for="titulo">Nome do Livro</label>
-                    <input type="text" class="form-control" id="titulo" placeholder="Titulo" aria-label="titulo" aria-describedby="Escreva o título do livro" name="nomeLivro">
+                    <input type="text" required class="form-control" id="titulo" placeholder="Titulo" aria-label="titulo" aria-describedby="Escreva o título do livro" name="nomeLivro">
                 </div>
                 <div class="input-group mb-3">
                     <label class="input-group-text" for="genero">Gênero do livro</label>
-                    <input type="text" class="form-control" id="genero" placeholder="generôs do livro" aria-label="generôs do livro" aria-describedby="Todos os gêneros do livro, insira cada um separado por hífen" name="genero">
+                    <input type="text" required class="form-control" id="genero" placeholder="generôs do livro" aria-label="generôs do livro" aria-describedby="Todos os gêneros do livro, insira cada um separado por hífen" name="genero">
                 </div>
                 <div class="input-group mb-3">
                     <label class="input-group-text" for="publicado">Publicado em</label>
-                    <input type="number" class="form-control" id="publicado" placeholder="insira o ano" aria-label="Ano de publicação" aria-describedby="Ano em que foi publicado" name="publicado">
+                    <input type="number" required class="form-control" id="publicado" placeholder="insira o ano" aria-label="Ano de publicação" aria-describedby="Ano em que foi publicado" name="publicado">
                 </div>
             </div>
             <div class="coluna" id="coluna2">
                 <div class="input-group mb-3">
                     <label class="input-group-text" for="nomeAutor">Nome do autor</label>
-                    <input type="text" class="form-control" id="nomeAutor" placeholder="nome" aria-label="nome" aria-describedby="Escreva o nome do autor" name="nomeAutor">
+                    <input type="text" required class="form-control" id="nomeAutor" placeholder="nome" aria-label="nome" aria-describedby="Escreva o nome do autor" name="nomeAutor">
                 </div>
                 <div class="input-group mb-3">
                     <label class="input-group-text" for="editora">Editora</label>
-                    <input type="text" class="form-control" id="editora" placeholder="Editora do livro" aria-label="Editora do livro" aria-describedby="A editora que trabalhou no livro" name="editora">
+                    <input type="text" required class="form-control" id="editora" placeholder="Editora do livro" aria-label="Editora do livro" aria-describedby="A editora que trabalhou no livro" name="editora">
                 </div>
                 <div class="input-group mb-3">
                     <label class="input-group-text" for="npags">Nº de páginas</label>
-                    <input type="number" class="form-control" id="npags" placeholder="Número de páginas" aria-label="Número de páginas" aria-describedby="Número total de páginas no livro" name="npags">
+                    <input type="number" required class="form-control" id="npags" placeholder="Número de páginas" aria-label="Número de páginas" aria-describedby="Número total de páginas no livro" name="npags">
                 </div>
             </div>
             <div id="base">
                 <div id="areaSinopse">
                     <div class="input-group">
                         <label class="input-group-text" id="labelSinopse" for="sinopse">Escreva a sinópse do livro</label>
-                        <textarea class="form-control" name="sinopse" rows="6" aria-label="With textarea" id="sinopse" placeholder="Escreva a sinópse com até 450 caractéres, para não tomar muito do seu tempo, recomendo puxar do ChatGPT mesmo, não tem problema."></textarea>
+                        <textarea class="form-control" required name="sinopse" rows="6" aria-label="With textarea" id="sinopse" placeholder="Escreva a sinópse com até 450 caractéres, para não tomar muito do seu tempo, recomendo puxar do ChatGPT mesmo, não tem problema."></textarea>
                     </div>
                 </div>
                 <div id="areaResto">
                     <div class="input-group mb-3">
                         <label class="input-group-text" for="inputGroupFile01">Capa do livro</label>
-                        <input type="file" name="capa" class="form-control" id="inputGroupFile01">
+                        <input type="file" name="capa" required class="form-control" id="inputGroupFile01" accept="image/*">
                     </div>
                     <div class="input-group mb-3">
-                        <div class="input-group-text">
-                            <input class="form-check-input mt-0" id="disponibilidade" type="checkbox" name="disponibilidade" value="disponivel" aria-label="Checkbox for following text input">
-                        </div>
-                        <input type="text" class="form-control" id="disponibilidadeTexto" aria-label="Text input with checkbox" disabled="disabled" value="O livro cadastrado consta no acervo e pode ser emprestado">
+                        <label class="input-group-text" for="copias">Nº de cópias</label>
+                        <input type="number" required class="form-control" id="copias" value="1" aria-label="Número de cópias" aria-describedby="Número total de cópias desse exemplar" name="copias">
                     </div>
+
+                    <input type="hidden" name="disponibilidade" value="disponivel">
                     <div id="areaRestoBotoes">
-                        <div class="input-group mb-3">
-                            <label class="input-group-text" for="copias">Nº de cópias</label>
-                            <input type="number" class="form-control" id="copias" value="1" aria-label="Número de cópias" aria-describedby="Número total de cópias desse exemplar" name="copias">
-                        </div>
                         <button type="submit" class="btn btn-success">Confirmar</button> 
                         <button type="reset" class="btn btn-danger">Limpar</button>
                     </div>
