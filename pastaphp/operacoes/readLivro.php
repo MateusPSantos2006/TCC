@@ -1,7 +1,7 @@
 <?php
     class Conexaopdo {
         private $host = "localhost";
-        private $dbname = "teste";
+        private $dbname = "biblioteca";
         private $user = "root";
         private $pass = "";
         private PDO $conexao;

@@ -16,7 +16,7 @@
 </head>
   <body>
     <header>
-        <a href="../../index.html" class="linkHeader algoQueDeveServirComoLogo">
+        <a href="../../index.php" class="linkHeader algoQueDeveServirComoLogo">
             <img src="../../imagens/logo.png" class="logo">
             <p>
                 Acervo Digital <br>
@@ -28,10 +28,10 @@
             <a href="http://"  target="_blank" class="linkHeader">
                 Sugestões dos professores
             </a>
-            <a href="../public/explorar.html" class="linkHeader">
+            <a href="../public/explorar.php" class="linkHeader">
                 Explorar
             </a>
-            <a href="../../pastaphp/banco/insercao/createLivro.php" class="linkHeader">
+            <a href="../admin/cadastroLivros.php" class="linkHeader">
                 Login
             </a>
         </div>

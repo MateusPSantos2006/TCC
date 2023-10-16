@@ -17,7 +17,7 @@
     </head>
     <body>
         <header>
-            <a href="./index.html" class="linkHeader algoQueDeveServirComoLogo">
+            <a href="./index.php" class="linkHeader algoQueDeveServirComoLogo">
                 <img src="./imagens/logo.png" class="logo">
                 <p>
                     Acervo Digital <br>
@@ -32,7 +32,7 @@
                 <a href="./pages/public/explorar.html" class="linkHeader">
                     Explorar
                 </a>
-                <a href="./pages/admin/cadastroLivros.html" class="linkHeader">
+                <a href="./pages/admin/cadastroLivros.php" class="linkHeader">
                     Login
                 </a>
             </div>

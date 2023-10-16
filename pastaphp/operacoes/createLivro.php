@@ -1,7 +1,7 @@
 <?php
     class Conexaopdo {
         private $host = "localhost";
-        private $dbname = "teste";
+        private $dbname = "biblioteca";
         private $user = "root";
         private $pass = "";
         private PDO $conexao;
@@ -27,7 +27,7 @@
     }
     class LivroTratamento {
         private $dadosArray=[];
-        private $padraoEspeciais = "/[@_%$|#*!+.={}]/";
+        private $padraoEspeciais = "/[@_%$'`|#*!+.={}]/";
         public function __construct($dadosForm, $imagemCapa) {
             foreach ($dadosForm as $dado) {
                 $dado = trim($dado);
