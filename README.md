@@ -81,8 +81,8 @@ Aqui estão as atualizações semanais do projeto:
 
 | Semana | Data | Etapa | Ação | Valor |
 | ------ | --- | ----- | ----- | ----- |
-| Semana 1 | 00-00-0000 | **Digitalização dos livros** | Iniciada | 1% concluída |
-| Semana 2 | 00-00-0000 | **Desenvolvimento do sistema de busca e alteração de informações** | Iniciada | 1% concluída |
+| Semana 1 | 00-00-0000 | **....................................** | 1% concluída |
+| Semana 2 | 00-00-0000 | **....................................** | Iniciada | 1% concluída |
 | Semana 3 | 00-00-0000 | **....................................** | Iniciada | 1% concluída |
 | Semana 4 | 00-00-0000 | **....................................** | Iniciada | 1% concluída |
 | Semana 5 | 00-00-0000 | **....................................** | Iniciada | 1% concluída |
