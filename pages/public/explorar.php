@@ -12,7 +12,7 @@
 </head>
   <body>
     <header>
-        <a href="../../index.html" class="linkHeader algoQueDeveServirComoLogo">
+        <a href="../../index.php" class="linkHeader algoQueDeveServirComoLogo">
             <img src="../../imagens/logo.png" class="logo">
             <p>
                 Acervo Digital <br>
@@ -27,7 +27,7 @@
             <a href="./explorar.html" class="linkHeader">
                 Explorar
             </a>
-            <a href="../admin/cadastroLivros.html" class="linkHeader">
+            <a href="../admin/cadastroLivros.php" class="linkHeader">
                 Login
             </a>
         </div>
@@ -56,7 +56,7 @@
 
         <div id="areaCardResul">
             <div class="cardResul">
-                <img src="../../imagens/metamorfose.jpg" alt="" >
+                <img src="../../imagens/placeholderCapa.jpg" alt="" >
                 <article class="infosCardResul">
                     <div class="infosCardDados">
                         <p> <span class="enfase">Título:</span> A metamorfose <span class="enfase">Autor:</span> Franz Kafka</p>

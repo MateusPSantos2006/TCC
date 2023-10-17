@@ -46,7 +46,7 @@ section {
 
 .alerta {
     width: 80%;
-    height: 8vh;
+    height: auto;
     background-color: #ffe65b;
     border-radius: 3px;
     border: solid 2px #FFD700;

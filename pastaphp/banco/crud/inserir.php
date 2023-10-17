@@ -1,9 +1,9 @@
 <?php
 
-    namespace pastaphp\banco\crud;
-    use pastaphp\banco\pdo;
+    namespace TCC\pastaphp\banco\crud;
+    use TCC\pastaphp\banco\Conexaopdo;
 
-    class inserir {
+    class Inserir {
         private $arrayInsert;
 
         public function __construct($dados) {
@@ -12,7 +12,7 @@
         } 
 
         public function inserirLivro() {
-            $db = new pdo;
+            $db = new Conexaopdo;
             $db = $db->conectar();
             $sql = "INSERT INTO livros (titulo, autor, ano, genero, editora, npags, estado, sinopse, capa) VALUES (:titulo, :autor, :ano, :genero, :editora, :npags, :estado, :sinopse, :capa)";
             $x=0;
