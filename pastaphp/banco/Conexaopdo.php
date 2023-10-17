@@ -1,9 +1,9 @@
 <?php    
     namespace TCC\pastaphp\banco;
     
-    class Pdo {
+    class Conexaopdo {
         private $host = "localhost";
-        private $dbname = "bibliotecatestes";
+        private $dbname = "biblioteca";
         private $user = "root";
         private $pass = "";
         private \PDO $conexao;
@@ -13,7 +13,7 @@
             try {
                 $conexao = new \PDO(
                     "mysql:host={$this->host};dbname={$this->dbname}",
-                       $this->user,
+                    $this->user,
                     $this->pass,
                     array(\PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION)
                 );

@@ -25,7 +25,7 @@
             }
         }
     }
-    class LivroTratamento {
+    class Livro {
         private $dadosArray=[];
         private $padraoEspeciais = "/[@_%$'`|#*!+.={}]/";
         public function __construct($dadosForm, $imagemCapa) {
@@ -87,10 +87,15 @@
             $db=null;
         }
     }
+    
+    /*
+        use TCC\pastaphp\validacoes\Livro;
+        use TCC\pastaphp\banco\crud\Inserir;
+    */
 
-        $livroForm = new LivroTratamento($_POST, $_FILES['capa']);
-        $dadosLivro = $livroForm->getArrayLivro();
-        $livro = new Inserir ($dadosLivro);
-        $livro->inserirLivro();
+    $livroForm = new Livro($_POST, $_FILES['capa']);
+    $dadosLivro = $livroForm->getArrayLivro();
+    $livro = new Inserir ($dadosLivro);
+    $livro->inserirLivro();
 
-        require __DIR__ . "/../../pages/admin/cadastroLivros.php";
+    require __DIR__ . "/../../pages/admin/cadastroLivros.php";
