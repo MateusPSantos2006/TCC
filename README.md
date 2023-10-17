@@ -88,7 +88,7 @@ Aqui estão as atualizações semanais do projeto:
 | Semana 5 | 27/09/2023 | **Estrutura  da Prototipagem de Média-Alta Fidelidade da Busca de Livro, Estrutura  da Prototipagem de Média-Alta Fidelidade do Cadastro do Professor, Estrutura  da Prototipagem de Média-Alta Fidelidade do Cadastro do Professor, Estrutura  da Prototipagem de Média-Alta Fidelidade do Login do Professor, Criação da Logo, Página  de Buscar de Livros, Documentação, Estrutura da Página de Busca  de Livros** | Iniciada | 50% concluída |
 | Semana 6 | 04/10/2023 | **Alterações de Divisões de Tarefas do Fron-end do Back-end e da Documentação** | Iniciada | 100% concluída |
 | Semana 7 | 10/10/2023 | **Página de Login dos Professores, Página de Cadastrado do Professores, Criação do Footer, Página de Alteração de Dados dos Livros** | Iniciada | 100% concluída |
-| Semana 8 | 17/10/2023 | **......................................** | Iniciada | 1% concluída |
+| Semana 8 | 17/10/2023 | **Ajustes no Back-and com Auxílio de um Pleno** | Iniciada | 50% concluída |
 | Semana 9 | 00/00/2023 | **....................................** | Iniciada | 1% concluída |
 | Semana 10 | 00/00/2023 | **....................................** | Iniciada | 1% concluída |
 
