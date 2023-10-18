@@ -1,0 +1,101 @@
+.titulo {
+    margin-bottom: 25px;
+}
+
+#cadastroLivro {
+    background-color: #001f3f;
+    border-radius: 5px;
+    width: 85%;
+    padding: 2%;
+
+    display:grid;
+    grid-template-areas: "coluna1 coluna2"
+    "base base";
+    grid-template-columns: 50% 50%;
+}
+
+#coluna1{
+    grid-area: coluna1;
+}
+
+#coluna2{
+    grid-area: coluna2;
+}
+
+#base{
+    grid-area: base;
+}
+
+.coluna {
+    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#base {
+    padding: 0 10px 0 10px;
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#areaSinopse {
+    width: 49%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#labelSinopse{
+    width: 100%;
+    text-align: center;
+    border-top-right-radius: 0.375rem;
+    border-bottom-left-radius: 0;
+
+    justify-content: center;
+}
+
+#sinopse {
+    resize: none;
+    width: 100%;
+    margin: 0;
+    border-bottom-left-radius: 0.375rem;
+    border-top-right-radius: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#areaResto {
+    width: 49%;
+    text-align: center;
+}
+
+#areaResto p {
+    margin: 0;
+}
+
+#disponibilidade{
+    width: 25px;
+    height: 25px;
+}
+
+#disponibilidadeTexto:disabled {
+    background-color: #fff;
+}
+
+#areaRestoBotoes {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    margin: 0;
+    height: 50px;
+    width: 150px;
+    font-weight: 600;
+}
