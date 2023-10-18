@@ -25,17 +25,43 @@
             }
         }
     }
-    class Ler {
-        /*
-        deve ler cada dado de uma linha e entregar para um array, vamos chamar esse array de dado[]
-        haverá um outro array, chamaremos de livro[], e dentro dele contrá dado[]
-        tal que livro[0] terá dado[0], dados[1], dado[2], dado[3]..., livro[1] terá dado[0], dados[1], dado[2], dado[3]..., 
-        livro[2] terá dado[0], dados[1], dado[2], dado[3]..., r por aí vai
+    class Pesquisa {
+        private $dado;
+        private $tipo;
+        private $padraoEspeciais = "/[@_%$'`|#*!+.={}]/";
 
-        A quantidade de dado[]s será baseada na necessidade. No index.php deve conter apenas titulo, gênero, autor e status, 
-        enquanto explorar.php terá todos os dados.
-
-        No index, deverá conter 6 livros aleatórios, enquanto no explorar terá de 5 em 5 SELECT colunas FROM livros WHERE 
-        chave = valor. Deve-se tomar cuidado com repetição de títulos.
-        */
+        public function __construct($dadosForm)
+        {
+            $this->tipo = $dadosForm['tipo'];
+            $this->dado = htmlspecialchars(preg_replace($this->padraoEspeciais, "", $dadosForm['tipo']), ENT_QUOTES, 'UTF-8');
+        }
     }
+    class Ler {
+        public function lerBanco () {
+            $db = new Conexaopdo;
+            $db = $db->conectar();
+
+            $query = "SELECT * FROM livros";
+            $resultado = $db->query($query);
+
+            foreach ($resultado as $linha) {
+                echo"
+                <div class='cardResul'>
+                    <img src='../../pastaphp/banco/capas/".$linha['capa']."' alt='' >
+                    <article class='infosCardResul'>
+                        <div class='infosCardDados'>
+                            <p> <span class='enfase'>Título:</span>".$linha['titulo']."<span class='enfase'>Autor:</span>".$linha['autor']."</p>
+                            <p> <span class='enfase'>Genero:</span>".$linha['genero']."</p>
+                            <p> <span class='enfase'>Nº de páginas:</span>".$linha['ano']."</p>
+                            <p> <span class='enfase'>Editora:</span>".$linha['editora']."</p>
+                            <p> <span class='enfase'>Status:</span> <img class='simboloDisponibilidade' src='../../imagens/indisponivel.png'>".$linha['estado']."</p>
+                        </div>
+                        <p class='sinopse'> <span class='enfase'>Sinópse:</span>".$linha['sinopse']."</p>
+                    </article>
+                </div>";
+            }
+        }
+    }
+
+    $dadosPesquisa = new Ler;
+    $dadosPesquisa->lerBanco();
