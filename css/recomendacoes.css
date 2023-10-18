@@ -10,10 +10,11 @@
     margin: 0 10px 0 10px;
     border: solid black 1px;
     border-radius: 15px;
-
     display: flex;
+    background-color: #1f4369;
     flex-direction: row;
 }
+
 
 .card img{
     width: 45%;
@@ -21,21 +22,21 @@
 
 .contCard {
     width: 100%;
-    
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
 .infosCards {
+    color: white;
     text-align: center;
     height: 100%;
-
     display: flex;
     flex-direction: column;
 }
 
 .tituloCard {
+    color: aliceblue;
     text-align: center;
     margin-top: 15px;
     width: 100%;

@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/inicio.css">
         <link rel="stylesheet" href="./css/recomendacoes.css">
+        <link rel="stylesheet" href="../../css/footer.css">
     </head>
     <body>
         <header>
@@ -32,7 +33,7 @@
                 <a href="./pages/public/explorar.php" class="linkHeader">
                     Explorar
                 </a>
-                <a href="./pages/admin/cadastroLivros.php" class="linkHeader">
+                <a href="./pages/public/loginProf.html" class="linkHeader">
                     Login
                 </a>
             </div>
@@ -82,127 +83,105 @@
                 </form>
             </section>
 
-            <section id="recomendacoes">
-                <p class="titulo">
-                    Recomendações do dia
-                </p>
+<section id="recomendacoes" class="container">
+    <p class="titulo">
+        Recomendações do dia
+    </p>
 
-                <div id="areaCards">
-                    
-                    <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="8000">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="grupoCard">
-                                    <div class="card">
-                                        <img src="./imagens/oProcesso.jpg" alt="">
-                                        <div class="contCard">
-                                            <div class="infosCards">
-                                                <p class="tituloCard">O processo</p>
-                                                <div class="tentativaEErro"> 
-                                                    <p class="innerClassInfos"><span class="enfase">Gereno</span><br> Não ficção</p>
-                                                    <p class="innerClassInfos"><span class="enfase">Autor</span><br> Kafka</p>
-                                                    <p class="innerClassInfos"><span class="enfase">Status</span><br> disponivel</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <img src="./imagens/artistaComFome.jpg" alt="">
-                                        <div class="contCard">
-                                            <div class="infosCards">
-                                                <p class="tituloCard">Artista com fome</p>
-                                                <div class="tentativaEErro"> 
-                                                    <p class="innerClassInfos"><span class="enfase">Gereno</span><br> Não ficção</p>
-                                                    <p class="innerClassInfos"><span class="enfase">Autor</span><br> Kafka</p>
-                                                    <p class="innerClassInfos"><span class="enfase">Status</span><br> disponivel</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-                                <div class="grupoCard">
-                                    <div class="card">
-                                        <img src="./imagens/cartaAoPai.jpg" alt="">
-                                        <div class="contCard">
-                                            <div class="infosCards">
-                                                <p class="tituloCard">Carta ao pai</p>
-                                                <div class="tentativaEErro"> 
-                                                    <p class="innerClassInfos"><span class="enfase">Gereno</span><br> Não ficção</p>
-                                                    <p class="innerClassInfos"><span class="enfase">Autor</span><br> Kafka</p>
-                                                    <p class="innerClassInfos"><span class="enfase">Status</span><br> disponivel</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <img src="./imagens/metamorfose.jpg" alt="">
-                                        <div class="contCard">
-                                            <div class="infosCards">
-                                                <p class="tituloCard">A metamorfose</p>
-                                                <div class="tentativaEErro"> 
-                                                    <p class="innerClassInfos"><span class="enfase">Gereno</span><br> Não ficção</p>
-                                                    <p class="innerClassInfos"><span class="enfase">Autor</span><br> Kafka</p>
-                                                    <p class="innerClassInfos"><span class="enfase">Status</span><br> disponivel</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-                                <div class="grupoCard">
-                                    <div class="card">
-                                        <img src="./imagens/oCastelo.jpg" alt="">
-                                        <div class="contCard">
-                                            <div class="infosCards">
-                                                <p class="tituloCard">O Castelo</p>
-                                                <div class="tentativaEErro"> 
-                                                    <p class="innerClassInfos"><span class="enfase">Gereno</span><br> Não ficção</p>
-                                                    <p class="innerClassInfos"><span class="enfase">Autor</span><br> Kafka</p>
-                                                    <p class="innerClassInfos"><span class="enfase">Status</span><br> disponivel</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <img src="./imagens/cartasAMilena.jpeg" alt="">
-                                        <div class="contCard">
-                                            <div class="infosCards">
-                                                <p class="tituloCard">Cartas a Milena</p>
-                                                <div class="tentativaEErro"> 
-                                                    <p class="innerClassInfos"><span class="enfase">Gereno</span><br> Não ficção</p>
-                                                    <p class="innerClassInfos"><span class="enfase">Autor</span><br> Kafka</p>
-                                                    <p class="innerClassInfos"><span class="enfase">Status</span><br> disponivel</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <div class="card">
+                  <img src="./imagens/oProcesso.jpg" alt="">
+                  <div class="contCard">
+                      <div class="infosCards">
+                          <p class="tituloCard">O processo</p>
+                          <div class="tentativaEErro"> 
+                              <p class="innerClassInfos"><span class="enfase">Gênero</span><br> Não ficção</p>
+                              <p class="innerClassInfos"><span class="enfase">Autor</span><br> Kafka</p>
+                              <p class="innerClassInfos"><span class="enfase">Status</span><br> Disponível</p>
+                          </div>
                       </div>
-                      
-                </div>
-            </section>
-        </main>   
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="card">
+                  <img src="./imagens/artistaComFome.jpg" alt="">
+                  <div class="contCard">
+                      <div class="infosCards">
+                          <p class="tituloCard">Artista com fome</p>
+                          <div class="tentativaEErro"> 
+                              <p class="innerClassInfos"><span class="enfase">Gênero</span><br> Não ficção</p>
+                              <p class= "innerClassInfos"><span class="enfase">Autor</span><br> Kafka</p>
+                              <p class="innerClassInfos"><span class="enfase">Status</span><br> Disponível</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="card">
+                  <img src="./imagens/cartaAoPai.jpg" alt="">
+                  <div class="contCard">
+                      <div class="infosCards">
+                          <p class="tituloCard">Carta ao pai</p>
+                          <div class="tentativaEErro"> 
+                              <p class="innerClassInfos"><span class="enfase">Gênero</span><br> Não ficção</p>
+                              <p class="innerClassInfos"><span class="enfase">Autor</span><br> Kafka</p>
+                              <p class="innerClassInfos"><span class="enfase">Status</span><br> Disponível</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev carousel-control-dark" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next carousel-control-dark" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+  
+                  </div>
+                        </section>
+                    </main>    
+        
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <p>
+          © 2023 Acervo Digital Benedito Calixto
+        </p>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">Sobre</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Contato</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Termos de uso</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Política de privacidade</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <p class="copyright">
+          Desenvolvido por <a href="https://github.com/alysonsilvaprado">Alyson Silva Prado</a> e <a href="https://github.com/mateuspinheirosantos">Mateus Pinheiro dos Santos</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+z5v5s8I4Jbxcz2l2zCGpKJw5f5p5o5g7f5fn5+F5" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
