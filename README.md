@@ -1,4 +1,4 @@
--# **Acervo Digital Benedito Calixto** 📚
+# **Acervo Digital Benedito Calixto** 📚
 
 ## **Objetivo** 🎯
 
