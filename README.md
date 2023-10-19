@@ -74,6 +74,11 @@ O sucesso do projeto será medido por meio das seguintes métricas:
 *  Quantidade de alunos que usam o sistema
 *  Quantidade de livros emprestados
 *  Quantidade de recomendações de livros feitas pelos professores
+  
+  ****Requisitos funcionais e não funcionais**** ✅
+*  **https://docs.google.com/document/d/1CPzpDzHi_L22c_zXbPOuc6xitNCRhKA1YBzs_PFRPGA/edit?usp=sharing**
+  
+
 
   ## **Atualização Semanal** 📅
 
