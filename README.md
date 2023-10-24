@@ -94,7 +94,7 @@ Aqui estão as atualizações semanais do projeto:
 | Semana 6 | 04/10/2023 | **Alterações de Divisões de Tarefas do Fron-end do Back-end e da Documentação** | Iniciada | 100% concluída |
 | Semana 7 | 10/10/2023 | **Página de Login dos Professores, Página de Cadastrado do Professores, Criação do Footer, Página de Alteração de Dados dos Livros** | Iniciada | 100% concluída |
 | Semana 8 | 17/10/2023 | **Ajustes no Back-and com Auxílio de um Pleno** | Iniciada | 50% concluída |
-| Semana 9 | 24/10/2023 | **Estrutura da Prototipagem de Alta Fidelidade de Todos as Pages através da Utilização do Site https://app.uizard.io,Teste do Back-End pra a busca de dados através do Front-End** | Iniciada | 100% concluída |
+| Semana 9 | 24/10/2023 | **Estrutura da Prototipagem de Alta Fidelidade de Todos as Pages através da Utilização do Site https://app.uizard.io, Teste do Back-End pra a busca de dados através do Front-End** | Iniciada | 100% concluída |
 | Semana 10 | 00/00/2023 | **....................................** | Iniciada | 1% concluída |
 
 
