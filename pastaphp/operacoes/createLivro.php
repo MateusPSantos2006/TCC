@@ -87,15 +87,12 @@
             $db=null;
         }
     }
-    
-    /*
-        use TCC\pastaphp\validacoes\Livro;
-        use TCC\pastaphp\banco\crud\Inserir;
-    */
+
 
     $livroForm = new Livro($_POST, $_FILES['capa']);
     $dadosLivro = $livroForm->getArrayLivro();
     $livro = new Inserir ($dadosLivro);
     $livro->inserirLivro();
 
-    require __DIR__ . "/../../pages/admin/cadastroLivros.php";
+    header('Location: ../../pages/admin/cadastroLivros.php'); 
+    exit();

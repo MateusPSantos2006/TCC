@@ -35,25 +35,19 @@
     </header>
 
     <section id="BuscasResul">
-        <form action="" id="busca">
+        <form action="explorar.php" method="GET" id="busca">
             <div class="inputsArea">
-                <input type="text" placeholder="Insira a palavra chave" class="formInput textInput" id="">
+                <input name="dado" type="text" placeholder="Insira a palavra chave" class="formInput textInput" id="">
                 <select name="tipo" class="formInput">
                     <option value="" disabled selected>Tipo da palavra-chave</option>
-                    <option value="">Titulo</option>
-                    <option value="">Autor</option>
-                    <option value="">Ano de publicação</option>
-                    <option value="">Assunto</option>
+                    <option value="titulo">Titulo</option>
+                    <option value="autor">Autor</option>
+                    <option value="genero">Genero</option>
+                    <option value="editora">Editora</option>
                 </select>
             </div>
             <button type="submit" class="formInput formSubmit">Enviar</button>
         </form>
-
-        <div class="alerta">
-            <p>
-                Total de livros encontrados: XX 
-            </p>
-        </div>
 
         <div id="areaCardResul">
             <?php

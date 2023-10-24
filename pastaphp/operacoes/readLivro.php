@@ -26,42 +26,118 @@
         }
     }
     class Pesquisa {
-        private $dado;
+        private $chave;
         private $tipo;
         private $padraoEspeciais = "/[@_%$'`|#*!+.={}]/";
 
         public function __construct($dadosForm)
         {
             $this->tipo = $dadosForm['tipo'];
-            $this->dado = htmlspecialchars(preg_replace($this->padraoEspeciais, "", $dadosForm['tipo']), ENT_QUOTES, 'UTF-8');
+            $this->chave = htmlspecialchars(preg_replace($this->padraoEspeciais, "", $dadosForm['dado']), ENT_QUOTES, 'UTF-8');
+        }
+
+        public function getChavePesquisa() {
+            return $this->chave;
+        }
+        public function getTipoPesquisa() {
+            return $this->tipo;
         }
     }
     class Ler {
-        public function lerBanco () {
+        public function lerBancoProcura ($tipo, $chave) {
+            $chave = '%' . $chave . '%';
             $db = new Conexaopdo;
             $db = $db->conectar();
 
-            $query = "SELECT * FROM livros";
-            $resultado = $db->query($query);
 
-            foreach ($resultado as $linha) {
+            $sql = "SELECT * FROM livros where $tipo LIKE :chave";
+
+            $stmt = $db->prepare($sql);
+            $stmt->bindParam(':chave', $chave);
+            $stmt->execute();
+
+            $valores = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            if (!empty($valores)) {
+                foreach ($valores as $objeto) {
+                    echo"
+                    <div class='cardResul'>
+                        <img src='../../pastaphp/banco/capas/".$objeto['capa']."' alt='' >
+                        <article class='infosCardResul'>
+                            <div class='infosCardDados'>
+                                <p> <span class='enfase'>Título: </span>".$objeto['titulo']."</p>
+                                <p><span class='enfase'>Autor: </span>".$objeto['autor']."</p>
+                                <p> <span class='enfase'>Genero: </span>".$objeto['genero']."</p>
+                                <p> <span class='enfase'>Nº de páginas: </span>".$objeto['npags']."</p>
+                                <p> <span class='enfase'>Editora: </span>".$objeto['editora']."</p>
+                                <p> <span class='enfase'>Status: </span> <img class='simboloDisponibilidade' src='../../imagens/indisponivel.png'>".$objeto['estado']."</p>
+                            </div>
+                            <p class='sinopse'> <span class='enfase'>Sinópse: </span>".$objeto['sinopse']."</p>
+                        </article>
+                    </div>";
+                }
+            }else{
+                echo"
+                <div class='alerta'>
+                    <p>
+                        Nenhum livro encontrado com os dados pesquisados, pesquisa geral feita
+                    </p>
+                </div>";
+
+            $sql = "SELECT * FROM livros;";
+            $valores = $db->query($sql);
+
+            foreach ($valores as $objeto) {
                 echo"
                 <div class='cardResul'>
-                    <img src='../../pastaphp/banco/capas/".$linha['capa']."' alt='' >
+                    <img src='../../pastaphp/banco/capas/".$objeto['capa']."' alt='' >
                     <article class='infosCardResul'>
                         <div class='infosCardDados'>
-                            <p> <span class='enfase'>Título:</span>".$linha['titulo']."<span class='enfase'>Autor:</span>".$linha['autor']."</p>
-                            <p> <span class='enfase'>Genero:</span>".$linha['genero']."</p>
-                            <p> <span class='enfase'>Nº de páginas:</span>".$linha['ano']."</p>
-                            <p> <span class='enfase'>Editora:</span>".$linha['editora']."</p>
-                            <p> <span class='enfase'>Status:</span> <img class='simboloDisponibilidade' src='../../imagens/indisponivel.png'>".$linha['estado']."</p>
+                            <p> <span class='enfase'>Título:</span>".$objeto['titulo']."</p>
+                            <p><span class='enfase'>Autor:</span>".$objeto['autor']."</p>
+                            <p> <span class='enfase'>Genero:</span>".$objeto['genero']."</p>
+                            <p> <span class='enfase'>Nº de páginas:</span>".$objeto['npags']."</p>
+                            <p> <span class='enfase'>Editora:</span>".$objeto['editora']."</p>
+                            <p> <span class='enfase'>Status:</span> <img class='simboloDisponibilidade' src='../../imagens/indisponivel.png'>".$objeto['estado']."</p>
                         </div>
-                        <p class='sinopse'> <span class='enfase'>Sinópse:</span>".$linha['sinopse']."</p>
+                        <p class='sinopse'> <span class='enfase'>Sinópse:</span>".$objeto['sinopse']."</p>
+                    </article>
+                </div>";
+            }
+            }
+        }
+        public function lerBancoTudo(){
+            $db = new Conexaopdo;
+            $db = $db->conectar();
+
+            $sql = "SELECT * FROM livros;";
+            $valores = $db->query($sql);
+
+            foreach ($valores as $objeto) {
+                echo"
+                <div class='cardResul'>
+                    <img src='../../pastaphp/banco/capas/".$objeto['capa']."' alt='' >
+                    <article class='infosCardResul'>
+                        <div class='infosCardDados'>
+                            <p> <span class='enfase'>Título:</span>".$objeto['titulo']."</p>
+                            <p><span class='enfase'>Autor:</span>".$objeto['autor']."</p>
+                            <p> <span class='enfase'>Genero:</span>".$objeto['genero']."</p>
+                            <p> <span class='enfase'>Nº de páginas:</span>".$objeto['npags']."</p>
+                            <p> <span class='enfase'>Editora:</span>".$objeto['editora']."</p>
+                            <p> <span class='enfase'>Status:</span> <img class='simboloDisponibilidade' src='../../imagens/indisponivel.png'>".$objeto['estado']."</p>
+                        </div>
+                        <p class='sinopse'> <span class='enfase'>Sinópse:</span>".$objeto['sinopse']."</p>
                     </article>
                 </div>";
             }
         }
     }
 
-    $dadosPesquisa = new Ler;
-    $dadosPesquisa->lerBanco();
+    if (isset($_GET['tipo']) && isset($_GET['dado'])) {
+        $dadosPesquisa = new Pesquisa($_GET);
+
+        $retorno = new Ler;
+        $retorno->lerBancoProcura($dadosPesquisa->getTipoPesquisa(), $dadosPesquisa->getChavePesquisa());
+    }else{
+        $retorno = new Ler;
+        $retorno->lerBancoTudo();
+    }

@@ -63,7 +63,7 @@
                     </div>
                 </div>
 
-                <form action="/pastaphp/operacoes/readLivro.php" id="pesquisa">
+                <form action="/pages/public/explorar.php" method="$_GET" id="pesquisa">
                     <h1 class="titulo">
                         Está procurando algum livro?
                     </h1>

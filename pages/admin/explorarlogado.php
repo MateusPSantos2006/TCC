@@ -13,47 +13,41 @@
 </head>
   <body>
     <header>
-      <a href="./principalLogado.php" class="linkHeader algoQueDeveServirComoLogo">
-        <img src="../../imagens/logo.png" class="logo">
-        <p>
-          Acervo Digital <br>
-          Benedito Calixto
-        </p>
-      </a>
+        <a href="../../index.php" class="linkHeader algoQueDeveServirComoLogo">
+            <img src="../../imagens/logo.png" class="logo">
+            <p>
+                Acervo Digital <br>
+                Benedito Calixto
+            </p>
+        </a>
 
-      <div class="navegacaoHeader">
-        <a href="http://"  target="_blank" class="linkHeader">
-          Sugestões dos professores
-        </a>
-        <a href="./explorarlogado.php" class="linkHeader">
-          Explorar
-        </a>
-        <a href="./cadastroLivros.php" class="linkHeader">
-          Cad. livros
-        </a>
-      </div>
+        <div class="navegacaoHeader">
+            <a href="http://"  target="_blank" class="linkHeader">
+                Sugestões dos professores
+            </a>
+            <a href="./explorar.php" class="linkHeader">
+                Explorar
+            </a>
+            <a href="./cadastroLivros.php" class="linkHeader">
+                    Cad. livros
+                </a>
+        </div>
     </header>
 
     <section id="BuscasResul">
-        <form action="" id="busca">
+        <form action="explorarLogado.php" method="GET" id="busca">
             <div class="inputsArea">
-                <input type="text" placeholder="Insira a palavra chave" class="formInput textInput" id="">
+                <input name="dado" type="text" placeholder="Insira a palavra chave" class="formInput textInput" id="">
                 <select name="tipo" class="formInput">
                     <option value="" disabled selected>Tipo da palavra-chave</option>
-                    <option value="">Titulo</option>
-                    <option value="">Autor</option>
-                    <option value="">Ano de publicação</option>
-                    <option value="">Assunto</option>
+                    <option value="titulo">Titulo</option>
+                    <option value="autor">Autor</option>
+                    <option value="genero">Genero</option>
+                    <option value="editora">Editora</option>
                 </select>
             </div>
             <button type="submit" class="formInput formSubmit">Enviar</button>
         </form>
-
-        <div class="alerta">
-            <p>
-                Total de livros encontrados: XX 
-            </p>
-        </div>
 
         <div id="areaCardResul">
             <?php
