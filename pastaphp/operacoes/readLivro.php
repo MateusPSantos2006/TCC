@@ -28,7 +28,7 @@
     class Pesquisa {
         private $chave;
         private $tipo;
-        private $padraoEspeciais = "/[@_%$'`|#*!+.={}]/";
+        private $padraoEspeciais = "/[@_%$'`|ﾠ#ㅤ*!+.={}]/";
 
         public function __construct($dadosForm)
         {
