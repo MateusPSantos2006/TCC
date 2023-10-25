@@ -100,9 +100,8 @@
                         <button type="submit" class="btn btn-success">Confirmar</button> 
                         <button type="reset" class="btn btn-danger">Limpar</button>
                     </div>
-                </div>
-                
-            </div>
+                </div> 
+            </div>            
         </form>
     </section>
       

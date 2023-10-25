@@ -1,5 +1,5 @@
 <?php
-    namespace TCC\pastaphp\validacoes;
+    namespace TCC\validacoes;
 
     class Livro {
         private $dadosArray=[];

@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/inicio.css">
         <link rel="stylesheet" href="./css/recomendacoes.css">
-        <link rel="stylesheet" href="../../css/footer.css">
+        <link rel="stylesheet" href="./css/footer.css">
     </head>
     <body>
         <header>

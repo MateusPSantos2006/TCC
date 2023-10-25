@@ -1,8 +1,8 @@
 <?php
 
-    namespace TCC\pastaphp\banco\crud;
-    use TCC\pastaphp\banco\Conexaopdo;
-
+    namespace TCC\banco\crud;
+    use TCC\banco\Conexaopdo;
+    
     class Inserir {
         private $arrayInsert;
 
