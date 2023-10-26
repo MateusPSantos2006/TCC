@@ -89,10 +89,8 @@
 #areaRestoBotoes {
     margin-top: 30px;
 
-    display: grid;
-    grid-template-columns: 28% 36% 36%;
-    justify-items: end;
-    align-items: baseline;
+    display: flex;
+    justify-content: space-around;
 }
 
 .btn {

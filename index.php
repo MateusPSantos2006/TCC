@@ -1,3 +1,7 @@
+<?php
+    require_once "vendor/autoload.php";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -14,7 +18,7 @@
     </head>
     <body>
         <header>
-            <a href="./index.html" class="linkHeader algoQueDeveServirComoLogo">
+            <a href="./index.php" class="linkHeader algoQueDeveServirComoLogo">
                 <img src="./imagens/logo.png" class="logo">
                 <p>
                     Acervo Digital <br>
@@ -26,7 +30,7 @@
                 <a href="http://"  target="_blank" class="linkHeader">
                     Sugestões dos professores
                 </a>
-                <a href="./pages/public/explorar.html" class="linkHeader">
+                <a href="./pages/public/explorar.php" class="linkHeader">
                     Explorar
                 </a>
                 <a href="./pages/public/loginProf.html" class="linkHeader">
@@ -59,19 +63,19 @@
                     </div>
                 </div>
 
-                <form action="" id="pesquisa">
+                <form action="/pages/public/explorar.php" method="$_GET" id="pesquisa">
                     <h1 class="titulo">
                         Está procurando algum livro?
                     </h1>
                     <div id="innerForm">
                         <div class="inputsArea">
-                            <input type="text" placeholder="Insira a palavra chave" class="formInput textInput">
+                            <input name="dado" type="text" placeholder="Insira a palavra chave" class="formInput textInput">
                             <select name="tipo" class="formInput">
                                 <option value="" disabled selected>Tipo da palavra-chave</option>
-                                <option value="">Titulo</option>
-                                <option value="">Autor</option>
-                                <option value="">Ano de publicação</option>
-                                <option value="">Assunto</option>
+                                <option value="titulo">Titulo</option>
+                                <option value="autor">Autor</option>
+                                <option value="genero">Genero</option>
+                                <option value="editora">Editora</option>
                             </select>
                         </div>
                         <button type="submit" class="formInput formSubmit">Enviar</button>
