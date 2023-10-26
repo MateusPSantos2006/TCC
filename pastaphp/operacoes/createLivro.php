@@ -2,14 +2,14 @@
     require_once "../../vendor/autoload.php";
 
     
-    use TCC\validacoes\Livro as meuLivro;
-    use TCC\banco\crud\Inserir as bota;
+    use TCC\validacoes\Livro;
+    use TCC\banco\crud\Inserir;
 
         
     try {
-        $livroForm = new meuLivro($_POST, $_FILES['capa']);
+        $livroForm = new Livro($_POST, $_FILES['capa']);
         $dadosLivro = $livroForm->getArrayLivro();
-        $livro = new bota ($dadosLivro);
+        $livro = new Inserir ($dadosLivro);
         $livro->inserirLivro();
     
         header('Location: ../../pages/admin/cadastroLivros.php'); 
