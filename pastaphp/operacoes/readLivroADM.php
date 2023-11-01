@@ -7,10 +7,10 @@
         $dadosPesquisa = new Pesquisa($_GET);
 
         $retorno = new Ler;
-        $retorno->explorarProcura($dadosPesquisa->getTipoPesquisa(), $dadosPesquisa->getChavePesquisa());
+        $retorno->explorarProcuraADM($dadosPesquisa->getTipoPesquisa(), $dadosPesquisa->getChavePesquisa());
     }else{
         $retorno = new Ler;
-        $retorno->explorarTudo();
+        $retorno->explorarTudoADM();
     }
 
     
