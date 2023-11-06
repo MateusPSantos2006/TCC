@@ -63,3 +63,40 @@ section {
     margin: 0;
     text-align: center;
 }
+@media screen and (max-width: 230px) and (min-height: 1000px) {
+    section {
+      padding: 3vh 2% 4vh 2%;
+    }
+  
+    .titulo {
+      font-size: 25px;
+    }
+  
+    .inputsArea {
+      flex-wrap: wrap;
+    }
+  
+    .textInput,
+    .formSubmit {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .textInput {
+      margin-right: 0;
+    }
+  
+    .formSubmit {
+      width: 70px;
+      height: 35px;
+    }
+  
+    .alerta {
+      width: 100%;
+    }
+  
+    .alerta p {
+      font-size: 16px;
+    }
+  }
+  

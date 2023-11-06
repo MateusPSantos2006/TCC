@@ -3,34 +3,38 @@ header {
     height: 90px;
     background-color: #001f3f;
     padding: 15px 2% 15px 2%;
-
+  
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+  }
+  
 
-.navegacaoHeader {
+  .navegacaoHeader {
     width: 420px;
     display: flex;
     justify-content: space-between;
-}
-
-.linkHeader {
+  }
+  
+  .linkHeader {
     color: #f5f5f5;
     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
-}
-
-.logo {
+  }
+  
+ 
+  .logo {
     height: 70px;
-}
-
-.algoQueDeveServirComoLogo {
+  }
+  
+ 
+  .algoQueDeveServirComoLogo {
     display: flex;
     align-items: center;
-}
-
-.algoQueDeveServirComoLogo p{
+  }
+  
+  .algoQueDeveServirComoLogo p {
     margin: 0 0 0 10px;
-}
+  }
+  
