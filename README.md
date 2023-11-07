@@ -96,6 +96,10 @@ Aqui estão as atualizações semanais do projeto:
 | Semana 8 | 17/10/2023 | **Ajustes no Back-and com Auxílio de um Pleno** | Iniciada | 50% concluída |
 | Semana 9 | 24/10/2023 | **Estrutura da Prototipagem de Alta Fidelidade de Todos as Pages através da Utilização do Site https://app.uizard.io, Teste do Back-End pra a busca de dados através do Front-End** | Iniciada | 100% concluída |
 | Semana 10 | 07/11/2023 | **Ajuste no Front-end em relação a  Responsividade do Site** | Iniciada | 50% concluída |
+| Semana 10 | 00/00/2023 | **..................................** | Iniciada | 0% concluída |
+| Semana 10 | 00/00/2023 | **..................................** | Iniciada | 0% concluída |
+| Semana 10 | 00/00/2023 | **..................................** | Iniciada | 0% concluída |
+| Semana 10 | 00/00/2023 | **..................................** | Iniciada | 0% concluída |
 
 
 **Conclusão** 🎉
