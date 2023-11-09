@@ -1,16 +1,17 @@
 
 $(".apagar").click(function(){
-    let idBd = $(this).data("valor")
+    let idBd = $(this).data("valor");
     $.ajax({
         type: "POST",
         url: "../../pastaphp/operacoes/deleteLivro.php",
         data: {id: idBd},
         success: function(data) {
-            $("#areaCardResul").load("../../pastaphp/operacoes/readLivroADM.php")
+            $("#areaCardResul").load("../../pastaphp/operacoes/readLivroADM.php");
         }
     });
 });
 
 $(".update").click(function(){
-
+    let idBd = $(this).data("valor");
+    $("#"+idBd).load("../../pastaphp/operacoes/altLivro.php")
 });

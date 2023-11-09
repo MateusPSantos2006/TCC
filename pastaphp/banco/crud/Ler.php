@@ -19,62 +19,65 @@
             $valores = $stmt->fetchAll(\PDO::FETCH_ASSOC);
             if (!empty($valores)) {
                 foreach ($valores as $objeto) {
-                    echo"
+                    ?>
                     <div class='livro'>
-                        <div class='cardResul'>
-                            <img src='../../imagens/capas/".$objeto['capa']."' alt='' >
+                        <div class='cardResul' id='<?=$objeto['id']?>'>
+                            <img src='../../imagens/capas/<?=$objeto['capa']?>' alt='' >
                             <article class='infosCardResul'>
                                 <div class='infosCardDados'>
-                                    <p> <span class='enfase'>Título: </span>".$objeto['titulo']."</p>
-                                    <p><span class='enfase'>Autor: </span>".$objeto['autor']."</p>
-                                    <p> <span class='enfase'>Genero: </span>".$objeto['genero']."</p>
-                                    <p> <span class='enfase'>Nº de páginas: </span>".$objeto['npags']."</p>
-                                    <p> <span class='enfase'>Editora: </span>".$objeto['editora']."</p>
-                                    <p> <span class='enfase'>Status: </span> <img class='simboloDisponibilidade' src='../../imagens/".$objeto['estado'].".png'>".$objeto['estado']."</p>
+                                    <p> <span class='enfase'>Título: </span><?=$objeto['titulo']?></p>
+                                    <p><span class='enfase'>Autor: </span><?=$objeto['autor']?></p>
+                                    <p> <span class='enfase'>Genero: </span><?=$objeto['genero']?></p>
+                                    <p> <span class='enfase'>Nº de páginas: </span><?=$objeto['npags']?></p>
+                                    <p> <span class='enfase'>Editora: </span><?=$objeto['editora']?></p>
+                                    <p> <span class='enfase'>Status: </span> <img class='simboloDisponibilidade' src='../../imagens/<?=$objeto['estado']?>.png'><?=$objeto['estado']?></p>
                                 </div>
-                                <p class='sinopse'> <span class='enfase'>Sinópse: </span>".$objeto['sinopse']."</p>
+                                <p class='sinopse'> <span class='enfase'>Sinópse: </span><?=$objeto['sinopse']?></p>
                             </article>
                         </div>
                         <div class='botoes'>
-                            <button type='button' class='btn btn-primary update' data-valor='".$objeto['id']."'>Primary</button>
-                            <button type='button' class='btn btn-danger apagar' data-valor='".$objeto['id']."'>apagar</button>
+                            <button type='button' class='btn btn-primary update' data-valor='<?=$objeto['id']?>'>modificar</button>
+                            <button type='button' class='btn btn-danger apagar' data-valor='<?=$objeto['id']?>'>apagar</button>
                         </div>
-                    </div>";
+                    </div>
+                    <?php
                 }
                 $db=null;
             }else{
-                echo"
+                ?>
                 <div class='alerta'>
                     <p>
                         Nenhum livro encontrado com os dados pesquisados, pesquisa geral feita
                     </p>
-                </div>";
+                </div>
+                <?php
 
             $sql = "SELECT * FROM livros;";
             $valores = $db->query($sql);
             $db=null;
             foreach ($valores as $objeto) {
-                echo"
+                ?>
                 <div class='livro'>
-                        <div class='cardResul'>
-                            <img src='../../imagens/capas/".$objeto['capa']."' alt='' >
-                            <article class='infosCardResul'>
-                                <div class='infosCardDados'>
-                                    <p> <span class='enfase'>Título: </span>".$objeto['titulo']."</p>
-                                    <p><span class='enfase'>Autor: </span>".$objeto['autor']."</p>
-                                    <p> <span class='enfase'>Genero: </span>".$objeto['genero']."</p>
-                                    <p> <span class='enfase'>Nº de páginas: </span>".$objeto['npags']."</p>
-                                    <p> <span class='enfase'>Editora: </span>".$objeto['editora']."</p>
-                                    <p> <span class='enfase'>Status: </span> <img class='simboloDisponibilidade' src='../../imagens/".$objeto['estado'].".png'>".$objeto['estado']."</p>
-                                </div>
-                                <p class='sinopse'> <span class='enfase'>Sinópse: </span>".$objeto['sinopse']."</p>
-                            </article>
-                        </div>
-                        <div class='botoes'>
-                            <button type='button' class='btn btn-primary update' data-valor='".$objeto['id']."'>Primary</button>
-                            <button type='button' class='btn btn-danger apagar' data-valor='".$objeto['id']."'>apagar</button>
-                        </div>
-                    </div>";
+                    <div class='cardResul' id='<?=$objeto['id']?>'>
+                        <img src='../../imagens/capas/<?=$objeto['capa']?>' alt='' >
+                        <article class='infosCardResul'>
+                            <div class='infosCardDados'>
+                                <p> <span class='enfase'>Título: </span><?=$objeto['titulo']?></p>
+                                <p><span class='enfase'>Autor: </span><?=$objeto['autor']?></p>
+                                <p> <span class='enfase'>Genero: </span><?=$objeto['genero']?></p>
+                                <p> <span class='enfase'>Nº de páginas: </span><?=$objeto['npags']?></p>
+                                <p> <span class='enfase'>Editora: </span><?=$objeto['editora']?></p>
+                                <p> <span class='enfase'>Status: </span> <img class='simboloDisponibilidade' src='../../imagens/<?=$objeto['estado']?>.png'><?=$objeto['estado']?></p>
+                            </div>
+                            <p class='sinopse'> <span class='enfase'>Sinópse: </span><?=$objeto['sinopse']?></p>
+                        </article>
+                    </div>
+                    <div class='botoes'>
+                        <button type='button' class='btn btn-primary update' data-valor='<?=$objeto['id']?>'>modificar</button>
+                        <button type='button' class='btn btn-danger apagar' data-valor='<?=$objeto['id']?>'>apagar</button>
+                    </div>
+                </div>
+                <?php
             }
             }
         }
@@ -86,27 +89,28 @@
             $valores = $db->query($sql);
             $db=null;
             foreach ($valores as $objeto) {
-                echo"
+                ?>
                 <div class='livro'>
-                        <div class='cardResul'>
-                            <img src='../../imagens/capas/".$objeto['capa']."' alt='' >
-                            <article class='infosCardResul'>
-                                <div class='infosCardDados'>
-                                    <p> <span class='enfase'>Título: </span>".$objeto['titulo']."</p>
-                                    <p><span class='enfase'>Autor: </span>".$objeto['autor']."</p>
-                                    <p> <span class='enfase'>Genero: </span>".$objeto['genero']."</p>
-                                    <p> <span class='enfase'>Nº de páginas: </span>".$objeto['npags']."</p>
-                                    <p> <span class='enfase'>Editora: </span>".$objeto['editora']."</p>
-                                    <p> <span class='enfase'>Status: </span> <img class='simboloDisponibilidade' src='../../imagens/".$objeto['estado'].".png'>".$objeto['estado']."</p>
-                                </div>
-                                <p class='sinopse'> <span class='enfase'>Sinópse: </span>".$objeto['sinopse']."</p>
-                            </article>
-                        </div>
-                        <div class='botoes'>
-                            <button type='button' class='btn btn-primary update' data-valor='".$objeto['id']."'>Primary</button>
-                            <button type='button' class='btn btn-danger apagar' data-valor='".$objeto['id']."'>apagar</button>
-                        </div>
-                    </div>";
+                    <div class='cardResul' id='<?=$objeto['id']?>'>
+                        <img src='../../imagens/capas/<?=$objeto['capa']?>' alt='' >
+                        <article class='infosCardResul'>
+                            <div class='infosCardDados'>
+                                <p> <span class='enfase'>Título: </span><?=$objeto['titulo']?></p>
+                                <p><span class='enfase'>Autor: </span><?=$objeto['autor']?></p>
+                                <p> <span class='enfase'>Genero: </span><?=$objeto['genero']?></p>
+                                <p> <span class='enfase'>Nº de páginas: </span><?=$objeto['npags']?></p>
+                                <p> <span class='enfase'>Editora: </span><?=$objeto['editora']?></p>
+                                <p> <span class='enfase'>Status: </span> <img class='simboloDisponibilidade' src='../../imagens/<?=$objeto['estado']?>.png'><?=$objeto['estado']?></p>
+                            </div>
+                            <p class='sinopse'> <span class='enfase'>Sinópse: </span><?=$objeto['sinopse']?></p>
+                        </article>
+                    </div>
+                    <div class='botoes'>
+                        <button type='button' class='btn btn-primary update' data-valor='<?=$objeto['id']?>'>modificar</button>
+                        <button type='button' class='btn btn-danger apagar' data-valor='<?=$objeto['id']?>'>apagar</button>
+                    </div>
+                </div>
+                <?php
             }
         }
         public function explorarProcura($tipo, $chave) {
@@ -125,50 +129,53 @@
             $valores = $stmt->fetchAll(\PDO::FETCH_ASSOC);
             if (!empty($valores)) {
                 foreach ($valores as $objeto) {
-                    echo"
+                    ?>
                     <div class='cardResul'>
-                        <img src='../../imagens/capas/".$objeto['capa']."' alt='' >
+                        <img src='../../imagens/capas/" <?= $objeto['capa'] ?>' alt='' >
                         <article class='infosCardResul'>
                             <div class='infosCardDados'>
-                                <p> <span class='enfase'>Título: </span>".$objeto['titulo']."</p>
-                                <p><span class='enfase'>Autor: </span>".$objeto['autor']."</p>
-                                <p> <span class='enfase'>Genero: </span>".$objeto['genero']."</p>
-                                <p> <span class='enfase'>Nº de páginas: </span>".$objeto['npags']."</p>
-                                <p> <span class='enfase'>Editora: </span>".$objeto['editora']."</p>
-                                <p> <span class='enfase'>Status: </span> <img class='simboloDisponibilidade' src='../../imagens/".$objeto['estado'].".png'>".$objeto['estado']."</p>
+                                <p> <span class='enfase'>Título:</span><?=$objeto['titulo']?></p>
+                                <p><span class='enfase'>Autor:</span><?=$objeto['autor']?></p>
+                                <p> <span class='enfase'>Genero:</span><?=$objeto['genero']?></p>
+                                <p> <span class='enfase'>Nº de páginas:</span><?=$objeto['npags']?></p>
+                                <p> <span class='enfase'>Editora:</span><?=$objeto['editora']?></p>
+                                <p> <span class='enfase'>Status:</span><img class='simboloDisponibilidade' src='../../imagens/<?=$objeto['estado']?>.png'><?= $objeto['estado']?></p>
                             </div>
-                            <p class='sinopse'> <span class='enfase'>Sinópse: </span>".$objeto['sinopse']."</p>
+                            <p class='sinopse'> <span class='enfase'>Sinópse:</span><?=$objeto['sinopse']?></p>
                         </article>
-                    </div>";
+                    </div>
+                    <?php
                 }
                 $db=null;
             }else{
-                echo"
+                ?>
                 <div class='alerta'>
                     <p>
                         Nenhum livro encontrado com os dados pesquisados, pesquisa geral feita
                     </p>
-                </div>";
+                </div>
+                <?php
 
             $sql = "SELECT * FROM livros;";
             $valores = $db->query($sql);
             $db=null;
             foreach ($valores as $objeto) {
-                echo"
+                ?>
                 <div class='cardResul'>
-                    <img src='../../imagens/capas/".$objeto['capa']."' alt='' >
+                    <img src='../../imagens/capas/" <?= $objeto['capa'] ?>' alt='' >
                     <article class='infosCardResul'>
                         <div class='infosCardDados'>
-                            <p> <span class='enfase'>Título:</span>".$objeto['titulo']."</p>
-                            <p><span class='enfase'>Autor:</span>".$objeto['autor']."</p>
-                            <p> <span class='enfase'>Genero:</span>".$objeto['genero']."</p>
-                            <p> <span class='enfase'>Nº de páginas:</span>".$objeto['npags']."</p>
-                            <p> <span class='enfase'>Editora:</span>".$objeto['editora']."</p>
-                            <p> <span class='enfase'>Status:</span> <img class='simboloDisponibilidade' src='../../imagens/".$objeto['estado'].".png'>".$objeto['estado']."</p>
+                            <p> <span class='enfase'>Título:</span><?=$objeto['titulo']?></p>
+                            <p><span class='enfase'>Autor:</span><?=$objeto['autor']?></p>
+                            <p> <span class='enfase'>Genero:</span><?=$objeto['genero']?></p>
+                            <p> <span class='enfase'>Nº de páginas:</span><?=$objeto['npags']?></p>
+                            <p> <span class='enfase'>Editora:</span><?=$objeto['editora']?></p>
+                            <p> <span class='enfase'>Status:</span><img class='simboloDisponibilidade' src='../../imagens/<?=$objeto['estado']?>.png'><?= $objeto['estado']?></p>
                         </div>
-                        <p class='sinopse'> <span class='enfase'>Sinópse:</span>".$objeto['sinopse']."</p>
+                        <p class='sinopse'> <span class='enfase'>Sinópse:</span><?=$objeto['sinopse']?></p>
                     </article>
-                </div>";
+                </div>
+                <?php
             }
             }
         }
@@ -180,21 +187,33 @@
             $valores = $db->query($sql);
             $db=null;
             foreach ($valores as $objeto) {
-                echo"
+                ?>
                 <div class='cardResul'>
-                    <img src='../../imagens/capas/".$objeto['capa']."' alt='' >
+                    <img src='../../imagens/capas/" <?= $objeto['capa'] ?>' alt='' >
                     <article class='infosCardResul'>
                         <div class='infosCardDados'>
-                            <p> <span class='enfase'>Título:</span>".$objeto['titulo']."</p>
-                            <p><span class='enfase'>Autor:</span>".$objeto['autor']."</p>
-                            <p> <span class='enfase'>Genero:</span>".$objeto['genero']."</p>
-                            <p> <span class='enfase'>Nº de páginas:</span>".$objeto['npags']."</p>
-                            <p> <span class='enfase'>Editora:</span>".$objeto['editora']."</p>
-                            <p> <span class='enfase'>Status:</span> <img class='simboloDisponibilidade' src='../../imagens/".$objeto['estado'].".png'>".$objeto['estado']."</p>
+                            <p> <span class='enfase'>Título:</span><?=$objeto['titulo']?></p>
+                            <p><span class='enfase'>Autor:</span><?=$objeto['autor']?></p>
+                            <p> <span class='enfase'>Genero:</span><?=$objeto['genero']?></p>
+                            <p> <span class='enfase'>Nº de páginas:</span><?=$objeto['npags']?></p>
+                            <p> <span class='enfase'>Editora:</span><?=$objeto['editora']?></p>
+                            <p> <span class='enfase'>Status:</span><img class='simboloDisponibilidade' src='../../imagens/<?=$objeto['estado']?>.png'><?= $objeto['estado']?></p>
                         </div>
-                        <p class='sinopse'> <span class='enfase'>Sinópse:</span>".$objeto['sinopse']."</p>
+                        <p class='sinopse'> <span class='enfase'>Sinópse:</span><?=$objeto['sinopse']?></p>
                     </article>
-                </div>";
+                </div>
+                <?php
             }
+        }
+        public function dadosPAlteracao($id){
+            $db = new ConexaoPdo;
+            $db = $db->conectar();
+
+
+            $sql = "SELECT * FROM livros where id LIKE $id";
+
+            $objeto = $db->query($sql);
+            $db=null;
+            return $objeto;
         }
     }
