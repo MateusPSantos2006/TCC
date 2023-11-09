@@ -36,8 +36,8 @@
                             </article>
                         </div>
                         <div class='botoes'>
-                            <button type='button' class='btn btn-primary'>Primary</button>
-                            <button type='button' class='btn btn-danger'>Danger</button>
+                            <button type='button' class='btn btn-primary update' data-valor='".$objeto['id']."'>Primary</button>
+                            <button type='button' class='btn btn-danger apagar' data-valor='".$objeto['id']."'>apagar</button>
                         </div>
                     </div>";
                 }
@@ -71,8 +71,8 @@
                             </article>
                         </div>
                         <div class='botoes'>
-                            <button type='button' class='btn btn-primary'>Primary</button>
-                            <button type='button' class='btn btn-danger'>Danger</button>
+                            <button type='button' class='btn btn-primary update' data-valor='".$objeto['id']."'>Primary</button>
+                            <button type='button' class='btn btn-danger apagar' data-valor='".$objeto['id']."'>apagar</button>
                         </div>
                     </div>";
             }
@@ -103,8 +103,8 @@
                             </article>
                         </div>
                         <div class='botoes'>
-                            <button type='button' class='btn btn-primary'>Primary</button>
-                            <button type='button' class='btn btn-danger'>Danger</button>
+                            <button type='button' class='btn btn-primary update' data-valor='".$objeto['id']."'>Primary</button>
+                            <button type='button' class='btn btn-danger apagar' data-valor='".$objeto['id']."'>apagar</button>
                         </div>
                     </div>";
             }

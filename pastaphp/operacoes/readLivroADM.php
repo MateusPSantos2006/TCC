@@ -3,6 +3,7 @@
     use TCC\banco\crud\Ler;
     use TCC\validacoes\Pesquisa;
 
+    
     if (isset($_GET['tipo']) && isset($_GET['dado'])) {
         $dadosPesquisa = new Pesquisa($_GET);
 

@@ -1,5 +1,11 @@
 <?php
-    namespace TCC\banco\crud;
-    use TCC\banco\ConexaoPdo;
+    require_once "../../vendor/autoload.php";
+    use TCC\banco\crud\Deletar;
 
-    
+
+    try {
+        $apagarDados = new Deletar ($_POST["id"]);
+        $apagarDados -> excluirLivro();
+    }catch (\Exception $erro) {
+        echo $erro->getMessage();
+    }
