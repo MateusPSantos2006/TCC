@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../../css/buscaExplorar.css">
     <link rel="stylesheet" href="../../css/footer.css">
+    <link rel='stylesheet' id='styleContraste' href="css/style.css"   type='text/css' media='all' />
+    <script src="teste.js"></script>
+</head>
+
+
+<head>
+ 
+
+   
 </head>
   <body>
     <header>

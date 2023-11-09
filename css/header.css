@@ -38,3 +38,22 @@ header {
     margin: 0 0 0 10px;
   }
   
+  @media (max-width: 230px) {
+    header {
+      height: 50px;
+      padding: 5px 2% 5px 2%;
+    }
+  
+    .navegacaoHeader {
+      width: 200px;
+    }
+  
+    .linkHeader {
+      font-size: 14px;
+    }
+  
+    .logo {
+      height: 35px;
+    }
+  }
+  

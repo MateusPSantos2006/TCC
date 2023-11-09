@@ -63,7 +63,7 @@ section {
     margin: 0;
     text-align: center;
 }
-@media screen and (max-width: 230px) and (min-height: 1000px) {
+@media screen and (max-width: 230px) and (min-height: 500px) {
     section {
       padding: 3vh 2% 4vh 2%;
     }
