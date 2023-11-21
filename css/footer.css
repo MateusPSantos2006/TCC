@@ -36,7 +36,7 @@ text-decoration: none;
 }
 
 
-@media (min-width: 230px) and (max-width: 500px) {
+@media screen and (max-width: 420px) and (min-height: 320px)  {
   
   footer {
     font-size: 12px;

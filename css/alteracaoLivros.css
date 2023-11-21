@@ -140,7 +140,7 @@
     grid-template-columns: 50% 50%;
   }
   
-  @media (min-width: 230px) and (max-width: 500px) {
+  @media screen and (max-width: 420px) and (min-height: 320px)  {
     #alteracaoLivros {
       width: 100%;
     }

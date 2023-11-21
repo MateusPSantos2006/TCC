@@ -85,8 +85,7 @@ h1{
     color: #333;
     font-weight: 600;
 }
-@media (max-width: 230px) and (max-height: 500px) {
-
+@media screen and (max-width: 420px) and (min-height: 320px)  {
     .wrapper {
       width: 100%;
     }
