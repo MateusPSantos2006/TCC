@@ -3,15 +3,26 @@
     use TCC\banco\ConexaoPdo;
 
     class Ler {
-        public function tabelaProfs(){
+        public function getProfsRA(){
             $db = new ConexaoPdo;
             $db = $db->conectar();
 
-            $sql = "SELECT * FROM profs;";
-            $valores = $db->query($sql);
+            $sql = "SELECT ra, id FROM profs;";
+            $dados = $db->query($sql);
             $db=null;
-            foreach ($valores as $objeto) {
-                //planejar como será a tabela
-            }
+
+            return $dados;
+        }
+
+        public function getProfsPass($id){
+            $db = new ConexaoPdo;
+            $db = $db->conectar();
+
+            $sql = "SELECT senha FROM profs WHERE id = $id;
+            WHERE id=$id";
+            $senha = $db->query($sql);
+            $db=null;
+
+            return $senha;
         }
     }

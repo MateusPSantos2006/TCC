@@ -34,16 +34,15 @@
   </header>
   <div class="quase-tudo">
     <div class="wrapper">
-      <form action="../admin/principalLogado.php">
+      <form action="../../pastaphp/operacoes/login.php" method="post">
         <h1>Login</h1>
         <div class="input-box">
           <div class="input-field">
-            <input type="text" placeholder="Nome Completo" required=
-            ""><i class='bx bxs-user' name="nome"></i>
+            <input type="text" placeholder="RA" name="ra" required><i class='bx bxs-user'></i>
           </div>
           <div class="input-field">
-            <input type="password" placeholder="Senha" required=""><i class=
-            'bx bxs-lock-alt' name="senha"></i>
+            <input type="password" placeholder="Senha" name="senha" required><i class=
+            'bx bxs-lock-alt'></i>
           </div>
         </div><button type="submit" class="botao">Entrar</button>
       </form>
