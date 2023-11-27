@@ -29,8 +29,8 @@
                 <a href="./explorarlogado.php" class="linkHeader">
                     Explorar
                 </a>
-                <a href="./cadastroLivros.php" class="linkHeader">
-                    Cad. livros
+                <a href="./gerenciar.html" class="linkHeader">
+                    gerenciar
                 </a>
             </div>
         </header>

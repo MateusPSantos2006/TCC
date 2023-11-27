@@ -3,6 +3,14 @@
     use TCC\banco\abstratos\AbstractV as V;
 
     class Livro extends V {
+        public function extras() {
+            $this->dadosArray[2] = filter_var($this->dadosArray[2], FILTER_SANITIZE_NUMBER_INT);
+            $this->dadosArray[7] = filter_var($this->dadosArray[7], FILTER_SANITIZE_NUMBER_INT);
+            if ($this->dadosArray[7] < 1) {
+                $this->dadosArray[7] = 1;
+            }
+        }
+        
         public function setCapa($imagemCapa) {
             try {
                 $tipo = mime_content_type($imagemCapa['tmp_name']);
@@ -15,6 +23,5 @@
             } catch (\Exception $erro) {
                 echo $erro->getMessage();
             }
-
         }
     }

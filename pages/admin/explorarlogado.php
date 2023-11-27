@@ -14,7 +14,7 @@
 </head>
   <body>
     <header>
-        <a href="../../index.php" class="linkHeader algoQueDeveServirComoLogo">
+        <a href="./principalLogado.php" class="linkHeader algoQueDeveServirComoLogo">
             <img src="../../imagens/logo.png" class="logo">
             <p>
                 Acervo Digital <br>
@@ -23,16 +23,16 @@
         </a>
 
         <div class="navegacaoHeader">
-            <a href="http://"  target="_blank" class="linkHeader">
-                Sugestões dos professores
-            </a>
-            <a href="./explorar.php" class="linkHeader">
-                Explorar
-            </a>
-            <a href="./cadastroLivros.php" class="linkHeader">
-                    Cad. livros
+                <a href="http://"  target="_blank" class="linkHeader">
+                    Sugestões dos professores
                 </a>
-        </div>
+                <a href="./explorarlogado.php" class="linkHeader">
+                    Explorar
+                </a>
+                <a href="./gerenciar.html" class="linkHeader">
+                    gerenciar
+                </a>
+            </div>
     </header>
 
     <section id="BuscasResul">

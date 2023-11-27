@@ -4,7 +4,8 @@
     use TCC\banco\livros\Inserir;
     
     try {
-        $livroForm = new Livro($_POST, true);
+        $livroForm = new Livro($_POST);
+        $livroForm->extras();
         $livroForm->setCapa ($_FILES['capa']);
         $dadosLivro = $livroForm->getDados();
         $livro = new Inserir ($dadosLivro);
