@@ -4,25 +4,34 @@
 
     class Ler {
         public function getProfsRA(){
-            $db = new ConexaoPdo;
-            $db = $db->conectar();
-
-            $sql = "SELECT ra, id FROM profs;";
-            $dados = $db->query($sql);
-            $db=null;
-
-            return $dados;
+            try{
+                $db = new ConexaoPdo;
+                $db = $db->conectar();
+    
+                $sql = "SELECT ra, id FROM profs;";
+                $dados = $db->query($sql);
+                $db=null;
+    
+                return $dados;
+            } catch (\Exception $erro) {
+                echo "Erro 1 ao tentar logar";
+            }
         }
 
         public function getProfsPass($id){
-            $db = new ConexaoPdo;
-            $db = $db->conectar();
+            try {
+                $db = new ConexaoPdo;
+                $db = $db->conectar();
+    
+                $sql = "SELECT senha FROM profs WHERE id = $id;
+                WHERE id=$id";
+                $senha = $db->query($sql);
+                $db=null;
+    
+                return $senha;
+            } catch (\Exception $erro) {
+                echo "Erro 2 ao tentar logar";
+            }
 
-            $sql = "SELECT senha FROM profs WHERE id = $id;
-            WHERE id=$id";
-            $senha = $db->query($sql);
-            $db=null;
-
-            return $senha;
         }
     }
