@@ -1,5 +1,5 @@
 <?php
-    namespace TCC\banco\crud;
+    namespace TCC\banco\livros;
     use TCC\banco\ConexaoPdo;
 
     class Ler {

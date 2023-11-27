@@ -1,16 +1,10 @@
 <?php
-    namespace TCC\banco\crud;
+    namespace TCC\banco\livros;
     use TCC\banco\ConexaoPdo;
+    use TCC\banco\abstratos\AbstractD as D;
 
-    class Deletar {
-        private $idAlvo;
-
-        public function __construct($idSelecionado)
-        {
-            $this->idAlvo = $idSelecionado;
-        }
-
-        public function excluirLivro () {
+    class Deletar extends D{
+        public function delete() {
             $db = new ConexaoPdo;
             $db = $db->conectar();
 

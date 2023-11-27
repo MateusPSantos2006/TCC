@@ -1,17 +1,17 @@
 <?php   
     require_once "../../vendor/autoload.php";
     use TCC\validacoes\Livro;
-    use TCC\banco\crud\Inserir;
-
-        
+    use TCC\banco\livros\Inserir;
+    
     try {
-        $livroForm = new Livro($_POST, $_FILES['capa']);
-        $dadosLivro = $livroForm->getArrayLivro();
+        $livroForm = new Livro($_POST, true);
+        $livroForm->setCapa ($_FILES['capa']);
+        $dadosLivro = $livroForm->getDados();
         $livro = new Inserir ($dadosLivro);
-        $livro->inserirLivro();
+        $livro->insert();
     
         header('Location: ../../pages/admin/cadastroLivros.php'); 
         exit();
-    } catch (\Exception $maria) {
-        echo $maria->getMessage();
+    } catch (\Exception $erro) {
+        echo $erro->getMessage();
     }

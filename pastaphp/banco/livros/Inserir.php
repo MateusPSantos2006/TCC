@@ -1,16 +1,11 @@
 <?php
-    namespace TCC\banco\crud;
+    namespace TCC\banco\livros;
+    use TCC\banco\abstratos\AbstractI as I;
     use TCC\banco\ConexaoPdo;
     
-    class Inserir {
-        private $arrayInsert;
+    class Inserir extends I{
 
-        public function __construct($dados) {
-            $this->arrayInsert = $dados;
-            print_r ($this->arrayInsert);
-        } 
-
-        public function inserirLivro() {
+        public function insert() {
             $db = new ConexaoPdo;
             $db = $db->conectar();
             $sql = "INSERT INTO livros (titulo, autor, ano, genero, editora, npags, estado, sinopse, capa) VALUES (:titulo, :autor, :ano, :genero, :editora, :npags, :estado, :sinopse, :capa)";
