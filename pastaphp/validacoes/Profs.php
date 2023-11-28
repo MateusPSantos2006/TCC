@@ -4,7 +4,6 @@
 
     class Profs extends V {
         public function extras() {
-            print_r($this->dadosArray[1]);
             if ($this->dadosArray[1] != 1) {
                 $this->dadosArray[1] = 0;
             }
