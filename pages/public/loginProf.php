@@ -20,6 +20,12 @@
   <link rel="stylesheet" href="../../css/footer.css">
 </head>
 <body>
+  <?php
+      if (isset($_COOKIE["ra"]) && isset($_COOKIE["senha"])) {
+        require_once "../../vendor/autoload.php";
+        require_once "../../pastaphp/operacoes/loginCookie.php";
+      }
+  ?>
   <header>
     <a href="../../index.php" class=
     "linkHeader algoQueDeveServirComoLogo"><img src="../../imagens/logo.png"
@@ -34,7 +40,7 @@
   </header>
   <div class="quase-tudo">
     <div class="wrapper">
-      <form action="../../pastaphp/operacoes/login.php" method="post">
+      <form action="../../pastaphp/operacoes/pLogin.php" method="post">
         <h1>Login</h1>
         <div class="input-box">
           <div class="input-field">

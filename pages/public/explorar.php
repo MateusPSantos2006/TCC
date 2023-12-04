@@ -28,7 +28,7 @@
             <a href="./explorar.php" class="linkHeader">
                 Explorar
             </a>
-            <a href="./loginProf.html" class="linkHeader">
+            <a href="./loginProf.php" class="linkHeader">
                 Login
             </a>
         </div>

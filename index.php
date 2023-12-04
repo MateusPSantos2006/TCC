@@ -13,6 +13,12 @@
         <link rel="stylesheet" href="./css/footer.css">
     </head>
     <body>
+    <?php
+      if (isset($_COOKIE["ra"]) && isset($_COOKIE["senha"])) {
+        require_once "./vendor/autoload.php";
+        require_once "./pastaphp/operacoes/loginCookie.php";
+      }
+    ?>
         <header>
             <a href="./index.php" class="linkHeader algoQueDeveServirComoLogo">
                 <img src="./imagens/logo.png" class="logo">
@@ -29,7 +35,7 @@
                 <a href="./pages/public/explorar.php" class="linkHeader">
                     Explorar
                 </a>
-                <a href="./pages/public/loginProf.html" class="linkHeader">
+                <a href="./pages/public/loginProf.php" class="linkHeader">
                     Login
                 </a>
             </div>
