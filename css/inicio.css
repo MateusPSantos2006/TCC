@@ -1,5 +1,4 @@
-@media screen and (max-width: 420px) and (min-height: 320px)  {
-    #inicio {
+ #inicio {
       padding: 0 0 3vh 0;
     }
   
@@ -30,5 +29,3 @@
     #carrosel {
       width: 100%;
     }
-  }
-  
