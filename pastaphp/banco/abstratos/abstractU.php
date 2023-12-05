@@ -9,6 +9,7 @@
         {
             $this->idAlvo = $idSelecionado;
             $this->valoresNovos = $valoresSelecionados;
+            setcookie("idAlvo", "", time() - 3600, "/");
         }
 
         abstract public function update();

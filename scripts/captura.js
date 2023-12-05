@@ -13,5 +13,12 @@ $(".apagar").click(function(){
 
 $(".update").click(function(){
     let idBd = $(this).data("valor");
-    $("#"+idBd).load("../../pastaphp/operacoes/editarLivro.php")
+    $.ajax({
+        type: "POST",
+        url: "../../pastaphp/operacoes/prepAlt.php",
+        data: {id: idBd},
+        success: function(data) {
+            $("#"+idBd).load("../../pastaphp/operacoes/altLivro.php")
+        }
+    })
 });

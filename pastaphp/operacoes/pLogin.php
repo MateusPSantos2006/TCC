@@ -15,6 +15,7 @@
                     $RA = true;
                     $id = $prof[1];
                     $ativo = $prof[2];
+                    $adm = $prof[3];
                 }
             }
         
@@ -27,6 +28,7 @@
                     setcookie("ra", $leituraForm[0], time() + 60 * 60 * 24 * 90, "/");
                     setcookie("senha", $leituraForm[1], time() + 60 * 60 * 24 * 90, "/");
                     setcookie("hash", password_hash($id, PASSWORD_DEFAULT), time() + 60 * 60 * 24 * 90, "/");
+                    setcookie("tipo", password_hash($adm, PASSWORD_DEFAULT), time() + 60 * 60 * 24 * 90, "/");
                     header('Location: ../../pages/admin/principalLogado.php'); 
                     exit();
                 } else {

@@ -18,9 +18,10 @@
             setcookie("ra", "", time() - 3600, "/");
             setcookie("senha", "", time() - 3600, "/");
             setcookie("hash", "", time() - 3600, "/");
+            setcookie("tipo", "", time() - 3600, "/");
             header('Location: ../public/loginProf.php'); 
             exit();
         }
-    } catch (\Exception $erro) {
+    } catch (Exception $erro) {
         echo ($erro);
     }

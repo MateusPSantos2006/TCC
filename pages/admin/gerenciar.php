@@ -43,9 +43,19 @@
                     Adicionar livro
                 </button> 
             </a>
-            <a href="http:./cadastroProfs.html">
+            <a href="http:./cadastroProfs.php">
                 <button>
                     Adicionar professor
+                </button> 
+            </a>
+            <a href="http:./cadastroProfs.html">
+                <button>
+                    Gerenciar livros
+                </button> 
+            </a>
+            <a href="http:./cadastroProfs.html">
+                <button>
+                    Gerenciar professores
                 </button> 
             </a>
         </main>    

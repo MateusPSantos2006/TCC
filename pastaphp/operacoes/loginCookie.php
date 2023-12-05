@@ -1,33 +1,19 @@
 <?php
-    use TCC\validacoes\Profs;
     use TCC\banco\profs\Ler;
 
     try {
+        $login = false;
         $cookie[0] = $_COOKIE["ra"];
-        $cookie[1] = $_COOKIE["senha"];
-        $dadosCookie = new Profs ($cookie);
-        $leituraCookie = $dadosCookie->getDados();
+        $cookie[1] = $_COOKIE["hash"];
 
-        $dadosBanco = new Ler;
-        $leituraBD = $dadosBanco->getProfsRA();
+        $dadosBD = new Ler;
+        $leituraBD = $dadosBD->getProfsRA();
         foreach ($leituraBD as $prof) {
-            if ($leituraCookie[0] == $prof[0]) {
-                $RA = true;
-                $id = $prof[1];
-                $ativo = $prof[2];
-            }
-        }
-
-        if (isset($RA) && $ativo == 1) {
-            $senhaAtividade = $dadosBanco->getProfsPass($id);
-            foreach ($senhaAtividade as $Senha) {
-                $senhaBD = $Senha[0];
-            }
-            if (password_verify($leituraCookie[1], $senhaBD)) {
+            if ($cookie[0] == $prof[0] || password_verify($prof[1], $cookie[1])) {
                 header('Location: ../../pages/admin/principalLogado.php'); 
                 exit();
             }
-        }
-    } catch (\Exception $erro) {
-
+        } 
+    }catch (Exception $erro) {
+        echo "$erro";
     }

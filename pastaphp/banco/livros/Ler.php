@@ -118,13 +118,11 @@
             $db = new ConexaoPdo;
             $db = $db->conectar();
 
-
             $sql = "SELECT * FROM livros where $tipo LIKE :chave";
 
             $stmt = $db->prepare($sql);
             $stmt->bindParam(':chave', $chave);
             $stmt->execute();
-
 
             $valores = $stmt->fetchAll(\PDO::FETCH_ASSOC);
             if (!empty($valores)) {
@@ -205,15 +203,22 @@
                 <?php
             }
         }
-        public function dadosPAlteracao($id){
-            $db = new ConexaoPdo;
-            $db = $db->conectar();
-
-
-            $sql = "SELECT * FROM livros where id LIKE $id";
-
-            $objeto = $db->query($sql);
-            $db=null;
-            return $objeto;
+        public function verDadosCru($id){
+            try {
+                $db = new ConexaoPdo;
+                $db = $db->conectar();
+    
+                $sql = "SELECT * FROM livros where id = :chave";
+    
+                $stmt = $db->prepare($sql);
+                $stmt->bindParam(':chave', $id);
+                $stmt->execute();
+    
+                $valores = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+                $db=null;
+                return $valores;
+            } catch (\PDOException $erro) {
+                echo "Erro ao retornar os dados dos livros: $erro";
+            }
         }
     }

@@ -1,7 +1,3 @@
-<?php
-    require_once __DIR__ . "/../../vendor/autoload.php";
-?>
-
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -18,8 +14,8 @@
   <body>
     <header>
       <?php
-      require_once "../../pastaphp/operacoes/verificarCookie.php";
-    ?>
+        require_once "../../pastaphp/operacoes/verificarCookie.php";
+      ?>
         <a href="./principalLogado.php" class="linkHeader algoQueDeveServirComoLogo">
             <img src="../../imagens/logo.png" class="logo">
             <p>
