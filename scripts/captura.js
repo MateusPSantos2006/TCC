@@ -15,10 +15,10 @@ $(".update").click(function(){
     let idBd = $(this).data("valor");
     $.ajax({
         type: "POST",
-        url: "../../pastaphp/operacoes/prepAlt.php",
+        url: "../../pastaphp/operacoes/idAlvo.php",
         data: {id: idBd},
         success: function(data) {
-            $("#"+idBd).load("../../pastaphp/operacoes/altLivro.php")
+            $("#buscasResul").load("./altLivro.php")
         }
     })
 });

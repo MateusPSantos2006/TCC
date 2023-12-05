@@ -38,7 +38,7 @@
             </div>
     </header>
 
-    <section id="BuscasResul">
+    <section id="buscasResul">
         <form action="explorarLogado.php" method="GET" id="busca">
             <div class="inputsArea">
                 <input name="dado" type="text" placeholder="Insira a palavra chave" class="formInput textInput" id="">

@@ -48,12 +48,12 @@
                     Adicionar professor
                 </button> 
             </a>
-            <a href="http:./cadastroProfs.html">
+            <a href="http:./explorarlogado.php">
                 <button>
                     Gerenciar livros
                 </button> 
             </a>
-            <a href="http:./cadastroProfs.html">
+            <a href="http:./cadastroProfs.php">
                 <button>
                     Gerenciar professores
                 </button> 
