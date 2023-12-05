@@ -14,8 +14,8 @@
     </head>
     <body>
     <?php
-    require_once "../../pastaphp/operacoes/verificarCookie.php";
-  ?>
+      require_once "../../pastaphp/operacoes/verificarCookie.php";
+    ?>
         <header>
             <a href="./principalLogado.php" class="linkHeader algoQueDeveServirComoLogo">
                 <img src="../../imagens/logo.png" class="logo">
