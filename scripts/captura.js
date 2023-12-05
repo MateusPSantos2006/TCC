@@ -13,5 +13,5 @@ $(".apagar").click(function(){
 
 $(".update").click(function(){
     let idBd = $(this).data("valor");
-    $("#"+idBd).load("../../pastaphp/operacoes/altLivro.php")
+    $("#"+idBd).load("../../pastaphp/operacoes/editarLivro.php")
 });

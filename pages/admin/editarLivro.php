@@ -17,6 +17,9 @@
 </head>
   <body>
     <header>
+      <?php
+      require_once "../../pastaphp/operacoes/verificarCookie.php";
+    ?>
         <a href="./principalLogado.php" class="linkHeader algoQueDeveServirComoLogo">
             <img src="../../imagens/logo.png" class="logo">
             <p>
@@ -32,7 +35,7 @@
           <a href="./explorarlogado.php" class="linkHeader">
               Explorar
           </a>
-          <a href="./gerenciar.html" class="linkHeader">
+          <a href="./gerenciar.php" class="linkHeader">
               gerenciar
           </a>
       </div>
