@@ -54,7 +54,7 @@
                     Gerenciar livros
                 </button> 
             </a>
-            <a href="http:./cadastroProfs.php">
+            <a href="http:./tabelaProfs.php">
                 <button>
                     Gerenciar professores
                 </button> 

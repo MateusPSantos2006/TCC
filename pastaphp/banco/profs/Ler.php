@@ -8,7 +8,7 @@
                 $db = new ConexaoPdo;
                 $db = $db->conectar();
     
-                $sql = "SELECT ra, id, ativo, adm FROM profs;";
+                $sql = "SELECT ra, id, ativo, adm, nome FROM profs;";
                 $dados = $db->query($sql);
                 $db=null;
     
