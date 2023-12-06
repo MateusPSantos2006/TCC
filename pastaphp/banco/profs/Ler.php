@@ -34,4 +34,23 @@
             }
 
         }
+        public function verDadosCru($id, $tabela){
+            try {
+                $db = new ConexaoPdo;
+                $db = $db->conectar();
+    
+                $sql = "SELECT * FROM :tabela where id = :chave";
+    
+                $stmt = $db->prepare($sql);
+                $stmt->bindParam(':chave', $id);
+                $stmt->bindParam(':tabela', $tabela);
+                $stmt->execute();
+    
+                $valores = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+                $db=null;
+                return $valores;
+            } catch (\PDOException $erro) {
+                echo "Erro ao retornar os dados dos livros: $erro";
+            }
+        }
     }

@@ -17,7 +17,7 @@ $(".update").click(function(){
         url: "../../pastaphp/operacoes/idAlvo.php",
         data: {id: idBd},
         success: function(data) {
-            $("#buscasResul").load("./altLivro.php");
+            $("#secao").load("./altProf.php");
         }
     });
 });

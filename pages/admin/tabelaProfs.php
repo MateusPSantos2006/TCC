@@ -41,7 +41,7 @@
                 Em caso de perda se senha, modifique os dados do usuário.
             </p>
         </div>
-        <section id="tabela">
+        <section id="secao">
             <table class="table table-info table-bordered table-striped table-hover">
                 <thead>
                     <tr>

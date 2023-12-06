@@ -4,7 +4,7 @@
     use TCC\banco\livros\Ler;
     
     $dados = new Ler;
-    $dadosAntigos = $dados->verDadosCru($_COOKIE["idAlvo"]);
+    $dadosAntigos = $dados->verDadosCru($_COOKIE["idAlvo"], "livros");
 
     foreach ($dadosAntigos as $objeto) {
         $dispInd = "indisponivel";
@@ -18,7 +18,7 @@
         }
         ?>
     <h1 class="titulo">
-        Cadastro do livro
+        Alteração do livro
     </h1>
 
     <div class="alerta">
@@ -88,8 +88,7 @@
                 
 
                 <div id="areaRestoBotoes">
-                    <button type="submit" class="btn btn-success">Confirmar</button> 
-                    <button type="reset" class="btn btn-danger">Limpar</button>
+                    <button type="submit" class="btn btn-success">Confirmar</button>
                 </div>
             </div>         
         </div>

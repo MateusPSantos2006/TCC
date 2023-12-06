@@ -203,15 +203,16 @@
                 <?php
             }
         }
-        public function verDadosCru($id){
+        public function verDadosCru($id, $tabela){
             try {
                 $db = new ConexaoPdo;
                 $db = $db->conectar();
     
-                $sql = "SELECT * FROM livros where id = :chave";
+                $sql = "SELECT * FROM :tabela where id = :chave";
     
                 $stmt = $db->prepare($sql);
                 $stmt->bindParam(':chave', $id);
+                $stmt->bindParam(':tabela', $tabela);
                 $stmt->execute();
     
                 $valores = $stmt->fetchAll(\PDO::FETCH_ASSOC);
