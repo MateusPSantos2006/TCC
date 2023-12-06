@@ -4,7 +4,7 @@
     use TCC\banco\livros\Ler;
     
     $dados = new Ler;
-    $dadosAntigos = $dados->verDadosCru($_COOKIE["idAlvo"], "livros");
+    $dadosAntigos = $dados->verDadosCru($_COOKIE["idAlvo"]);
 
     foreach ($dadosAntigos as $objeto) {
         $dispInd = "indisponivel";
