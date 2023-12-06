@@ -4,6 +4,7 @@
     use TCC\validacoes\LivroEdit as Livro;
 
     $dadosAlterados = new Livro ($_POST);
+    setcookie("idAlvo", "", time() - 3600, "/");
     $dadosAlterados->extras();
     $arquivo = $_FILES["capa"];
     if ($arquivo["name"] != null){
@@ -12,8 +13,11 @@
     $livro = $dadosAlterados->getDados();
 
     $alteracao = new Atualizar($livro[0], $livro);
-    //$alteracao -> update();
+    $alteracao -> update();
 
+    $titulo = preg_replace("/ /", "+", $livro[1]);
+    header('Location: ../../pages/admin/explorarLogado.php?dado='.$titulo.'&tipo=titulo'); 
+    exit();
 
 
 

@@ -4,7 +4,8 @@
   <meta name="generator" content=
   "HTML Tidy for HTML5 for Linux version 5.9.20">
   <title>Cadastro dos Professores</title>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
   <meta name="viewport" content=
   "width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href=
