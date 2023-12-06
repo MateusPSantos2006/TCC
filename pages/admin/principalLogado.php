@@ -1,23 +1,30 @@
-<?php
-    require_once "../../vendor/autoload.php";
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Acervo digital - EE Benedito Calixto</title>
+        <title>Acervo digital </title>
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="../../css/style.css">
         <link rel="stylesheet" href="../../css/header.css">
         <link rel="stylesheet" href="../../css/inicio.css">
         <link rel="stylesheet" href="../../css/recomendacoes.css">
+        <link rel="shortcut icon" href="../../imagens/logo.png" type="image/x-icon">
         <link rel="stylesheet" href="../../css/footer.css">
     </head>
     <body>
         <header>
+        <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget();
+  </script> 
             <a href="./principalLogado.php" class="linkHeader algoQueDeveServirComoLogo">
                 <img src="../../imagens/logo.png" class="logo">
                 <p>
@@ -27,14 +34,14 @@
             </a>
 
             <div class="navegacaoHeader">
-                <a href="http://"  target="_blank" class="linkHeader">
+                <a href="../public/manutenção.html"  target="_blank" class="linkHeader">
                     Sugestões dos professores
                 </a>
                 <a href="./explorarlogado.php" class="linkHeader">
                     Explorar
                 </a>
-                <a href="./cadastroLivros.php" class="linkHeader">
-                    Cad. livros
+                <a href="adm.html" class="linkHeader">
+                   ADM
                 </a>
             </div>
         </header>
@@ -45,13 +52,13 @@
                     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="../../imagens/1.png" class="d-block w-100" alt="...">
+                            <img src="../../imagens/1.png" class="d-block w-100" alt="Imagem da biblioteca da escola">
                           </div>
                           <div class="carousel-item">
-                            <img src="../../imagens/2.png" class="d-block w-100" alt="...">
+                            <img src="../../imagens/2.png" class="d-block w-100" alt="Imagem da biblioteca da escola 2">
                           </div>
                           <div class="carousel-item">
-                            <img src="../../imagens/3.png" class="d-block w-100" alt="...">
+                            <img src="../../imagens/3.png" class="d-block w-100" alt="Imagem da biblioteca da escola 3">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -107,7 +114,7 @@
           </div>
           <div class="carousel-item">
               <div class="card">
-                  <img src="../../imagens/artistaComFome.jpg" alt="">
+                  <img src="../../imagens/artistaComFome.jpg" alt="capa do artista com fome">
                   <div class="contCard">
                       <div class="infosCards">
                           <p class="tituloCard">Artista com fome</p>
@@ -122,7 +129,7 @@
           </div>
           <div class="carousel-item">
               <div class="card">
-                  <img src="../../imagens/cartaAoPai.jpg" alt="">
+                  <img src="../../imagens/cartaAoPai.jpg" alt="capa do carta ao pai">
                   <div class="contCard">
                       <div class="infosCards">
                           <p class="tituloCard">Carta ao pai</p>
@@ -150,7 +157,7 @@
                         </section>
                     </main>    
         
-<footer class="footer">
+                    <footer class="footer">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
@@ -161,17 +168,11 @@
       <div class="col-md-4">
         <ul class="list-inline">
           <li class="list-inline-item">
-            <a href="#">Sobre</a>
+            <a href="./sobreLogado.html">Sobre</a>
           </li>
           <li class="list-inline-item">
-            <a href="#">Contato</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Termos de uso</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Política de privacidade</a>
-          </li>
+            <a href="./contatoLogado.html">Contato</a>
+
         </ul>
       </div>
       <div class="col-md-4">

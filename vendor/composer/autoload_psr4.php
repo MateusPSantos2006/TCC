@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'TCC\\' => array($baseDir . '/TCC2'),
+    'TCC\\' => array($baseDir . '/pastaphp'),
 );

@@ -1,25 +1,32 @@
-<?php
-    require_once "vendor/autoload.php";
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Acervo digital - EE Benedito Calixto</title>
-
+        <title>Acervo Digital </title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/inicio.css">
-        <link rel="stylesheet" href="./css/recomendacoes.css">
-        <link rel="stylesheet" href="../../css/footer.css">
+        <link rel="shortcut icon" href="./imagens/logo.png" type="image/x-icon">
+         <link rel="stylesheet" href="./css/recomendacoes.css">
+        <link rel="stylesheet" href="./css/footer.css">
     </head>
     <body>
+
         <header>
+        <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget();
+  </script> 
             <a href="./index.php" class="linkHeader algoQueDeveServirComoLogo">
-                <img src="./imagens/logo.png" class="logo">
+                <img src="./imagens/logo.png" class="logo" alt="um livro aberto que representa a logo do site acervo digtal">
                 <p>
                     Acervo Digital <br>
                     Benedito Calixto
@@ -27,7 +34,7 @@
             </a>
 
             <div class="navegacaoHeader">
-                <a href="http://"  target="_blank" class="linkHeader">
+                <a href="./pages/public/manutenção.html"  target="_blank" class="linkHeader">
                     Sugestões dos professores
                 </a>
                 <a href="./pages/public/explorar.php" class="linkHeader">
@@ -38,6 +45,7 @@
                 </a>
             </div>
         </header>
+
 
         <main>
             <section id="inicio">
@@ -63,7 +71,7 @@
                     </div>
                 </div>
 
-                <form action="/pages/public/explorar.php" method="$_GET" id="pesquisa">
+                <form action="./pages/public/explorar.php" method="$_GET" id="pesquisa">
                     <h1 class="titulo">
                         Está procurando algum livro?
                     </h1>
@@ -107,7 +115,7 @@
           </div>
           <div class="carousel-item">
               <div class="card">
-                  <img src="./imagens/artistaComFome.jpg" alt="">
+                  <img src="./imagens/artistaComFome.jpg" alt="capa do artista com fome">
                   <div class="contCard">
                       <div class="infosCards">
                           <p class="tituloCard">Artista com fome</p>
@@ -122,7 +130,7 @@
           </div>
           <div class="carousel-item">
               <div class="card">
-                  <img src="./imagens/cartaAoPai.jpg" alt="">
+                  <img src="./imagens/cartaAoPai.jpg" alt="Capa da carta ao pai">
                   <div class="contCard">
                       <div class="infosCards">
                           <p class="tituloCard">Carta ao pai</p>
@@ -161,17 +169,11 @@
       <div class="col-md-4">
         <ul class="list-inline">
           <li class="list-inline-item">
-            <a href="#">Sobre</a>
+            <a href="./pages/public/sobre.html">Sobre</a>
           </li>
           <li class="list-inline-item">
-            <a href="#">Contato</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Termos de uso</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Política de privacidade</a>
-          </li>
+            <a href="./pages/public/contato.html">Contato</a>
+
         </ul>
       </div>
       <div class="col-md-4">
@@ -185,5 +187,7 @@
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+z5v5s8I4Jbxcz2l2zCGpKJw5f5p5o5g7f5fn5+F5" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <div vw class="enabled">
+
     </body>
 </html>

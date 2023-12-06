@@ -30,8 +30,8 @@
 }
 
 .cardResul {
+    margin-top: 50px;
     width: 100%;
-    margin-top: 30px;
     height: 250px;
     background-color: #59aadd ;
 
@@ -52,7 +52,7 @@
 }
 
 .infosCardResul p{
-    margin: 0;
+    margin: 0 10px 0 0;
     height: auto;
 }
 
@@ -68,31 +68,8 @@
 
 .sinopse {
     width: 60%;
+    line-height: normal;
 }
 
-@media screen and (max-width: 420px) and (min-height: 320px)  {
-    
-  
-    #alteracaoLivros {
-      width: 100%;
-    }
-  
-    #coluna1,
-    #coluna2 {
-      width: 100%;
-    }
-  
-    #areaSinopse,
-    #areaResto {
-      width: 100%;
-    }
-  
-    #areaRestoBotoes {
-      grid-template-columns: 40% 40%;
-    }
-  
-    .btn {
-      width: 100px;
-    }
-  }
-  
+
+

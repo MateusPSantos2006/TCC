@@ -16,7 +16,7 @@ class ComposerStaticInit2dce1f6fb51812d60309d3d64dfc751c
     public static $prefixDirsPsr4 = array (
         'TCC\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/TCC2',
+            0 => __DIR__ . '/../..' . '/pastaphp',
         ),
     );
 

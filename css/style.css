@@ -9,7 +9,6 @@ section {
     width: 100%;
     height: auto;
     padding: 3vh 7% 4vh 7%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,40 +62,3 @@ section {
     margin: 0;
     text-align: center;
 }
-@media screen and (max-width: 420px) and (min-height: 320px) {
-    section {
-      padding: 3vh 2% 4vh 2%;
-    }
-  
-    .titulo {
-      font-size: 25px;
-    }
-  
-    .inputsArea {
-      flex-wrap: wrap;
-    }
-  
-    .textInput,
-    .formSubmit {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-  
-    .textInput {
-      margin-right: 0;
-    }
-  
-    .formSubmit {
-      width: 70px;
-      height: 35px;
-    }
-  
-    .alerta {
-      width: 100%;
-    }
-  
-    .alerta p {
-      font-size: 16px;
-    }
-  }
-  

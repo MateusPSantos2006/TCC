@@ -1,11 +1,7 @@
-<?php
-    require_once __DIR__ . "/../../vendor/autoload.php";
-?>
-
 <!doctype html>
 <html lang="pt-br">
   <head>
-    <title>Cadastro dos Livros</title>
+    <title>Cadastro dos Livro</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,9 +10,20 @@
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../../css/cadastroLivro.css">
     <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="shortcut icon" href="../../imagens/logo.png" type="image/x-icon">
 </head>
   <body>
     <header>
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget();
+  </script> 
         <a href="./principalLogado.php" class="linkHeader algoQueDeveServirComoLogo">
             <img src="../../imagens/logo.png" class="logo">
             <p>
@@ -26,14 +33,14 @@
         </a>
 
         <div class="navegacaoHeader">
-            <a href="http://"  target="_blank" class="linkHeader">
+        <a href="../public/manutenção.html"  target="_blank" class="linkHeader">
                 Sugestões dos professores
             </a>
             <a href="./explorarlogado.php" class="linkHeader">
                 Explorar
             </a>
             <a href="./cadastroLivros.php" class="linkHeader">
-                Cad. livros
+                ADM
             </a>
         </div>
     </header>
@@ -100,14 +107,13 @@
                         <button type="submit" class="btn btn-success">Confirmar</button> 
                         <button type="reset" class="btn btn-danger">Limpar</button>
                     </div>
-                </div>
-                
-            </div>
+                </div> 
+            </div>            
         </form>
     </section>
       
     
-<footer class="footer">
+    <footer class="footer">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
@@ -118,17 +124,11 @@
       <div class="col-md-4">
         <ul class="list-inline">
           <li class="list-inline-item">
-            <a href="#">Sobre</a>
+            <a href="./pages/public/sobre.html">Sobre</a>
           </li>
           <li class="list-inline-item">
             <a href="#">Contato</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Termos de uso</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Política de privacidade</a>
-          </li>
+
         </ul>
       </div>
       <div class="col-md-4">

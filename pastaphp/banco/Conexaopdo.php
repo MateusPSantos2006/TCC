@@ -1,7 +1,7 @@
 <?php    
-    namespace TCC\pastaphp\banco;
+    namespace TCC\banco;
     
-    class Conexaopdo {
+    class ConexaoPdo {
         private $host = "localhost";
         private $dbname = "biblioteca";
         private $user = "root";

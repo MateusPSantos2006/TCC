@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
-    <title>Explorar</title>
+    <title>Acervo digital - EE Benedito Calixto</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -9,21 +9,19 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../../css/buscaExplorar.css">
-    <link rel="shortcut icon" href="../../imagens/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/footer.css">
+    <link rel='stylesheet' id='styleContraste' href="css/style.css"   type='text/css' media='all' />
+    <script src="teste.js"></script>
+</head>
+
+
+<head>
+ 
+
+   
 </head>
   <body>
     <header>
-    <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget();
-  </script> 
         <a href="../../index.php" class="linkHeader algoQueDeveServirComoLogo">
             <img src="../../imagens/logo.png" class="logo">
             <p>
@@ -33,7 +31,7 @@
         </a>
 
         <div class="navegacaoHeader">
-            <a href="./manutenção.html"  target="_blank" class="linkHeader">
+            <a href="http://"  target="_blank" class="linkHeader">
                 Sugestões dos professores
             </a>
             <a href="./explorar.php" class="linkHeader">
@@ -66,10 +64,7 @@
             ?>
         </div>
     </section>
-   
-
-
-
+    
     <footer class="footer">
   <div class="container">
     <div class="row">
@@ -81,11 +76,17 @@
       <div class="col-md-4">
         <ul class="list-inline">
           <li class="list-inline-item">
-            <a href="./sobre.html">Sobre</a>
+            <a href="#">Sobre</a>
           </li>
           <li class="list-inline-item">
-            <a href="./contato.html">Contato</a>
-
+            <a href="#">Contato</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Termos de uso</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Política de privacidade</a>
+          </li>
         </ul>
       </div>
       <div class="col-md-4">

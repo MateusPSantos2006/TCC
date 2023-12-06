@@ -72,9 +72,9 @@
                             <p class='sinopse'> <span class='enfase'>Sinópse: </span><?=$objeto['sinopse']?></p>
                         </article>
                     </div>
-                    <div class='teste'>
-                        <button type='button' class='teste' data-valor='<?=$objeto['id']?>'>modificar</button>
-                        <button type='button' class='teste' data-valor='<?=$objeto['id']?>'>apagar</button>
+                    <div class='botoes'>
+                        <button type='button' class='btn btn-warning update ' data-valor='<?=$objeto['id']?>'>modificar</button>
+                        <button type='button' class='btn btn-danger apagar' data-valor='<?=$objeto['id']?>'>apagar</button>
                     </div>
                 </div>
                 <?php
@@ -105,9 +105,9 @@
                             <p class='sinopse'> <span class='enfase'>Sinópse: </span><?=$objeto['sinopse']?></p>
                         </article>
                     </div>
-                    <div class='teste'>
-                        <button type='button' class='teste' data-valor='<?=$objeto['id']?>'>modificar</button>
-                        <button type='button' class='teste' data-valor='<?=$objeto['id']?>'>apagar</button>
+                    <div class='botoes'>
+                        <button type='button' class='btn btn-warning update ' data-valor='<?=$objeto['id']?>'>modificar</button>
+                        <button type='button' class='btn btn-danger apagar' data-valor='<?=$objeto['id']?>'>apagar</button>
                     </div>
                 </div>
                 <?php

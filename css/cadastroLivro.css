@@ -99,39 +99,3 @@
     width: 150px;
     font-weight: 600;
 }
-@media screen and (max-width: 420px) and (min-height: 320px)  {
-    .titulo {
-        margin-bottom: 25px;
-    }
-
-    #cadastroLivro {
-        width: 100%; 
-        height: 100%;
-    }
-
-  
-    #coluna1,#coluna2 {
-        width: 100%;
-    }
-
-    #base {
-        margin-top: 15px;
-        justify-content: space-between;
-    }
-
-    #areaSinopse, #areaResto {
-        width: 100%; 
-
-    #sinopse {
-        border-radius: 0; 
-    }
-
-    #areaRestoBotoes {
-        margin-top: 30px;
-    }
-
-    .btn {
-        width: 100%; 
-    }
-}
-}

@@ -3,4 +3,6 @@
     use TCC\banco\crud\Ler;
 
     $dados = new Ler;
-    $retorno = $dados->
+    $retorno = $dados-> explorarTudo();
+
+    ?>
