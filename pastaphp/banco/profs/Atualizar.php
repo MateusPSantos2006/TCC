@@ -22,6 +22,23 @@
 
             $db=null;
         }
-    }
 
-    //necessário ver comportamento em execução
+        public function toggle(){
+            try {
+                $db = new ConexaoPdo;
+                $db = $db->conectar();
+    
+                $sql = "UPDATE profs 
+                SET ativo = :ativo
+                WHERE id = :idAlvo";
+                $stmt = $db->prepare($sql);
+                $stmt->bindParam(':ativo', $this->valoresNovos); 
+                $stmt->bindParam(':idAlvo', $this->idAlvo);
+                $stmt->execute();
+    
+                $db=null;
+            } catch (\Exception $erro) {
+                echo $erro;
+            }
+        }
+    }

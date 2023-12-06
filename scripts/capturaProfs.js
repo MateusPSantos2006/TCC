@@ -1,35 +1,23 @@
-$(".ativar").click(function(){
-    /*let idBd = $(this).data("valor");
+$(".toggle").click(function(){
+    let idBd = $(this).data("valor");
     $.ajax({
         type: "POST",
-        url: "../../pastaphp/operacoes/deleteProf.php",
+        url: "../../pastaphp/operacoes/toggleProf.php",
         data: {id: idBd},
         success: function(data) {
-            $("#areaCardResul").load("../../pastaphp/operacoes/readLivroADM.php");
+            $("#corpoTabela").load("../../pastaphp/operacoes/readProfs.php");
         }
-    });*/
-});
-
-$(".desativar").click(function(){
-    /*let idBd = $(this).data("valor");
-    $.ajax({
-        type: "POST",
-        url: "../../pastaphp/operacoes/deleteProf.php",
-        data: {id: idBd},
-        success: function(data) {
-            $("#areaCardResul").load("../../pastaphp/operacoes/readLivroADM.php");
-        }
-    });*/
+    });
 });
 
 $(".update").click(function(){
-    /*let idBd = $(this).data("valor");
+    let idBd = $(this).data("valor");
     $.ajax({
         type: "POST",
         url: "../../pastaphp/operacoes/idAlvo.php",
         data: {id: idBd},
         success: function(data) {
-            $("#buscasResul").load("./altLivro.php")
+            $("#buscasResul").load("./altLivro.php");
         }
-    })*/
+    });
 });

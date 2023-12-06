@@ -1,4 +1,5 @@
 <?php
+    require_once "../../vendor/autoload.php";
     use TCC\banco\profs\Ler;
 
     $leitura = new Ler;
@@ -23,8 +24,8 @@
                 <td><?=$placeholder3?></td>
                 <td><?=$placeholder1?></td>
                 <td>
-                    <button type='button' class='btn btn-primary update' data-valor='<?=$objeto['id']?>'>modificar</button>
-                    <button type='button' class='btn btn-warning <?=$placeholder2?>' data-valor='<?=$objeto['id']?>'><?=$placeholder2?></button>
+                    <button type='button' class='btn btn-primary update' data-valor='<?=$prof['id']?>'>modificar</button>
+                    <button type='button' class='btn btn-warning toggle' data-valor='<?=$prof['id']?>'><?=$placeholder2?></button>
                 </td>
             </tr>
         <?php

@@ -4,13 +4,12 @@
     use TCC\validacoes\Pesquisa;
 
     try {
+        $retorno = new Ler;
         if (isset($_GET['tipo']) && isset($_GET['dado'])) {
             $dadosPesquisa = new Pesquisa($_GET);
     
-            $retorno = new Ler;
             $retorno->explorarProcuraADM($dadosPesquisa->getTipoPesquisa(), $dadosPesquisa->getChavePesquisa());
         }else{
-            $retorno = new Ler;
             $retorno->explorarTudoADM();
         }
     } catch (\Exception $erro) {
