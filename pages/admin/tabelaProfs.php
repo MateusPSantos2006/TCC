@@ -37,12 +37,13 @@
                     </a>
                 </div>
         </header>
-        <div class="alerta">
-            <p>
-                Em caso de perda se senha, modifique os dados do usuário.
-            </p>
-        </div>
+
         <section id="secao">
+            <div class="alerta">
+                <p>
+                    Em caso de perda se senha, modifique os dados do usuário.
+                </p>
+            </div>
             <table class="table table-info table-bordered table-striped table-hover">
                 <thead>
                     <tr>

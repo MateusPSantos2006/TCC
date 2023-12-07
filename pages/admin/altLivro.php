@@ -5,6 +5,7 @@
     
     $dados = new Ler;
     $dadosAntigos = $dados->verDadosCru($_COOKIE["idAlvo"]);
+    setcookie("idAlvo", "", time() - 3600, "/");
 
     foreach ($dadosAntigos as $objeto) {
         $dispInd = "indisponivel";

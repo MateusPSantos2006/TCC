@@ -4,7 +4,6 @@
     use TCC\validacoes\LivroEdit as Livro;
 
     $dadosAlterados = new Livro ($_POST);
-    setcookie("idAlvo", "", time() - 3600, "/");
     $dadosAlterados->extras();
     $arquivo = $_FILES["capa"];
     if ($arquivo["name"] != null){
