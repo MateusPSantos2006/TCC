@@ -90,16 +90,16 @@ Aqui estão as atualizações semanais do projeto:
 | Semana 2 | 14/09/2023 | **Inspiração do Projeto** | Iniciada | 100% concluída |
 | Semana 3 | 19/09/2023 | **Cadastrodos Livros, Página de Sugestões dos Professores, Login dos Professores, Banco de Dados dos Livros** | Iniciada | 50% concluída |
 | Semana 4 | 20/09/2023 | **Prototipagem de Média-Alta Fidelidadeda Home Page, Seleção do Projeto Definitivo, Seleção da Paletas de Cores, Criação  do Slogan** | Iniciada | 100% concluída |
-| Semana 5 | 27/09/2023 | **Estrutura da Prototipagem de Média-Alta Fidelidade da Busca de Livro, Estrutura da Prototipagem de Média-Alta Fidelidade do Cadastro do Professor, Estrutura da Prototipagem de Média-Alta Fidelidade do Cadastro do Professor, Estrutura  da Prototipagem de Média-Alta Fidelidade do Login do Professor, Criação da Logo, Página  de Buscar de Livros, Documentação, Estrutura da Página de Busca  de Livros através da Utilização do Site https://whimsical.com para as Prototipagem** | Iniciada | 50% concluída |
+| Semana 5 | 27/09/2023 | **Estrutura da Prototipagem de Média-Alta Fidelidade da Busca de Livro, Estrutura da Prototipagem de Média-Alta Fidelidade do Cadastro do Professor, Estrutura da Prototipagem de Média-Alta Fidelidade do Cadastro do Professor, Estrutura  da Prototipagem de Média-Alta Fidelidade do Login do Professor, Criação da Logo, Página  de Buscar de Livros, Documentação, Estrutura da Página de Busca  de Livros através da Utilização do Site https://whimsical.com para as Prototipagem** | Iniciada | 100% concluída |
 | Semana 6 | 04/10/2023 | **Alterações de Divisões de Tarefas do Fron-end do Back-end e da Documentação** | Iniciada | 100% concluída |
 | Semana 7 | 10/10/2023 | **Página de Login dos Professores, Página de Cadastrado do Professores, Criação do Footer, Página de Alteração de Dados dos Livros** | Iniciada | 100% concluída |
 | Semana 8 | 17/10/2023 | **Ajustes no Back-and com Auxílio de um Pleno** | Iniciada | 50% concluída |
 | Semana 9 | 24/10/2023 | **Estrutura da Prototipagem de Alta Fidelidade de Todos as Pages através da Utilização do Site https://app.uizard.io, Teste do Back-End pra a busca de dados através do Front-End** | Iniciada | 100% concluída |
-| Semana 10 | 07/11/2023 | **Ajuste no Front-end em relação a  Responsividade do Site** | Iniciada | 75% concluída |
-| Semana 11 | 14/11/2023 | **Responsividade até o 360 x 640 (Modelo celular Motorola G4)  ** | Iniciada | 75% concluída |
+| Semana 10 | 07/11/2023 | **Ajuste no Front-end em relação a  Responsividade do Site** | Iniciada | 100% concluída |
+| Semana 11 | 14/11/2023 | **Responsividade até o 360 x 640 (Modelo celular Motorola G4)  ** | Iniciada | 100% concluída |
 | Semana 12 | 28/11/2023 | **Finalização da Documentação e do Apêndice do TCC** | Iniciada | 100% concluída |
-| Semana 10 | 00/00/2023 | **..................................** | Iniciada | 0% concluída |
-| Semana 10 | 00/00/2023 | **..................................** | Iniciada | 0% concluída |
+| Semana 13 | 07/12/2023 | **Ajustes Finais** | Iniciada | 100% concluída |
+| Semana 14 | 12/12/2023 | **Apresentação do TCC** | Iniciada | 100% concluída |
 
 
 **Conclusão** 🎉
