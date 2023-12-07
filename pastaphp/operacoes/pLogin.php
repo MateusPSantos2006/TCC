@@ -32,10 +32,12 @@
                     header('Location: ../../pages/admin/principalLogado.php'); 
                     exit();
                 } else {
-                    echo "erro no login 1: dados inválidos";
+                    header('Location: ../../pages/public/loginProf.php'); 
+                    exit();
                 }
             }else{
-                echo "erro no login 2: dados inválidos";
+                header('Location: ../../pages/public/loginProf.php'); 
+                exit();
             }
         } catch (Exception $erro) {
             echo "erro no login: " . $erro;

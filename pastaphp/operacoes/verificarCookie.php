@@ -10,8 +10,8 @@
         $dadosBD = new Ler;
         $leituraBD = $dadosBD->getProfsRA();
         foreach ($leituraBD as $prof) {
-            if ($cookie[0] == $prof[0] || password_verify($prof[1], $cookie[1])) {
-                $login = true;
+            if ($cookie[0] == $prof[0] && password_verify($prof[1], $cookie[1])) {
+                $login = $prof[2] == 1 ? true : false;
             }
         }
         if ($login == false) {
