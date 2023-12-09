@@ -1,8 +1,5 @@
 <?php
-    if (!isset($_POST["ra"]) || !isset($_POST["senha"]) || $_POST["ra"] == null || $_POST["senha"] == null) {
-        header('Location: ../../index.php'); 
-        exit(); 
-    }
+
     require_once "../../vendor/autoload.php";
     use TCC\validacoes\Profs;
     use TCC\banco\profs\Ler;

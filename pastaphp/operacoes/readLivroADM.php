@@ -1,8 +1,5 @@
 <?php
-    if (!isset($_SESSION["acesso"]) || $_SESSION["acesso"] != true) {
-        header('Location: ../../index.php'); 
-        exit(); 
-    }
+
     require_once "../../vendor/autoload.php";
     use TCC\banco\livros\Ler;
     use TCC\validacoes\Pesquisa;
@@ -17,8 +14,7 @@
             $retorno->explorarTudoADM();
         }
 
-        session_unset();
-        session_destroy();
+
     } catch (\Exception $erro) {
         echo $erro->getMessage();
     }

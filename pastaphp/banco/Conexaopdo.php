@@ -1,6 +1,9 @@
 <?php    
     namespace TCC\banco;
-
+    if (!isset($_SESSION["model"]) || $_SESSION["model"] != true) {
+        header('Location: ../../index.php'); 
+        exit(); 
+    }
     class ConexaoPdo {
         private $host = "localhost";
         private $dbname = "biblioteca";
