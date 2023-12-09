@@ -1,5 +1,6 @@
 <?php
     namespace TCC\banco\profs;
+    
     use TCC\banco\ConexaoPdo;
     use TCC\banco\abstratos\AbstractU as U;
 
