@@ -1,5 +1,5 @@
 <?php
-
+  session_start();
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -43,7 +43,7 @@
 
     <section id="recomendacoes">
         <?php
-
+        $_SESSION["acesso"] = true;
             include "../../pastaphp/operacoes/readPostADM.php";
         ?>
     </section>

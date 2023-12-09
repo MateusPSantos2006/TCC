@@ -1,9 +1,5 @@
 <?php
     namespace TCC\banco\profs;
-    if (!isset($_SESSION["model"]) || $_SESSION["model"] != true) {
-        header('Location: ../../index.php'); 
-        exit(); 
-    }
     use TCC\banco\ConexaoPdo;
 
     class Ler {

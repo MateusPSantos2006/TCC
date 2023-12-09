@@ -1,5 +1,8 @@
 <?php   
-
+    if (!isset($_POST["texto"]) || !isset($_POST["livroId"]) || $_POST["texto"] == null || $_POST["livroId"] == null) {
+        header('Location: ../../index.php'); 
+        exit(); 
+    }
     require_once "../../vendor/autoload.php";
     use TCC\validacoes\Comm;
     use TCC\banco\profs\Ler;
