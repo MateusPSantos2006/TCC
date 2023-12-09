@@ -3,6 +3,20 @@
     use TCC\banco\ConexaoPdo;
 
     class Ler {
+        public function getProfId(){
+            try{
+                $db = new ConexaoPdo;
+                $db = $db->conectar();
+    
+                $sql = "SELECT id FROM profs;";
+                $dados = $db->query($sql);
+                $db=null;
+    
+                return $dados;
+            } catch (\Exception $erro) {
+                echo "Erro 1 ao tentar logar";
+            }
+        }
         public function getProfsRA(){
             try{
                 $db = new ConexaoPdo;
