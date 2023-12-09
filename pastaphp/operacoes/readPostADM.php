@@ -1,4 +1,8 @@
 <?php
+    if (!isset($_SESSION["acesso"]) || $_SESSION["acesso"] != true) {
+        header('Location: ../../index.php'); 
+        exit(); 
+    }
     require_once "../../vendor/autoload.php";
     use TCC\banco\posts\Ler;
 
@@ -22,5 +26,7 @@
         </div>
         <?php
     }
+    session_unset();
+    session_destroy();
 
     //todos os cards devem ter botão para apagar

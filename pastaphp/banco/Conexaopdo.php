@@ -1,6 +1,6 @@
 <?php    
     namespace TCC\banco;
-    
+
     class ConexaoPdo {
         private $host = "localhost";
         private $dbname = "biblioteca";

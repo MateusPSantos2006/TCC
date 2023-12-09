@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -56,6 +59,7 @@
 
         <div id="areaCardResul">
             <?php
+                $_SESSION["acesso"] = true;
                 include "../../pastaphp/operacoes/readLivroADM.php";
             ?>
         </div>

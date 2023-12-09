@@ -15,8 +15,8 @@
     <form action="../../pastaphp/operacoes/createPosts.php" method="post" id="cadastroLivro">
         <div id="areaSinopse">
             <div class="input-group">
-                <label class="input-group-text" id="labelSinopse" for="sinopse" ></label>
-                <textarea class="form-control" required name="sinopse" rows="6" aria-label="With textarea" name="sinopse" placeholder="Escreva o porquê da recomendação"></textarea>
+                <label class="input-group-text" id="labelSinopse" for="texto" ></label>
+                <textarea class="form-control" required rows="6" aria-label="With textarea" name="texto" placeholder="Escreva o porquê da recomendação"></textarea>
             </div>
         </div>
         <input type="hidden" name="livroId" value="<?=$dadosLivro?>">
