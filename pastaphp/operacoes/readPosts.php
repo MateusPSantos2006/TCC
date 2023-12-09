@@ -1,4 +1,8 @@
 <?php
+    if (!isset($verificacao) || $verificacao != "readPosts") {
+        header('Location: ../../index.php'); 
+        exit(); 
+    }
     require_once "../../vendor/autoload.php";
     use TCC\banco\posts\Ler;
 

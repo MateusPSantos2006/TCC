@@ -1,5 +1,5 @@
 <?php
-
+  $verificacao = "readPostADM";
 ?>
 <!doctype html>
 <html lang="pt-br">

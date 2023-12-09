@@ -29,7 +29,7 @@
             </a>
 
             <div class="navegacaoHeader">
-                <a href="http://"  target="_blank" class="linkHeader">
+                <a href="./pages/public/sugestao.php" class="linkHeader">
                     Sugestões dos professores
                 </a>
                 <a href="./pages/public/explorar.php" class="linkHeader">

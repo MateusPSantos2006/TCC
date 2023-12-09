@@ -1,5 +1,5 @@
 <?php
-
+    $verificacao = "readProfs";
 ?>
 <!doctype html>
 <html lang="pt-br">
