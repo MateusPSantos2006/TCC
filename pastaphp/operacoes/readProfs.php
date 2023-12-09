@@ -1,8 +1,4 @@
 <?php
-    if (!isset($_SESSION["acesso"]) || $_SESSION["acesso"] != true) {
-        header('Location: ../../index.php'); 
-        exit(); 
-    }
     require_once "../../vendor/autoload.php";
     use TCC\banco\profs\Ler;
 
@@ -34,5 +30,3 @@
             </tr>
         <?php
     }
-    session_unset();
-    session_destroy();

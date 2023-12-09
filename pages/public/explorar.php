@@ -1,5 +1,5 @@
 <?php
-  session_start();
+
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -54,7 +54,7 @@
 
         <div id="areaCardResul">
             <?php
-                $_SESSION["acesso"] = true;
+
                 include "../../pastaphp/operacoes/readLivro.php";
             ?>
         </div>

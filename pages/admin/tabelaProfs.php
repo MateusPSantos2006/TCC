@@ -1,5 +1,5 @@
 <?php
-    session_start();
+
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -60,7 +60,7 @@
                 </thead>
                 <tbody id="corpoTabela">
                     <?php
-                        $_SESSION["acesso"] = true;
+
                         require_once "../../pastaphp/operacoes/readProfs.php"
                     ?>
                 </tbody>
