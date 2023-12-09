@@ -26,9 +26,9 @@
             </a>
 
             <div class="navegacaoHeader">
-                    <a href="http://"  target="_blank" class="linkHeader">
-                        Sugestões dos professores
-                    </a>
+                <a href="./sugestaoLogado.php"  target="_blank" class="linkHeader">
+                    Sugestões dos professores
+                </a>
                     <a href="./explorarlogado.php" class="linkHeader">
                         Explorar
                     </a>
