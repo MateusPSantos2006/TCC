@@ -8,7 +8,7 @@
     foreach ($dados as $algo) {
         ?>
         <div class="card">
-            <article class="texto">
+            <article class="artigo">
                 <div class="titulo">
                 <p><?= $algo[2]?>: <br><span><?= $algo[3]?></span></p>
                 <p><?= $algo[1]?></p>
@@ -18,6 +18,9 @@
             <div class="imagemEspaco">
                 <img src="../../imagens/capas/<?= $algo[4]?>" class="imagem" alt="">
             </div>
+            <img class="lixeira" data-valor='<?=$algo['id']?>' src="../../imagens/apagar.svg" alt="">
         </div>
         <?php
     }
+
+    //todos os cards devem ter botão para apagar

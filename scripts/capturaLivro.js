@@ -6,7 +6,7 @@ $(".apagar").click(function(){
         url: "../../pastaphp/operacoes/deleteLivro.php",
         data: {id: idBd},
         success: function(data) {
-            $("#areaCardResul").load("../../pastaphp/operacoes/readLivroADM.php");
+            location.reload();
         }
     });
 });

@@ -21,3 +21,5 @@
         </div>
         <?php
     }
+
+    //apenas o card com o id do professor deve ter botão de apagar

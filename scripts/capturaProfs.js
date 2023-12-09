@@ -5,7 +5,7 @@ $(".toggle").click(function(){
         url: "../../pastaphp/operacoes/toggleProf.php",
         data: {id: idBd},
         success: function(data) {
-            $("#corpoTabela").load("../../pastaphp/operacoes/readProfs.php");
+            location.reload();
         }
     });
 });

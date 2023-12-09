@@ -22,6 +22,9 @@
 
         $envio = new Inserir($dadosLivro);
         $envio->insert();
+
+        header('Location: ../../pages/admin/sugestaoLogado.php'); 
+        exit();
     } catch (Exception $erro) {
         echo $erro->getMessage();
     }
