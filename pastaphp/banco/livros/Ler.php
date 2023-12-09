@@ -38,6 +38,7 @@
                         <div class='botoes'>
                             <button type='button' class='btn btn-primary update' data-valor='<?=$objeto['id']?>'>modificar</button>
                             <button type='button' class='btn btn-danger apagar' data-valor='<?=$objeto['id']?>'>apagar</button>
+                            <button type="button" class="btn btn-primary recomendar" data-valor='<?=$objeto['id']?>'>recomendar</button>
                         </div>
                     </div>
                     <?php
@@ -75,6 +76,7 @@
                     <div class='botoes'>
                         <button type='button' class='btn btn-primary update' data-valor='<?=$objeto['id']?>'>modificar</button>
                         <button type='button' class='btn btn-danger apagar' data-valor='<?=$objeto['id']?>'>apagar</button>
+                        <button type="button" class="btn btn-primary recomendar" data-valor='<?=$objeto['id']?>'>recomendar</button>
                     </div>
                 </div>
                 <?php
@@ -108,6 +110,7 @@
                     <div class='botoes'>
                         <button type='button' class='btn btn-primary update' data-valor='<?=$objeto['id']?>'>modificar</button>
                         <button type='button' class='btn btn-danger apagar' data-valor='<?=$objeto['id']?>'>apagar</button>
+                        <button type="button" class="btn btn-primary recomendar" data-valor='<?=$objeto['id']?>'>recomendar</button>
                     </div>
                 </div>
                 <?php
