@@ -1,0 +1,12 @@
+{
+    "name": "mateuspsantos/tcc",
+    "description": "meu tcc com o Alyson",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "TCC\\": "pastaphp/"
+        }
+    },
+    "minimum-stability": "dev",
+    "license": "MIT"
+}
