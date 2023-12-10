@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
-    <title>Acervo digital - EE Benedito Calixto</title>
+    <title>Sugestões</title>
     <meta charset="UTF-8">
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../../css/sugestaoLogado.css">
     <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="shortcut icon" href="../../imagens/logo.png" type="image/x-icon">
 </head>
   <body>
   <?php
