@@ -30,7 +30,7 @@
         </a>
 
         <div class="navegacaoHeader">
-                <a href="./sugestaoLogado.php"  target="_blank" class="linkHeader">
+                <a href="./sugestaoLogado.php" class="linkHeader">
                     Sugestões dos professores
                 </a>
                 <a href="./explorarlogado.php" class="linkHeader">

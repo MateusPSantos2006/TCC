@@ -1,5 +1,5 @@
 <?php
-    if (!isset($acesso) || $acesso != "readPostADM") {
+    if (!isset($acesso) || $acesso != "readPostSelf") {
         header('Location: ../../index.php'); 
         exit(); 
     }
@@ -10,6 +10,7 @@
     $dados = $leitura -> getDadosPost();
     $aux = 0;
     foreach ($dados as $algo) {
+        if (password_verify($algo["idProf"], $_COOKIE["hash"])){
         ?>
         <div class="card">
             <article class="artigo">
@@ -26,12 +27,13 @@
         </div>
         <?php
         $aux++;
+        }
     }
     if($aux < 1) {
         ?>
             <div class="alerta">
                 <p>
-                    Não há livros recomendados no momento.
+                    Não há livros recomendados por você no momento.
                 </p>
             </div>
         <?php

@@ -31,9 +31,9 @@
     <p>Acervo Digital<br>
     Benedito Calixto</p></a>
     <div class="navegacaoHeader">
-                <a href="./sugestaoLogado.php"  target="_blank" class="linkHeader">
-                    Sugestões dos professores
-                </a>
+      <a href="./sugestaoLogado.php" class="linkHeader">
+          Sugestões dos professores
+      </a>
       <a href="./explorarlogado.php" class="linkHeader">
           Explorar
       </a>

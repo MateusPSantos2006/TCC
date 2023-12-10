@@ -26,7 +26,7 @@
             </a>
 
             <div class="navegacaoHeader">
-                <a href="./sugestaoLogado.php"  target="_blank" class="linkHeader">
+                <a href="./sugestaoLogado.php" class="linkHeader">
                     Sugestões dos professores
                 </a>
                 <a href="./explorarlogado.php" class="linkHeader">
@@ -37,30 +37,11 @@
                 </a>
             </div>
         </header>
-
-        <main>
-            <a href="http:./cadastroLivros.php">
-                <button>
-                    Adicionar livro
-                </button> 
-            </a>
-            <a href="http:./cadastroProfs.php">
-                <button>
-                    Adicionar professor
-                </button> 
-            </a>
-            <a href="http:./explorarlogado.php">
-                <button>
-                    Gerenciar livros
-                </button> 
-            </a>
-            <a href="http:./tabelaProfs.php">
-                <button>
-                    Gerenciar professores
-                </button> 
-            </a>
-        </main>    
-        
+          <?php
+          $verificacao = "gerenciamento";
+          $acesso = password_verify(1, $_COOKIE["tipo"]) ? "gerADM.php" : "gerProf.php";
+          require_once "./$acesso";
+          ?>
         <footer class="footer">
           <div class="container">
             <div class="row">

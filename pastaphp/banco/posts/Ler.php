@@ -8,7 +8,7 @@
                 $db = new ConexaoPdo;
                 $db = $db->conectar();
     
-                $sql = "SELECT texto, dataEnvio, nome, titulo, capa, posts.id 
+                $sql = "SELECT texto, dataEnvio, nome, titulo, capa, posts.id, idProf 
                 FROM posts
                 INNER JOIN profs ON posts.idProf = profs.id
                 INNER JOIN livros ON posts.idLivro = livros.id

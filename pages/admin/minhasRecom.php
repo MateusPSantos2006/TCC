@@ -40,8 +40,8 @@
 
     <section id="recomendacoes">
         <?php
-            $acesso = password_verify(1, $_COOKIE["tipo"]) ? "readPostADM" : "readPostProf";
-            include "../../pastaphp/operacoes/".$acesso.".php";
+            $acesso = "readPostSelf";
+            include "../../pastaphp/operacoes/readPostSelf.php";
         ?>
     </section>
     

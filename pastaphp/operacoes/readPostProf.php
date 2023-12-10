@@ -1,5 +1,5 @@
 <?php
-    if (!isset($verificacao) || $verificacao != "readPostProf") {
+    if (!isset($acesso) || $acesso != "readPostProf") {
         header('Location: ../../index.php'); 
         exit(); 
     }
@@ -8,7 +8,7 @@
 
     $leitura = new Ler;
     $dados = $leitura -> getDadosPost();
-
+    $aux = 0;
     foreach ($dados as $algo) {
         ?>
         <div class="card">
@@ -22,8 +22,23 @@
             <div class="imagemEspaco">
                 <img src="../../imagens/capas/<?= $algo[4]?>" class="imagem" alt="">
             </div>
+            <?php
+                if (password_verify($algo["idProf"], $_COOKIE["hash"])){
+                    ?>
+                    <img class="lixeira" data-valor='<?=$algo['id']?>' src="../../imagens/apagar.svg" alt="">
+                    <?php
+                }
+            ?>
         </div>
         <?php
+        $aux++;
     }
-
-    //apenas o card com o id do professor deve ter botão de apagar
+    if($aux < 1) {
+        ?>
+            <div class="alerta">
+                <p>
+                    Não há livros recomendados no momento.
+                </p>
+            </div>
+        <?php
+    }

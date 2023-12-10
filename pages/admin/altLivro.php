@@ -5,7 +5,6 @@
     }
     require_once "../../vendor/autoload.php";
     require_once "../../pastaphp/operacoes/verificarCookie.php";
-
     
     use TCC\banco\livros\Ler;
     $dados = new Ler;
