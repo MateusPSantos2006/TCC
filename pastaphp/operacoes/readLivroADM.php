@@ -78,7 +78,7 @@
             $retorno = new Ler;
             $leitura = $retorno->explorarTudo();
 
-            foreach ($leitura as $objeto) {
+            foreach ($leitura[0] as $objeto) {
                 ?>
                 <div class='livro'>
                     <div class='cardResul' id='<?=$objeto['id']?>'>
@@ -104,6 +104,8 @@
                 <?php
             }
         }
+
+        //A paginação vem aqui
     } catch (\Exception $erro) {
         echo $erro->getMessage();
     }

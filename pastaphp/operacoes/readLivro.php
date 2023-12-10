@@ -64,7 +64,7 @@
             $retorno = new Ler;
             $leitura = $retorno->explorarTudo();
 
-            foreach ($leitura as $objeto) {
+            foreach ($leitura[0] as $objeto) {
                 ?>
                 <div class='cardResul'>
                     <img src='../../imagens/capas/<?=$objeto['capa']?>' class="capa" alt='' >

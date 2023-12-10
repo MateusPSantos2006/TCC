@@ -13,16 +13,19 @@
             $stmt = $db->prepare($sql);
             $stmt->bindParam(':chave', $chave);
             $stmt->execute();
-
             $valores = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+
+            $sql = "SELECT COUNT(id) numero FROM livros;";
+            $total = $db->query($sql)->fetch()["numero"];
+
             if (!empty($valores)) {
                 $db=null;
-                return array($valores, true);
+                return array($valores, true, $total);
             }
             $sql = "SELECT * FROM livros;";
             $valores = $db->query($sql);
             $db=null;    
-            return array($valores, false);
+            return array($valores, false, $total);
         }
 
         public function explorarTudo(){
@@ -31,8 +34,12 @@
 
             $sql = "SELECT * FROM livros;";
             $valores = $db->query($sql);
+
+            $sql = "SELECT COUNT(id) numero FROM livros;";
+            $total = $db->query($sql)->fetch()["numero"];
+
             $db=null;
-            return $valores;
+            return array($valores, $total);
         }
 
         public function verDadosCru($id){
@@ -45,8 +52,8 @@
                 $stmt = $db->prepare($sql);
                 $stmt->bindParam(":chave", $id);
                 $stmt->execute();
-    
                 $valores = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+
                 $db=null;
                 return $valores;
             } catch (\PDOException $erro) {
