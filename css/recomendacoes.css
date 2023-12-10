@@ -4,7 +4,7 @@
 }
 
 .card {
-    width: 450px;
+    width: 950px;
     height: 320px;
     padding: 10px;
     margin: 0 10px 0 10px;
@@ -15,8 +15,7 @@
     flex-direction: row;
 }
 
-
-.card img{
+.card img {
     width: 45%;
 }
 
@@ -58,4 +57,27 @@
 .enfase {
     font-weight: 600;
     font-size: 18px;
+}
+
+
+@media screen and (max-width: 360px) {
+    .card {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 60%;
+        margin-left: 20%;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .tituloCard {
+        font-size: 20px;
+    }
 }

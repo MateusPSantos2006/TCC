@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/header.css">
   <link rel="stylesheet" href="../../css/cadastroProf.css">
+  <link rel="shortcut icon" href="../../imagens/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="../../css/footer.css">
 </head>
 <body>
@@ -25,6 +26,16 @@
     require_once "../../pastaphp/operacoes/verificarCookie.php";
   ?>
   <header>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget();
+    </script> 
     <a href="./principalLogado.php" class=
     "linkHeader algoQueDeveServirComoLogo"><img src="../../imagens/logo.png"
     class="logo">
@@ -75,29 +86,24 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <p>© 2023 Acervo Digital Benedito Calixto</p>
+          <p>
+            © 2023 Acervo Digital Benedito Calixto
+          </p>
         </div>
         <div class="col-md-4">
           <ul class="list-inline">
             <li class="list-inline-item">
-              <a href="#">Sobre</a>
+              <a href="./pages/public/sobre.html">Sobre</a>
             </li>
             <li class="list-inline-item">
               <a href="#">Contato</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">Termos de uso</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">Política de privacidade</a>
-            </li>
+  
           </ul>
         </div>
         <div class="col-md-4">
-          <p class="copyright">Desenvolvido por <a href=
-          "https://github.com/alysonsilvaprado">Alyson Silva Prado</a> e
-          <a href="https://github.com/mateuspinheirosantos">Mateus Pinheiro dos
-          Santos</a>.</p>
+          <p class="copyright">
+            Desenvolvido por <a href="https://github.com/AlysonSP">Alyson Silva Prado</a> e <a href="https://github.com/MateusPSantos2006">Mateus Pinheiro dos Santos</a>.
+          </p>
         </div>
       </div>
     </div>

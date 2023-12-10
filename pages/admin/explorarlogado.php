@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../../css/buscaExplorarADM.css">
     <link rel="stylesheet" href="../../css/alteracaoLivros.css">
+    <link rel="shortcut icon" href="../../imagens/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/footer.css">
 </head>
   <body>
@@ -21,6 +22,16 @@
     require_once "../../pastaphp/operacoes/verificarCookie.php";
   ?>
     <header>
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget();
+  </script> 
         <a href="./principalLogado.php" class="linkHeader algoQueDeveServirComoLogo">
             <img src="../../imagens/logo.png" class="logo">
             <p>
@@ -38,6 +49,8 @@
                 </a>
                 <a href="./gerenciar.php" class="linkHeader">
                     gerenciar
+                    <!--<a href="adm.html" class="linkHeader">
+                   ADM -->
                 </a>
             </div>
     </header>
@@ -59,7 +72,6 @@
 
         <div id="areaCardResul">
             <?php
-
                 include "../../pastaphp/operacoes/readLivroADM.php";
             ?>
         </div>
@@ -76,22 +88,16 @@
       <div class="col-md-4">
         <ul class="list-inline">
           <li class="list-inline-item">
-            <a href="#">Sobre</a>
+            <a href="./sobreLogado.html">Sobre</a>
           </li>
           <li class="list-inline-item">
-            <a href="#">Contato</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Termos de uso</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Política de privacidade</a>
-          </li>
+            <a href="./contatoLogado.html">Contato</a>
+
         </ul>
       </div>
       <div class="col-md-4">
         <p class="copyright">
-          Desenvolvido por <a href="https://github.com/alysonsilvaprado">Alyson Silva Prado</a> e <a href="https://github.com/mateuspinheirosantos">Mateus Pinheiro dos Santos</a>.
+          Desenvolvido por <a href="https://github.com/AlysonSP">Alyson Silva Prado</a> e <a href="https://github.com/MateusPSantos2006">Mateus Pinheiro dos Santos</a>.
         </p>
       </div>
     </div>
