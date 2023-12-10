@@ -15,17 +15,14 @@
             $stmt->execute();
             $valores = $stmt->fetchAll(\PDO::FETCH_ASSOC);
 
-            $sql = "SELECT COUNT(id) numero FROM livros;";
-            $total = $db->query($sql)->fetch()["numero"];
-
             if (!empty($valores)) {
                 $db=null;
-                return array($valores, true, $total);
+                return array($valores, true);
             }
             $sql = "SELECT * FROM livros;";
             $valores = $db->query($sql);
             $db=null;    
-            return array($valores, false, $total);
+            return array($valores, false);
         }
 
         public function explorarTudo(){
@@ -35,11 +32,8 @@
             $sql = "SELECT * FROM livros;";
             $valores = $db->query($sql);
 
-            $sql = "SELECT COUNT(id) numero FROM livros;";
-            $total = $db->query($sql)->fetch()["numero"];
-
             $db=null;
-            return array($valores, $total);
+            return $valores;
         }
 
         public function verDadosCru($id){
