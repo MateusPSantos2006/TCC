@@ -7,7 +7,6 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-right: 30%;
-    
 }
 
 .navegacaoHeader {
@@ -35,29 +34,3 @@ header {
 .algoQueDeveServirComoLogo p {
     margin: 0 0 0 10px;
 }
-
-
-@media screen and (max-width: 360px) {
-    header {
-        height: auto;
-        flex-direction: column;
-        padding: 10px 2% 10px 2%;
-    }
-
-    .navegacaoHeader {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .linkHeader {
-        font-size: 16px;
-    }
-
-    .logo {
-        height: 50px;
-        margin-bottom: 10px;
-    }
-}
-
-
-

@@ -22,7 +22,7 @@
                     ?>
                     <div class='livro'>
                         <div class='cardResul' id='<?=$objeto['id']?>'>
-                            <img src='../../imagens/capas/<?=$objeto['capa']?>' alt='' >
+                            <img src='../../imagens/capas/<?=$objeto['capa']?>' class="capa" alt='' >
                             <article class='infosCardResul'>
                                 <div class='infosCardDados'>
                                     <p> <span class='enfase'>Título: </span><?=$objeto['titulo']?></p>
@@ -60,7 +60,7 @@
                 ?>
                 <div class='livro'>
                     <div class='cardResul' id='<?=$objeto['id']?>'>
-                        <img src='../../imagens/capas/<?=$objeto['capa']?>' alt='' >
+                        <img src='../../imagens/capas/<?=$objeto['capa']?>' class="capa" alt='' >
                         <article class='infosCardResul'>
                             <div class='infosCardDados'>
                                 <p> <span class='enfase'>Título: </span><?=$objeto['titulo']?></p>
@@ -94,7 +94,7 @@
                 ?>
                 <div class='livro'>
                     <div class='cardResul' id='<?=$objeto['id']?>'>
-                        <img src='../../imagens/capas/<?=$objeto['capa']?>' alt='' >
+                        <img src='../../imagens/capas/<?=$objeto['capa']?>' class="capa" alt='' >
                         <article class='infosCardResul'>
                             <div class='infosCardDados'>
                                 <p> <span class='enfase'>Título: </span><?=$objeto['titulo']?></p>
@@ -132,7 +132,7 @@
                 foreach ($valores as $objeto) {
                     ?>
                     <div class='cardResul'>
-                    <img src='../../imagens/capas/<?=$objeto['capa']?>' alt='' >
+                    <img src='../../imagens/capas/<?=$objeto['capa']?>' class="capa" alt='' >
                         <article class='infosCardResul'>
                             <div class='infosCardDados'>
                                 <p> <span class='enfase'>Título:</span><?=$objeto['titulo']?></p>
@@ -163,7 +163,7 @@
             foreach ($valores as $objeto) {
                 ?>
                 <div class='cardResul'>
-                <img src='../../imagens/capas/<?=$objeto['capa']?>' alt='' >
+                <img src='../../imagens/capas/<?=$objeto['capa']?>' class="capa" alt='' >
                     <article class='infosCardResul'>
                         <div class='infosCardDados'>
                             <p> <span class='enfase'>Título:</span><?=$objeto['titulo']?></p>
@@ -190,7 +190,7 @@
             foreach ($valores as $objeto) {
                 ?>
                 <div class='cardResul'>
-                    <img src='../../imagens/capas/<?=$objeto['capa']?>' alt='' >
+                    <img src='../../imagens/capas/<?=$objeto['capa']?>' class="capa" alt='' >
                     <article class='infosCardResul'>
                         <div class='infosCardDados'>
                             <p> <span class='enfase'>Título:</span><?=$objeto['titulo']?></p>

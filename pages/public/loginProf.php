@@ -66,31 +66,31 @@
     </div>
   </div>
   <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <p>
-            © 2023 Acervo Digital Benedito Calixto
-          </p>
-        </div>
-        <div class="col-md-4">
-          <ul class="list-inline">
-            <li class="list-inline-item">
-              <a href="../public/sobre.html">Sobre</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="../public/contato.html">Contato</a>
-  
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <p class="copyright">
-            Desenvolvido por <a href="https://github.com/AlysonSP">Alyson Silva Prado</a> e <a href="https://github.com/MateusPSantos2006">Mateus Pinheiro dos Santos</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <p>
+                    © 2023 Acervo Digital Benedito Calixto
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a href="#">Sobre</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="./contato.html">Contato</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <p class="copyright">
+                    Desenvolvido por <a href="https://github.com/AlysonSP">Alyson Silva Prado</a> e <a href="https://github.com/MateusPSantos2006">Mateus Pinheiro dos Santos</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity=
   "sha384-KyZXEAg3QhqLMpG8r+Knujsl5+z5v5s8I4Jbxcz2l2zCGpKJw5f5p5o5g7f5fn5+F5"
   crossorigin="anonymous"></script>

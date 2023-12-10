@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -14,26 +13,39 @@
         <link rel="stylesheet" href="../../css/footer.css">
     </head>
     <body>
+    <?php
+    require_once "../../pastaphp/operacoes/verificarCookie.php";
+  ?>
+    <header>
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget();
+  </script> 
         <header>
-            <a href="../../index.php" class="linkHeader algoQueDeveServirComoLogo">
+          <a href="./principalLogado.php" class="linkHeader algoQueDeveServirComoLogo">
                 <img src="../../imagens/logo.png" class="logo">
                 <p>
                     Acervo Digital <br>
                     Benedito Calixto
                 </p>
             </a>
-
             <div class="navegacaoHeader">
-                <a href="./sugestao.php"  class="linkHeader">
-                    Sugestões dos professores
-                </a>
-                <a href="./explorar.php" class="linkHeader">
-                    Explorar
-                </a>
-                <a href="./loginProf.php" class="linkHeader">
-                    Login
-                </a>
-            </div>
+              <a href="./sugestaoLogado.php" class="linkHeader">
+                  Sugestões dos professores
+              </a>
+              <a href="./explorarlogado.php" class="linkHeader">
+                  Explorar
+              </a>
+              <a href="./gerenciar.php" class="linkHeader">
+                  gerenciar
+              </a>
+          </div>
           </header>
           <section>
             <div class="alguma-coisa card">
@@ -74,7 +86,7 @@
                       <a href="./sobre.html">Sobre</a>
                     </li>
                     <li class="list-inline-item">
-                      <a href="./contato.html">Contato</a>
+                      <a href="./contatoLogado.php">Contato</a>
                     </li>
                   </ul>
                 </div>

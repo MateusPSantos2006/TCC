@@ -54,27 +54,9 @@
 
         <main>
             <section id="inicio">
-                <div id="carrosel">
-                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="./imagens/1.png" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./imagens/2.png" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./imagens/3.png" class="d-block w-100" alt="...">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true" id="esquerda"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true" id="direita"></span>
-                        </button>
-                    </div>
-                </div>
+
+                <img src="./imagens/biblioteda.jpeg" class="d-block w-100" alt="...">
+                          
 
                 <form action="./pages/public/explorar.php" method="$_GET" id="pesquisa">
                     <h1 class="titulo">

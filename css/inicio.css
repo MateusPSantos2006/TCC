@@ -51,22 +51,3 @@ select.formInput {
     border-radius: 5px;
     margin-bottom: 8px;
 }
-
-
-@media screen and (max-width: 200px) {
-    #innerForm {
-        padding: 0;
-    }
-
-    button.formInput.formSubmit {
-        padding: 5px 5px;
-    }
-
-    input.formInput.textInput,
-    select.formInput {
-        padding: 5px;
-    }
-        
-}
-
-

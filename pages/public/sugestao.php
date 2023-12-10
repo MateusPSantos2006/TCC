@@ -45,37 +45,31 @@
     </section>
     
     <footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <p>
-          © 2023 Acervo Digital Benedito Calixto
-        </p>
-      </div>
-      <div class="col-md-4">
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="#">Sobre</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Contato</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Termos de uso</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Política de privacidade</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        <p class="copyright">
-          Desenvolvido por <a href="https://github.com/alysonsilvaprado">Alyson Silva Prado</a> e <a href="https://github.com/mateuspinheirosantos">Mateus Pinheiro dos Santos</a>.
-        </p>
-      </div>
-    </div>
-  </div>
-</footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <p>
+                    © 2023 Acervo Digital Benedito Calixto
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a href="#">Sobre</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="./contato.html">Contato</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <p class="copyright">
+                    Desenvolvido por <a href="https://github.com/AlysonSP">Alyson Silva Prado</a> e <a href="https://github.com/MateusPSantos2006">Mateus Pinheiro dos Santos</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="../../scripts/capturaPost.js"></script>

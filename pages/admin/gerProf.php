@@ -5,20 +5,18 @@
         exit(); 
     }
 ?>
-<main>
     <a href="http:./cadastroLivros.php">
-        <button>
+        <button class="acesso">
             Adicionar livro
         </button> 
     </a>
     <a href="http:./explorarlogado.php">
-        <button>
+        <button class="acesso">
             Gerenciar livros
         </button> 
     </a>
     <a href="http:./minhasRecom.php">
-        <button>
+        <button class="acesso">
             Ver suas recomendações
         </button> 
     </a>
-</main>  

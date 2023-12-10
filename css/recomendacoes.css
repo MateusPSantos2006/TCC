@@ -58,26 +58,3 @@
     font-weight: 600;
     font-size: 18px;
 }
-
-
-@media screen and (max-width: 360px) {
-    .card {
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-    }
-
-    .card img {
-        width: 60%;
-        margin-left: 20%;
-        text-align: center;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .tituloCard {
-        font-size: 20px;
-    }
-}
