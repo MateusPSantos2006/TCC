@@ -41,9 +41,6 @@
             return $total;
         }
 
-
-
-
         function explorarTudo($pagina){
             $limite = 5;
             $inicio = ($pagina * $limite) - $limite;
@@ -64,20 +61,17 @@
             $sql = "SELECT COUNT(id) numero FROM livros;";
             $total = $db->query($sql)->fetch()["numero"];
             $db=null;
-    
+            
             $total = ceil($total / 5);
             return $total;
         }
-
-
-
 
         public function verDadosCru($id){
             try {
                 $db = new ConexaoPdo;
                 $db = $db->conectar();
     
-                $sql = "SELECT * FROM livros where id = :chave";
+                $sql = "SELECT * FROM livros where id = :chave;";
     
                 $stmt = $db->prepare($sql);
                 $stmt->bindParam(":chave", $id);
@@ -86,6 +80,40 @@
 
                 $db=null;
                 return $valores;
+            } catch (\PDOException $erro) {
+                echo "Erro ao retornar os dados dos livros: $erro";
+            }
+        }
+
+        public function verTudoCru(){
+            try {
+                $db = new ConexaoPdo;
+                $db = $db->conectar();
+    
+                $sql = "SELECT * FROM livros;";
+                $valores = $db->query($sql)->fetchAll((\PDO::FETCH_ASSOC));
+
+                $db=null;
+                return $valores;
+            } catch (\PDOException $erro) {
+                echo "Erro ao retornar os dados dos livros: $erro";
+            }
+        }
+
+        public function getImagem($id){
+            try {
+                $db = new ConexaoPdo;
+                $db = $db->conectar();
+    
+                $sql = "SELECT capa FROM livros where id = :chave;";
+    
+                $stmt = $db->prepare($sql);
+                $stmt->bindParam(":chave", $id);
+                $stmt->execute();
+                $valor = $stmt->fetch();
+
+                $db=null;
+                return $valor;
             } catch (\PDOException $erro) {
                 echo "Erro ao retornar os dados dos livros: $erro";
             }

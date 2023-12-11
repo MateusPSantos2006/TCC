@@ -14,10 +14,10 @@
     </head>
     <body>
     <?php
-      if (isset($_COOKIE["ra"]) && isset($_COOKIE["senha"])) {
         require_once "./vendor/autoload.php";
-        require_once "./pastaphp/operacoes/loginCookie.php";
-      }
+        if (isset($_COOKIE["ra"]) && isset($_COOKIE["senha"])) {
+            require_once "./pastaphp/operacoes/loginCookie.php";
+        }
     ?>
         <header>
         <div vw class="enabled">
@@ -80,56 +80,16 @@
 
 <section id="recomendacoes" class="container">
     <p class="titulo">
-        Recomendações do dia
+        Talvez do seu interesse
     </p>
 
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-          <div class="carousel-item active">
-              <div class="card">
-                  <img src="./imagens/oProcesso.jpg" alt="">
-                  <div class="contCard">
-                      <div class="infosCards">
-                          <p class="tituloCard">O processo</p>
-                          <div class="tentativaEErro"> 
-                              <p class="innerClassInfos"><span class="enfase">Gênero</span><br> Não ficção</p>
-                              <p class="innerClassInfos"><span class="enfase">Autor</span><br> Kafka</p>
-                              <p class="innerClassInfos"><span class="enfase">Status</span><br> Disponível</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="carousel-item">
-              <div class="card">
-                  <img src="./imagens/artistaComFome.jpg" alt="capa do artista com fome">
-                  <div class="contCard">
-                      <div class="infosCards">
-                          <p class="tituloCard">Artista com fome</p>
-                          <div class="tentativaEErro"> 
-                              <p class="innerClassInfos"><span class="enfase">Gênero</span><br> Não ficção</p>
-                              <p class= "innerClassInfos"><span class="enfase">Autor</span><br> Kafka</p>
-                              <p class="innerClassInfos"><span class="enfase">Status</span><br> Disponível</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="carousel-item">
-              <div class="card">
-                  <img src="./imagens/cartaAoPai.jpg" alt="Capa da carta ao pai">
-                  <div class="contCard">
-                      <div class="infosCards">
-                          <p class="tituloCard">Carta ao pai</p>
-                          <div class="tentativaEErro"> 
-                              <p class="innerClassInfos"><span class="enfase">Gênero</span><br> Não ficção</p>
-                              <p class="innerClassInfos"><span class="enfase">Autor</span><br> Kafka</p>
-                              <p class="innerClassInfos"><span class="enfase">Status</span><br> Disponível</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
+        <?php
+            $verificacao = "randRecom";
+            $pag = "index";
+            require_once "./pastaphp/operacoes/randRecom.php";
+        ?>
       </div>
       <button class="carousel-control-prev carousel-control-dark" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>

@@ -8,6 +8,7 @@
             $db = new ConexaoPdo;
             $db = $db->conectar();
 
+            
             $sql = "DELETE FROM livros WHERE id = :idAlvo";
 
             $stmt = $db->prepare($sql);

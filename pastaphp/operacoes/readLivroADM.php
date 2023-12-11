@@ -9,6 +9,7 @@
 
     
     try {
+        
         $retorno = new Ler;
         if (isset($_GET['tipo']) && isset($_GET['dado'])) {
             $dadosPesquisa = new Pesquisa($_GET);
