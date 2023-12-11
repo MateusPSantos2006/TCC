@@ -28,7 +28,7 @@
   <script>
     new window.VLibras.Widget();
   </script> 
-        <a href="./principalLogado.php" class="linkHeader algoQueDeveServirComoLogo">
+        <a href="../../index.php" class="linkHeader algoQueDeveServirComoLogo">
             <img src="../../imagens/logo.png" class="logo">
             <p>
                 Acervo Digital <br>

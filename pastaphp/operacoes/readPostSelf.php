@@ -5,9 +5,19 @@
     }
     require_once "../../vendor/autoload.php";
     use TCC\banco\posts\Ler;
+    use TCC\banco\profs\Ler as IDs;
+
+    $leituraProfs = new IDs;
+    $todosProfsIds = $leituraProfs->getProfId();
+
+    foreach ($todosProfsIds as $idBanco){
+        if (password_verify($idBanco[0], $_COOKIE["hash"])) {
+            $idSelf = $idBanco[0];
+        }
+    }
 
     $leitura = new Ler;
-    $maximo = $leitura->getNumeroTotal();
+    $maximo = $leitura->getNumeroSelf($idSelf);
 
         if (isset($_GET["pagina"]) && $_GET["pagina"] != null){
             $entrada = filter_input(INPUT_GET, "pagina", FILTER_SANITIZE_NUMBER_INT);

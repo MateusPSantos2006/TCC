@@ -5,7 +5,7 @@
     class Ler {
         public function getDadosPost($pagina){
             try{
-                $limite = 5;
+                $limite = 4;
                 $inicio = ($pagina * $limite) - $limite;
 
                 $db = new ConexaoPdo;
@@ -33,8 +33,18 @@
             $total = $db->query($sql)->fetch()["numero"];
             $db=null;
     
-            $total = ceil($total / 5);
-
+            $total = ceil($total / 4);
+            return $total;
+        }
+        function getNumeroSelf($idSelf){
+            $db = new ConexaoPdo;
+            $db = $db->conectar();
+    
+            $sql = "SELECT COUNT(id) numero FROM posts WHERE idProf = $idSelf;";
+            $total = $db->query($sql)->fetch()["numero"];
+            $db=null;
+    
+            $total = ceil($total / 4);
             return $total;
         }
     }
