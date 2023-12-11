@@ -88,10 +88,10 @@
                 <div class="col-md-4">
                   <ul class="list-inline">
                     <li class="list-inline-item">
-                      <a href="./sobre.html">Sobre</a>
+                      <a href="./sobreLogado.php">Sobre o projeto</a>
                     </li>
                     <li class="list-inline-item">
-                      <a href="./contatoLogado.php">Contato</a>
+                      <a href="./contatoLogado.php">Meios de contato</a>
                     </li>
                   </ul>
                 </div>

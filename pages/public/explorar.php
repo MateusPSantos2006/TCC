@@ -83,14 +83,14 @@
             </p>
           </div>
           <div class="col-md-4">
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="#">Sobre</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="./contato.html">Contato</a>
-              </li>
-            </ul>
+          <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a href="./sobre.html">Sobre o projeto</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="./contato.html">Meios de contato</a>
+                    </li>
+                  </ul>
           </div>
           <div class="col-md-4">
             <p class="copyright">

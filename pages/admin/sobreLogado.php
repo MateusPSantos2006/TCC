@@ -1,4 +1,6 @@
-
+<?php
+require_once "../../pastaphp/operacoes/verificarCookie.php";
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -15,7 +17,7 @@
     </head>
     <body>
         <header>
-            <a href="../../index.php" class="linkHeader algoQueDeveServirComoLogo">
+            <a href="./principalLogado.php" class="linkHeader algoQueDeveServirComoLogo">
                 <img src="../../imagens/logo.png" class="logo">
                 <p>
                     Acervo Digital <br>
@@ -24,16 +26,17 @@
             </a>
 
             <div class="navegacaoHeader">
-              <a href="./sugestao.php"  class="linkHeader">
-                  Sugestões dos professores
-              </a>
-              <a href="./explorar.php" class="linkHeader">
-                  Explorar
-              </a>
-              <a href="./loginProf.php" class="linkHeader">
-                  Login
-              </a>
-          </div>
+                <a href="./sugestaoLogado.php" class="linkHeader">
+                    Sugestões dos professores
+                </a>
+                <a href="./explorarlogado.php" class="linkHeader">
+                    Explorar
+                </a>
+                <a href="./gerenciar.php" class="linkHeader">
+                    gerenciar
+                </a>
+            </div>
+            </div>
           </header>
 
           <section>
@@ -99,12 +102,12 @@
                   </p>
                 </div>
                 <div class="col-md-4">
-                  <ul class="list-inline">
+                <ul class="list-inline">
                     <li class="list-inline-item">
-                      <a href="./sobre.html">Sobre o projeto</a>
+                      <a href="./sobreLogado.php">Sobre o projeto</a>
                     </li>
                     <li class="list-inline-item">
-                      <a href="./contato.html">Meios de contato</a>
+                      <a href="./contatoLogado.php">Meios de contato</a>
                     </li>
                   </ul>
                 </div>
