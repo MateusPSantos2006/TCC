@@ -75,7 +75,7 @@
 
 <section id="recomendacoes" class="container">
     <p class="titulo">
-        Recomendações do dia
+      Talvez do seu interesse
     </p>
 
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">

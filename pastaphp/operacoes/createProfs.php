@@ -1,6 +1,6 @@
 <?php   
     if (!isset($_POST["adm"]) || !isset($_POST["RA"]) || $_POST["adm"] == null || $_POST["RA"] == null) {
-        header('Location: ../../index.php'); 
+        header('Location: ../public/erro.html'); 
         exit(); 
     } 
     require_once "../../vendor/autoload.php";
@@ -17,5 +17,6 @@
         header('Location: ../../pages/admin/tabelaProfs.php'); 
         exit();
     }catch (Exception $erro) {
-        echo $erro->getMessage();
+        header('Location: ../public/erro.html'); 
+        exit(); 
     }

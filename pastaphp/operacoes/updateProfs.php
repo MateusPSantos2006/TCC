@@ -1,6 +1,6 @@
 <?php
     if (!isset($_POST["adm"]) || !isset($_POST["ra"]) || $_POST["adm"] == null || $_POST["ra"] == null) {
-        header('Location: ../../index.php'); 
+        header('Location: ../public/erro.html'); 
         exit(); 
     }
     require_once "../../vendor/autoload.php";
@@ -19,7 +19,8 @@
         header('Location: ../../pages/admin/tabelaProfs.php'); 
         exit();
     } catch (PDOException $erro){
-        echo "erro na alteração: ".$erro;
+        header('Location: ../public/erro.html'); 
+        exit(); 
     }
 
 

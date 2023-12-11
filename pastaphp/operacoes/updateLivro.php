@@ -1,6 +1,6 @@
 <?php
     if (!isset($_POST["editora"]) || !isset($_POST["npags"]) || $_POST["editora"] == null || $_POST["npags"] == null) {
-        header('Location: ../../index.php'); 
+        header('Location: ../public/erro.html'); 
         exit(); 
     }
     require_once "../../vendor/autoload.php";
@@ -8,6 +8,7 @@
     use TCC\validacoes\LivroEdit as Livro;
     use TCC\banco\livros\Ler;
 
+    try {
     $dadosAlterados = new Livro ($_POST);
     $dadosAlterados->extras();
     $arquivo = $_FILES["capa"];
@@ -27,6 +28,10 @@
     $titulo = preg_replace("/ /", "+", $livro[1]);
     header('Location: ../../pages/admin/explorarLogado.php?dado='.$titulo.'&tipo=titulo'); 
     exit();
+}catch (Exception $erro){
+    header('Location: ../public/erro.html'); 
+    exit(); 
+}
 
 
 

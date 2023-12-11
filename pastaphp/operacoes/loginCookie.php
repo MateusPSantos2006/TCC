@@ -1,6 +1,6 @@
 <?php
     if (!isset($_COOKIE["ra"]) || !isset($_COOKIE["hash"]) || $_COOKIE["ra"] == null || $_COOKIE["hash"] == null) {
-        header('Location: ../../index.php'); 
+        header('Location: ../public/erro.html'); 
         exit(); 
     }
     use TCC\banco\profs\Ler;
@@ -25,5 +25,6 @@
             }
         } 
     }catch (Exception $erro) {
-        echo "$erro";
+        header('Location: ../public/erro.html'); 
+        exit(); 
     }

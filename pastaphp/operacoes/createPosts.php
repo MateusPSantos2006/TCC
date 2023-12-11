@@ -1,6 +1,6 @@
 <?php   
     if (!isset($_POST["texto"]) || !isset($_POST["livroId"]) || $_POST["texto"] == null || $_POST["livroId"] == null) {
-        header('Location: ../../index.php'); 
+        header('Location: ../public/erro.html'); 
         exit(); 
     }
     require_once "../../vendor/autoload.php";
@@ -30,6 +30,7 @@
         header('Location: ../../pages/admin/sugestaoLogado.php'); 
         exit();
     } catch (Exception $erro) {
-        echo $erro->getMessage();
+        header('Location: ../public/erro.html'); 
+        exit(); 
     }
     

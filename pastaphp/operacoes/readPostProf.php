@@ -1,12 +1,12 @@
 <?php
     if (!isset($acesso) || $acesso != "readPostProf") {
-        header('Location: ../../index.php'); 
+        header('Location: ../public/erro.html'); 
         exit(); 
     }
     require_once "../../vendor/autoload.php";
     use TCC\banco\posts\Ler;
 
-    
+    try {
     $leitura = new Ler;
     $maximo = $leitura->getNumeroTotal();
 
@@ -78,3 +78,7 @@
             </div>
         <?php
     }
+}catch (Exception $erro) {
+    header('Location: ../public/erro.html'); 
+    exit(); 
+}

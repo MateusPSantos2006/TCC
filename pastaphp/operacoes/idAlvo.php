@@ -1,6 +1,6 @@
 <?php
     if (!isset($_POST["id"]) || $_POST["id"] == null) {
-        header('Location: ../../index.php'); 
+        header('Location: ../public/erro.html'); 
         exit(); 
     }
     $idAlvo = $_POST["id"];

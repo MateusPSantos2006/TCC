@@ -1,6 +1,6 @@
 <?php    
     if (!isset($_COOKIE["ra"]) || !isset($_COOKIE["hash"]) || $_COOKIE["ra"] == null || $_COOKIE["hash"] == null) {
-        header('Location: ../../index.php'); 
+        header('Location: ../public/erro.html'); 
         exit(); 
     }
     require_once "../../vendor/autoload.php";
@@ -28,5 +28,6 @@
             exit();
         }
     } catch (Exception $erro) {
-        echo ($erro);
+        header('Location: ../public/erro.html'); 
+        exit(); 
     }

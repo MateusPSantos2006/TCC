@@ -1,6 +1,6 @@
 <?php
     if (!isset($_COOKIE["idAlvo"]) || is_int($_COOKIE["idAlvo"])) {
-      header('Location: ../../index.php'); 
+      header('Location: ../public/erro.html'); 
       exit(); 
     }
     require_once "../../vendor/autoload.php";

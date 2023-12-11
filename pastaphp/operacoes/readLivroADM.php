@@ -1,6 +1,6 @@
 <?php
     if (!isset($verificacao) || $verificacao != "readLivroADM") {
-        header('Location: ../../index.php'); 
+        header('Location: ../public/erro.html'); 
         exit(); 
     }
     require_once "../../vendor/autoload.php";
@@ -207,5 +207,6 @@
             <?php
         }
     } catch (\Exception $erro) {
-        echo $erro->getMessage();
+        header('Location: ../public/erro.html'); 
+        exit(); 
     }
