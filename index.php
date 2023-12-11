@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="./css/inicio.css">
         <link rel="stylesheet" href="./css/recomendacoes.css">
         <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/mediaQueries/indexesmq.css">
         <link rel="shortcut icon" href="./imagens/logo.png" type="image/x-icon">
     </head>
     <body>
