@@ -156,10 +156,10 @@
       <div class="col-md-4">
         <ul class="list-inline">
           <li class="list-inline-item">
-            <a href="./pages/public/sobre.html">Sobre</a>
+            <a href="./pages/public/sobre.html">Sobre o projeto</a>
           </li>
           <li class="list-inline-item">
-            <a href="./pages/public/contato.html">Contato</a>
+            <a href="./pages/public/contato.html">Meios de contato</a>
 
         </ul>
       </div>
@@ -175,6 +175,5 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+z5v5s8I4Jbxcz2l2zCGpKJw5f5p5o5g7f5fn5+F5" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <div vw class="enabled">
-
     </body>
 </html>

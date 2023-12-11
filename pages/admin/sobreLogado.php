@@ -16,6 +16,16 @@ require_once "../../pastaphp/operacoes/verificarCookie.php";
         <link rel="stylesheet" href="../../css/footer.css">
     </head>
     <body>
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget();
+  </script> 
         <header>
             <a href="./principalLogado.php" class="linkHeader algoQueDeveServirComoLogo">
                 <img src="../../imagens/logo.png" class="logo">
