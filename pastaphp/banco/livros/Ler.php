@@ -3,12 +3,14 @@
     use TCC\banco\ConexaoPdo;
 
     class Ler {
-        public function explorarProcura($tipo, $chave) {
+        public function explorarProcura($tipo, $chave, $pagina) {
             $chave = '%' . $chave . '%';
+            $limite = 5;
+            $inicio = ($pagina * $limite) - $limite;
             $db = new ConexaoPdo;
             $db = $db->conectar();
 
-            $sql = "SELECT * FROM livros where $tipo LIKE :chave";
+            $sql = "SELECT * FROM livros WHERE $tipo LIKE :chave LIMIT $inicio, $limite;";
 
             $stmt = $db->prepare($sql);
             $stmt->bindParam(':chave', $chave);
@@ -18,23 +20,57 @@
             if (!empty($valores)) {
                 $db=null;
                 return array($valores, true);
-            }
-            $sql = "SELECT * FROM livros;";
-            $valores = $db->query($sql);
-            $db=null;    
-            return array($valores, false);
+            }  
+            return array(null, false);
         }
 
-        public function explorarTudo(){
+        function getNumeroPesquisa($tipo, $chave){
+            $chave = '%' . $chave . '%';
             $db = new ConexaoPdo;
             $db = $db->conectar();
+    
+            $sql = "SELECT COUNT(id) numero FROM livros WHERE $tipo LIKE :chave;";
 
-            $sql = "SELECT * FROM livros;";
+            $stmt = $db->prepare($sql);
+            $stmt->bindParam(':chave', $chave);
+            $stmt->execute();
+            $total = $stmt->fetch()["numero"];
+            $db=null;
+    
+            $total = ceil($total / 5);
+            return $total;
+        }
+
+
+
+
+        function explorarTudo($pagina){
+            $limite = 5;
+            $inicio = ($pagina * $limite) - $limite;
+    
+            $db = new ConexaoPdo;
+            $db = $db->conectar();
+    
+            $sql = "SELECT * FROM livros LIMIT $inicio, $limite;";
             $valores = $db->query($sql);
-
             $db=null;
             return $valores;
         }
+
+        function getNumeroTotal(){
+            $db = new ConexaoPdo;
+            $db = $db->conectar();
+    
+            $sql = "SELECT COUNT(id) numero FROM livros;";
+            $total = $db->query($sql)->fetch()["numero"];
+            $db=null;
+    
+            $total = ceil($total / 5);
+            return $total;
+        }
+
+
+
 
         public function verDadosCru($id){
             try {
