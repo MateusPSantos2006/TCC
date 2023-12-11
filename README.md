@@ -30,9 +30,9 @@ O projeto será desenvolvido utilizando as seguintes tecnologias:
 O projeto está sendo desenvolvido por dois estudantes do 3° ano do NOVOTEC do E.E Benedito Calixto:
 
 
-*  [Alyson Silva Prado](https://github.com/alysonsilvaprado) 
+*  [Alyson Silva Prado](https://github.com/AlysonSP) 
 
-*  [Mateus Pinheiro Santos](https://github.com/mateuspinheirosantos) 
+*  [Mateus Pinheiro Santos](https://github.com/MateusPSantos2006) 
 
 
 ## **Benefícios** 🌟
@@ -76,7 +76,7 @@ O sucesso do projeto será medido por meio das seguintes métricas:
 *  Quantidade de recomendações de livros feitas pelos professores
   
   ****Requisitos funcionais e não funcionais**** ✅
-*  **https://docs.google.com/document/d/1CPzpDzHi_L22c_zXbPOuc6xitNCRhKA1YBzs_PFRPGA/edit?usp=sharing**
+*  **[Requisitos Funcionais e Não Funcionais do Site](https://docs.google.com/document/d/1CPzpDzHi_L22c_zXbPOuc6xitNCRhKA1YBzs_PFRPGA/edit?usp=sharing)**
   
 
 
