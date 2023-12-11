@@ -6,11 +6,17 @@
     require_once "../../vendor/autoload.php";
     use TCC\banco\livros\Atualizar;
     use TCC\validacoes\LivroEdit as Livro;
+    use TCC\banco\livros\Ler;
 
     $dadosAlterados = new Livro ($_POST);
     $dadosAlterados->extras();
     $arquivo = $_FILES["capa"];
     if ($arquivo["name"] != null){
+        $leitura = new Ler;
+        
+        $imagem = $leitura->getImagem($_POST["id"]);
+        unlink('../../imagens/capas/'.$imagem[0]);
+
         $dadosAlterados->setCapa($_FILES["capa"]);
     };
     $livro = $dadosAlterados->getDados();
