@@ -95,7 +95,7 @@ Aqui estão as atualizações semanais do projeto:
 | Semana 7 | 10/10/2023 | **Página de Login dos Professores, Página de Cadastrado do Professores, Criação do Footer, Página de Alteração de Dados dos Livros** | Iniciada | 100% concluída |
 | Semana 8 | 17/11/2023 | **Ajustes no Back-and com Auxílio de um Pleno** | Iniciada | 100% concluída |
 | Semana 9 | 11/11/2023 | **Revisão Final** | Iniciada | 100% concluída |
-| Semana 10 | 12/12/2023 | **Apresentação Final ** | Iniciada | 100% concluída |
+| Semana 10 | 12/12/2023 | **Apresentação Final** | Iniciada | 100% concluída |
 
 
 
