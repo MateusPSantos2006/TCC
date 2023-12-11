@@ -1,7 +1,7 @@
 <?php  
     require_once "../../pastaphp/operacoes/verificarCookie.php"; 
     if (!isset($verificacao) || $verificacao != "gerenciamento") {
-        header('Location: ../public/erro.html'); 
+        header('Location: ../../index.php'); 
         exit(); 
     }
 ?>

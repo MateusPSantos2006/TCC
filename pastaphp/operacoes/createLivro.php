@@ -1,6 +1,6 @@
 <?php  
     if (!isset($_POST["nomeLivro"]) || !isset($_POST["nomeAutor"]) || $_POST["nomeLivro"] == null || $_POST["nomeAutor"] == null) {
-        header('Location: ../public/erro.html'); 
+        header('Location: ../../index.php'); 
         exit(); 
     }
     
@@ -19,6 +19,5 @@
         header('Location: ../../pages/admin/explorarlogado.php'); 
         exit();
     } catch (\Exception $erro) {
-        header('Location: ../public/erro.html'); 
-        exit(); 
+        echo $erro->getMessage();
     }  

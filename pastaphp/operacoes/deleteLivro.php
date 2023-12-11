@@ -1,6 +1,6 @@
 <?php
     if (!isset($_POST["id"]) || $_POST["id"] == null) {
-        header('Location: ../public/erro.html'); 
+        header('Location: ../../index.php'); 
         exit(); 
     }
 
@@ -17,6 +17,5 @@
         $apagarDados = new Deletar ($_POST["id"]);
         $apagarDados -> delete();
     }catch (\Exception $erro) {
-        header('Location: ../public/erro.html'); 
-        exit(); 
+        echo $erro->getMessage();
     }

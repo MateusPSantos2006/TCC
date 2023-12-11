@@ -1,6 +1,6 @@
 <?php
     if (!isset($_POST["ra"]) || !isset($_POST["senha"]) || $_POST["ra"] == null || $_POST["senha"] == null) {
-        header('Location: ../public/erro.html'); 
+        header('Location: ../../index.php'); 
         exit(); 
     }
     require_once "../../vendor/autoload.php";

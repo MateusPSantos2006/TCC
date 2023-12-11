@@ -1,13 +1,12 @@
 <?php
     if (!isset($acesso) || $acesso != "readPostSelf") {
-        header('Location: ../public/erro.html'); 
+        header('Location: ../../index.php'); 
         exit(); 
     }
     require_once "../../vendor/autoload.php";
     use TCC\banco\posts\Ler;
     use TCC\banco\profs\Ler as IDs;
 
-    try {
     $leituraProfs = new IDs;
     $todosProfsIds = $leituraProfs->getProfId();
 
@@ -84,7 +83,3 @@
             </div>
         <?php
     }
-}catch (Exception $erro){
-    header('Location: ../public/erro.html'); 
-    exit(); 
-}

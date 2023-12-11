@@ -1,6 +1,6 @@
 <?php
     if (!isset($verificacao) || $verificacao != "readLivro") {
-        header('Location: ../public/erro.html'); 
+        header('Location: ../../index.php'); 
         exit(); 
     }
     require_once "../../vendor/autoload.php";
@@ -185,6 +185,5 @@
             <?php
         }
     } catch (\Exception $erro) {
-        header('Location: ../public/erro.html'); 
-        exit(); 
+        echo $erro->getMessage();
     }
