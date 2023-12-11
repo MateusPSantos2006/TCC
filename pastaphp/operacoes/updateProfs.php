@@ -1,8 +1,4 @@
 <?php
-    if (!isset($_POST["adm"]) || !isset($_POST["ra"]) || $_POST["adm"] == null || $_POST["ra"] == null) {
-        header('Location: ../../index.php'); 
-        exit(); 
-    }
     require_once "../../vendor/autoload.php";
     use TCC\banco\profs\Atualizar;
     use TCC\validacoes\ProfEdit as Prof;

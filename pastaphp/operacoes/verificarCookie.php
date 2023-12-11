@@ -1,8 +1,4 @@
 <?php    
-    if (!isset($_COOKIE["ra"]) || !isset($_COOKIE["hash"]) || $_COOKIE["ra"] == null || $_COOKIE["hash"] == null) {
-        header('Location: ../../index.php'); 
-        exit(); 
-    }
     require_once "../../vendor/autoload.php";
     use TCC\banco\profs\Ler;
 

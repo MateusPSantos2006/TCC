@@ -15,7 +15,6 @@
     </head>
     <body>
       <?php
-      require_once "../../pastaphp/operacoes/verificarCookie.php";
       ?>
         <header>
         <div vw class="enabled">

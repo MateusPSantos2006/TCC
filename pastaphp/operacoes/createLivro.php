@@ -1,9 +1,4 @@
 <?php  
-    if (!isset($_POST["nomeLivro"]) || !isset($_POST["nomeAutor"]) || $_POST["nomeLivro"] == null || $_POST["nomeAutor"] == null) {
-        header('Location: ../../index.php'); 
-        exit(); 
-    }
-    
     require_once "../../vendor/autoload.php";
     use TCC\validacoes\Livro;
     use TCC\banco\livros\Inserir;

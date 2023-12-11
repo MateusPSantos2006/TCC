@@ -1,8 +1,4 @@
 <?php   
-    if (!isset($_POST["adm"]) || !isset($_POST["RA"]) || $_POST["adm"] == null || $_POST["RA"] == null) {
-        header('Location: ../../index.php'); 
-        exit(); 
-    } 
     require_once "../../vendor/autoload.php";
     use TCC\validacoes\Profs;
     use TCC\banco\profs\Inserir;

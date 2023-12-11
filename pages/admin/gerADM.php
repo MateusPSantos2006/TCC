@@ -1,9 +1,4 @@
 <?php  
-    require_once "../../pastaphp/operacoes/verificarCookie.php"; 
-    if (!isset($verificacao) || $verificacao != "gerenciamento") {
-        header('Location: ../../index.php'); 
-        exit(); 
-    }
 ?>
     <a href="http:./cadastroLivros.php">
         <button class="acesso">
