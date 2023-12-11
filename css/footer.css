@@ -1,0 +1,40 @@
+footer {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 20px 0;
+  align-items: center;
+  border-top: 1px solid #fff;
+  text-align: center;
+  position:static;
+  bottom: 0;
+}
+
+footer .container {
+  width: 100%;
+  margin-top: 250px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer p.copyright {
+  font-size: 12px;
+}
+
+footer a {
+text-decoration: none;
+  color:gray
+}
