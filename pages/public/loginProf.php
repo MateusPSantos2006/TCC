@@ -50,6 +50,17 @@
       <a href="./loginProf.html" class="linkHeader">Login</a>
     </div>
   </header>
+  <div class="mobile-menu">
+                <a href="./sugestao.php" class="linkHeader">
+                    Sugestões dos professores
+                </a>
+                <a href="./explorar.php" class="linkHeader">
+                    Explorar
+                </a>
+                <a href="./loginProf.php" class="linkHeader">
+                Login
+                </a>
+          </div>
   <div class="quase-tudo">
     <div class="wrapper">
       <form action="../../pastaphp/operacoes/pLogin.php" method="post">

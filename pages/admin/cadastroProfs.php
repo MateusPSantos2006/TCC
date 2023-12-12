@@ -54,6 +54,17 @@
       </a>
   </div>
   </header>
+  <div class="mobile-menu">
+                <a href="./sugestaoLogado.php" class="linkHeader">
+                    Sugestões dos professores
+                </a>
+                <a href="./explorarlogado.php" class="linkHeader">
+                    Explorar
+                </a>
+                <a href="./gerenciar.php" class="linkHeader">
+                    gerenciar
+                </a>
+          </div>
   <div class="quase-tudo">
     <div class="wrapper">
       <form action="../../pastaphp/operacoes/createProfs.php" method="post" >

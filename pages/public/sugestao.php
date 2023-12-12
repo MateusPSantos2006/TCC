@@ -49,6 +49,17 @@
                 </a>
             </div>
     </header>
+    <div class="mobile-menu">
+                <a href="./sugestao.php" class="linkHeader">
+                    Sugestões dos professores
+                </a>
+                <a href="./explorar.php" class="linkHeader">
+                    Explorar
+                </a>
+                <a href="./loginProf.php" class="linkHeader">
+                Login
+                </a>
+          </div> 
 
     <section id="recomendacoes">
         <?php

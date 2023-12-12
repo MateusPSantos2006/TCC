@@ -48,6 +48,17 @@
               </a>
           </div>
           </header>
+          <div class="mobile-menu">
+                <a href="./sugestaoLogado.php" class="linkHeader">
+                    Sugestões dos professores
+                </a>
+                <a href="./explorarlogado.php" class="linkHeader">
+                    Explorar
+                </a>
+                <a href="./gerenciar.php" class="linkHeader">
+                    gerenciar
+                </a>
+          </div>
           <section>
             <div class="alguma-coisa card">
               <h1>Contato</h1>
