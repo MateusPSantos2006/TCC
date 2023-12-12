@@ -1,3 +1,7 @@
+<?php
+    require_once "../../pastaphp/operacoes/verificarCookie.php";
+  ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -14,21 +18,7 @@
         <link rel="stylesheet" href="../../css/mediaQueries/contatomq.css">
     </head>
     <body>
-    <?php
-    require_once "../../pastaphp/operacoes/verificarCookie.php";
-  ?>
     <header>
-    <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget();
-  </script> 
-        <header>
           <a href="./principalLogado.php" class="linkHeader algoQueDeveServirComoLogo">
                 <img src="../../imagens/logo.png" class="logo">
                 <p>
@@ -48,6 +38,16 @@
               </a>
           </div>
           </header>
+          <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget();
+          </script> 
           <div class="mobile-menu">
                 <a href="./sugestaoLogado.php" class="linkHeader">
                     Sugestões dos professores
@@ -93,12 +93,12 @@
                   </p>
                 </div>
                 <div class="col-md-4">
-                <ul class="list-inline">
+                  <ul class="list-inline">
                     <li class="list-inline-item">
-                      <a href="./sobreLogado.php">Sobre o projeto</a>
+                      <a href="./sobre.html">Sobre o projeto</a>
                     </li>
                     <li class="list-inline-item">
-                      <a href="./contatoLogado.php">Meios de contato</a>
+                      <a href="./contato.html">Meios de contato</a>
                     </li>
                   </ul>
                 </div>
