@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../../css/buscaExplorar.css">
     <link rel="shortcut icon" href="../../imagens/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/mediaQueries/explorarmq.css">
   </head>
   <body>
     <header>

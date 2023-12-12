@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../../css/sugestaoLogado.css">
     <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/mediaQueries/recommq.css">
     <link rel="shortcut icon" href="../../imagens/logo.png" type="image/x-icon">
 </head>
   <body>

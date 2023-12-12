@@ -1,27 +1,12 @@
-@media screen and (max-width:1200px){
-
-}
-
-@media screen and (max-width:1024px){
-
-}
-
 @media screen and (max-width:900px){
-
+    #secoes {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:768px){
-
-}
-
-@media screen and (max-width:600px){
-
-}
-
-@media screen and (max-width:480px){
-
-}
-
-@media screen and (max-width:320px){
-
+    .acesso {
+        width: 170px;
+        font-size: 18px;
+    }
 }

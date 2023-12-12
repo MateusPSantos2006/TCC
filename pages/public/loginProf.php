@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="../../css/loginProf.css">
   <link rel="shortcut icon" href="../../imagens/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="../../css/footer.css">
+  <link rel="stylesheet" href="../../css/mediaQueries/loginprofmq.css">
 </head>
 <body>
   <?php

@@ -14,6 +14,7 @@ require_once "../../pastaphp/operacoes/verificarCookie.php";
         <link rel="stylesheet" href="../../css/sobre.css  ">
         <link rel="shortcut icon" href="../../imagens/logo.png" type="image/x-icon">
         <link rel="stylesheet" href="../../css/footer.css">
+        <link rel="stylesheet" href="../../css/mediaQueries/sobremq.css">
     </head>
     <body>
     <div vw class="enabled">
@@ -72,7 +73,7 @@ require_once "../../pastaphp/operacoes/verificarCookie.php";
                   <article class="texto">
                     <p>Nós somos Alyson e Mateus, estudantes do 3º ano do Novo Ensino Médio Integrado ao Técnico (NOVOTEC), e nossa paixão pela tecnologia nos levou a aprender programação, desenvolvimento de sites e aplicativos. </p>
                     <p>Nesse curso técnico, aprofundamos nossos conhecimentos em desenvolvimento web, preparando-nos para o mercado de trabalho e para prosseguir nossos estudos na área de tecnologia. </p>
-                    <p>Após concluir o NOVOTEC, decidimos estudar Análise e Desenvolvimento de Sistemas (ADS) na faculdade, acreditando que essa formação é essencial para nos tornarmos profissionais altamente qualificados.</p>
+                    <p class="descarte">Após concluir o NOVOTEC, decidimos estudar Análise e Desenvolvimento de Sistemas (ADS) na faculdade, acreditando que essa formação é essencial para nos tornarmos profissionais altamente qualificados.</p>
                   </article>
                   </div>
                 </div>
@@ -84,7 +85,7 @@ require_once "../../pastaphp/operacoes/verificarCookie.php";
                     <article class="texto">
                       <p>A sala de leitura desempenha um papel crucial na promoção da leitura e aprendizado, mas a dificuldade em acessar rapidamente informações sobre os livros disponíveis representa um obstáculo significativo.</p>
                       <p>Sem uma solução adequada, os leitores precisam inconvenientemente procurar entre centenas, se não milhares, de livros na mesma sessão para achar o livro desejado, e ainda com o risco do estar indisponível, ou ainda pior, nem existir na sala de leitura.</p>
-                      <p>Além disso, a falta de informações detalhadas, como autor, tema e sinópse, pode dificultar a escolha de leitura.</p>
+                      <p class="descarte">Além disso, a falta de informações detalhadas, como autor, tema e sinópse, pode dificultar a escolha de leitura.</p>
                     </article>
                     </div>
                   </div>

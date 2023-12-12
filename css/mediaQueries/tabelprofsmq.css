@@ -1,9 +1,13 @@
-@media screen and (max-width:1200px){
-
+@media screen and (max-width:1921px){
+    .toggle{
+        width: 90px;
+    }
 }
 
-@media screen and (max-width:1024px){
-
+@media screen and (max-width:973px){
+    .acoes{
+        width: 100px;
+    }
 }
 
 @media screen and (max-width:900px){

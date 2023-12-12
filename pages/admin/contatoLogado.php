@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="../../css/contato.css">
         <link rel="shortcut icon" href="../../imagens/logo.png" type="image/x-icon">
         <link rel="stylesheet" href="../../css/footer.css">
+        <link rel="stylesheet" href="../../css/mediaQueries/contatomq.css">
     </head>
     <body>
     <?php

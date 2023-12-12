@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../css/sugestaoLogado.css">
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="shortcut icon" href="../../imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/mediaQueries/recommq.css">
 </head>
   <body>
   <?php

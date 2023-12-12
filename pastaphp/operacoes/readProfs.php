@@ -27,7 +27,7 @@
                 <td><?=$prof["ra"]?></td>
                 <td><?=$placeholder3?></td>
                 <td><?=$placeholder1?></td>
-                <td>
+                <td class="acoes">
                     <button type='button' class='btn btn-primary update' data-valor='<?=$prof['id']?>'>modificar</button>
                     <button type='button' class='btn btn-warning toggle' data-valor='<?=$prof['id']?>'><?=$placeholder2?></button>
                 </td>

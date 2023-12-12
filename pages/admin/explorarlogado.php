@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../../css/alteracaoLivros.css">
     <link rel="shortcut icon" href="../../imagens/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/mediaQueries/exploraradmmq.css">
 </head>
   <body>
   <?php

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../../css/cadastroProf.css">
     <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/mediaQueries/tabelprofsmq.css">
 </head>
     <body>
         <?php
@@ -65,7 +66,7 @@
                         <th scope="col">RA</th>
                         <th scope="col">ADM</th>
                         <th scope="col">Ativo</th>
-                        <th scope="col">Ações</th>
+                        <th scope="col" class="acoes">Ações</th>
                     </tr>
                 </thead>
                 <tbody id="corpoTabela">

@@ -1,27 +1,34 @@
-#recomendacoes{
-    align-items:flex-start;
-    padding-left: 19%;
+.recomendacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+section {
+    align-items: flex-start;
 }
 
 .card {
-    width: 700px;
+    background-color: #59aadd;
+    height: 277px;
+    width:65vw;
     margin: 20px 0 20px 0;
-    height: 100%;
-    background-color: #59aadd ;
 
     display: grid;
-    align-content: center;
-    grid-template-columns: 85% 15% 5%;
+    grid-template-columns: 75% 15% 5%;
 }
 
-.artigo {
-    height: 100%;
+.artigo{
+    width: 100%;
+}
+
+.texto {
     padding:15px 15px 0px 15px;
     margin: 0;
-
 }
 
 .titulo {
+    padding: 0 10px 0 10px;
     margin: 0;
     font-size: 18px;
     text-align: left;
@@ -41,7 +48,6 @@ p {
 .imagem {
     height: 277px;
 }
-
 .lixeira {
     margin-left: 90px;
     margin-top: 130px;

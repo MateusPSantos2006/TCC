@@ -1,21 +1,40 @@
-@media screen and (max-width:1200px){
-
+@media screen and (max-width:1920px){
+    .card{
+        grid-template-columns: 85% 15% 5%;
+    }
 }
 
-@media screen and (max-width:1024px){
-
+@media screen and (max-width:1074px){
+    .lixeira {
+        margin-left: 120px;
+    }
 }
 
-@media screen and (max-width:900px){
-
+@media screen and (max-width:800px){
+    .lixeira {
+        margin-left: 140px;
+    }
 }
 
 @media screen and (max-width:768px){
-
+    .card{
+        height:250px;
+    }
+    .imagem{
+        height:250px;
+    }
+    .lixeira {
+        margin-left: 120px;
+    }
 }
 
 @media screen and (max-width:600px){
-
+    .titulo{
+        font-size: 15px;
+    }
+    .texto{
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width:480px){

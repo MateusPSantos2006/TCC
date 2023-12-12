@@ -1,27 +1,20 @@
-@media screen and (max-width:1200px){
-
+@media screen and (max-width:1075px){
+    .descarte{
+        display: none;
+    }
 }
 
-@media screen and (max-width:1024px){
-
+@media screen and (max-width:850px){
+    .imagem{
+        width: 300px;
+    }
+    section p {
+        font-size: 16px;
+    }
 }
 
-@media screen and (max-width:900px){
-
-}
-
-@media screen and (max-width:768px){
-
-}
-
-@media screen and (max-width:600px){
-
-}
-
-@media screen and (max-width:480px){
-
-}
-
-@media screen and (max-width:320px){
-
+@media screen and (max-width:740px){
+    .imagem{
+        display: none;
+    }
 }
