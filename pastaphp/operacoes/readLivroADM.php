@@ -1,4 +1,8 @@
 <?php
+    if (!isset($verificacao) || $verificacao != "readLivroADM") {
+        header('Location: ../../index.php'); 
+        exit(); 
+    }
     require_once "../../vendor/autoload.php";
     use TCC\banco\livros\Ler;
     use TCC\validacoes\Pesquisa;
@@ -12,6 +16,7 @@
         }else{
             $retorno->explorarTudoADM();
         }
+
     } catch (\Exception $erro) {
         echo $erro->getMessage();
     }

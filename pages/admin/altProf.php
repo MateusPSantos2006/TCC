@@ -1,4 +1,8 @@
 <?php
+    if (!isset($_COOKIE["idAlvo"]) || is_int($_COOKIE["idAlvo"])) {
+      header('Location: ../../index.php'); 
+      exit(); 
+    }
     require_once "../../vendor/autoload.php";
     require_once "../../pastaphp/operacoes/verificarCookie.php";
     use TCC\banco\profs\Ler;

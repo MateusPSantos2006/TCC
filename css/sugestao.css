@@ -1,0 +1,42 @@
+.recomendacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 277px;
+    width: 800px;
+    margin: 20px 0 20px 0;
+
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+
+.texto {
+    background-color: #59aadd ;
+    padding:15px 15px 0px 15px;
+    margin: 0;
+}
+
+.titulo {
+    margin: 0;
+    font-size: 18px;
+    text-align: left;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    margin: 0;
+}
+
+.titulo span {
+    font-weight: 800;
+}
+
+.imagem {
+    height: 277px;
+}

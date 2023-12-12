@@ -1,4 +1,8 @@
 <?php
+    if (!isset($_POST["ra"]) || !isset($_POST["senha"]) || $_POST["ra"] == null || $_POST["senha"] == null) {
+        header('Location: ../../index.php'); 
+        exit(); 
+    }
     require_once "../../vendor/autoload.php";
     use TCC\validacoes\Profs;
     use TCC\banco\profs\Ler;
@@ -32,10 +36,20 @@
                     header('Location: ../../pages/admin/principalLogado.php'); 
                     exit();
                 } else {
+                    setcookie("ra", "", time() - 3600, "/");
+                    setcookie("senha", "", time() - 3600, "/");
+                    setcookie("hash", "", time() - 3600, "/");
+                    setcookie("tipo", "", time() - 3600, "/");
+                    setcookie("idAlvo", "", time() - 3600, "/");
                     header('Location: ../../pages/public/loginProf.php'); 
                     exit();
                 }
             }else{
+                setcookie("ra", "", time() - 3600, "/");
+                setcookie("senha", "", time() - 3600, "/");
+                setcookie("hash", "", time() - 3600, "/");
+                setcookie("tipo", "", time() - 3600, "/");
+                setcookie("idAlvo", "", time() - 3600, "/");
                 header('Location: ../../pages/public/loginProf.php'); 
                 exit();
             }

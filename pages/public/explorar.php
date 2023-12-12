@@ -1,3 +1,6 @@
+<?php
+  $verificacao = "readLivro";
+?>
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -22,7 +25,7 @@
         </a>
 
         <div class="navegacaoHeader">
-            <a href="http://"  target="_blank" class="linkHeader">
+            <a href="./sugestao.php"  class="linkHeader">
                 Sugestões dos professores
             </a>
             <a href="./explorar.php" class="linkHeader">
@@ -51,6 +54,7 @@
 
         <div id="areaCardResul">
             <?php
+
                 include "../../pastaphp/operacoes/readLivro.php";
             ?>
         </div>

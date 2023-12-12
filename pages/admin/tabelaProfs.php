@@ -1,3 +1,6 @@
+<?php
+    $verificacao = "readProfs";
+?>
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -26,9 +29,9 @@
             </a>
 
             <div class="navegacaoHeader">
-                    <a href="http://"  target="_blank" class="linkHeader">
-                        Sugestões dos professores
-                    </a>
+                <a href="./sugestaoLogado.php" class="linkHeader">
+                    Sugestões dos professores
+                </a>
                     <a href="./explorarlogado.php" class="linkHeader">
                         Explorar
                     </a>
@@ -57,6 +60,7 @@
                 </thead>
                 <tbody id="corpoTabela">
                     <?php
+
                         require_once "../../pastaphp/operacoes/readProfs.php"
                     ?>
                 </tbody>

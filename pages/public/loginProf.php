@@ -33,7 +33,7 @@
     <p>Acervo Digital<br>
     Benedito Calixto</p></a>
     <div class="navegacaoHeader">
-      <a href="http://" target="_blank" class="linkHeader">Sugestões dos
+      <a href="./sugestao.php" class="linkHeader">Sugestões dos
       professores</a> <a href="./explorar.php" class="linkHeader">Explorar</a>
       <a href="./loginProf.html" class="linkHeader">Login</a>
     </div>

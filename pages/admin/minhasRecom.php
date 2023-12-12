@@ -1,6 +1,3 @@
-<?php
-  $verificacao = "readLivroADM";
-?>
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -12,8 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/header.css">
-    <link rel="stylesheet" href="../../css/buscaExplorarADM.css">
-    <link rel="stylesheet" href="../../css/alteracaoLivros.css">
+    <link rel="stylesheet" href="../../css/sugestaoLogado.css">
     <link rel="stylesheet" href="../../css/footer.css">
 </head>
   <body>
@@ -42,27 +38,11 @@
             </div>
     </header>
 
-    <section id="buscasResul">
-        <form action="explorarLogado.php" method="GET" id="busca">
-            <div class="inputsArea">
-                <input name="dado" type="text" placeholder="Insira a palavra chave" class="formInput textInput" id="">
-                <select name="tipo" class="formInput">
-                    <option value="" disabled selected>Tipo da palavra-chave</option>
-                    <option value="titulo">Titulo</option>
-                    <option value="autor">Autor</option>
-                    <option value="genero">Genero</option>
-                    <option value="editora">Editora</option>
-                </select>
-            </div>
-            <button type="submit" class="formInput formSubmit">Enviar</button>
-        </form>
-
-        <div id="areaCardResul">
-            <?php
-
-                include "../../pastaphp/operacoes/readLivroADM.php";
-            ?>
-        </div>
+    <section id="recomendacoes">
+        <?php
+            $acesso = "readPostSelf";
+            include "../../pastaphp/operacoes/readPostSelf.php";
+        ?>
     </section>
     
     <footer class="footer">
@@ -99,7 +79,7 @@
 </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="../../scripts/capturaLivro.js"></script>
+    <script src="../../scripts/capturaPost.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>

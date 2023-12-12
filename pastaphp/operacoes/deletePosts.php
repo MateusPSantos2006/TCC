@@ -4,11 +4,11 @@
         exit(); 
     }
     require_once "../../vendor/autoload.php";
-    use TCC\banco\livros\Deletar;
+    use TCC\banco\posts\Deletar;
 
     try {
-        $apagarDados = new Deletar ($_POST["id"]);
-        $apagarDados -> delete();
-    }catch (\Exception $erro) {
+        $apagarPost = new Deletar ($_POST["id"]);
+        $apagarPost->delete();
+    }catch (Exception $erro) {
         echo $erro->getMessage();
     }

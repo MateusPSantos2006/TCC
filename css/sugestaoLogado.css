@@ -1,0 +1,48 @@
+#recomendacoes{
+    align-items:flex-start;
+    padding-left: 19%;
+}
+
+.card {
+    width: 700px;
+    margin: 20px 0 20px 0;
+    height: 100%;
+    background-color: #59aadd ;
+
+    display: grid;
+    align-content: center;
+    grid-template-columns: 85% 15% 5%;
+}
+
+.artigo {
+    height: 100%;
+    padding:15px 15px 0px 15px;
+    margin: 0;
+
+}
+
+.titulo {
+    margin: 0;
+    font-size: 18px;
+    text-align: left;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    margin: 0;
+}
+
+.titulo span {
+    font-weight: 800;
+}
+
+.imagem {
+    height: 277px;
+}
+
+.lixeira {
+    margin-left: 90px;
+    margin-top: 130px;
+}

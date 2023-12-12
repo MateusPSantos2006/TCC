@@ -1,4 +1,8 @@
 <?php
+    if (!isset($_POST["editora"]) || !isset($_POST["npags"]) || $_POST["editora"] == null || $_POST["npags"] == null) {
+        header('Location: ../../index.php'); 
+        exit(); 
+    }
     require_once "../../vendor/autoload.php";
     use TCC\banco\livros\Atualizar;
     use TCC\validacoes\LivroEdit as Livro;

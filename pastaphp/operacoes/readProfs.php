@@ -1,4 +1,8 @@
 <?php
+    if (!isset($verificacao) || $verificacao != "readProfs") {
+        header('Location: ../../index.php'); 
+        exit(); 
+    }
     require_once "../../vendor/autoload.php";
     use TCC\banco\profs\Ler;
 
