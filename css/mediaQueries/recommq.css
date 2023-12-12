@@ -38,9 +38,27 @@
 }
 
 @media screen and (max-width:480px){
+    .card{
+        height:200px;
+    }
+    .imagem{
+        height:200px;
+    }
+    .lixeira {
+        margin-left: 120px;
+    }
 
 }
 
 @media screen and (max-width:320px){
+    .card{
+        height:150px;
+    }
+    .imagem{
+        height:150px;
+    }
+    .lixeira {
+        margin-left: 120px;
+    }
 
 }
